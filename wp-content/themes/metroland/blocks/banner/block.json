@@ -1,0 +1,13 @@
+{
+    "name": "acf/banner",
+    "title": "Banner",
+    "description": "A banner",
+    "category": "metroland",
+    "icon": "embed-photo",
+    "keywords": ["banner"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "banner.php"
+    },
+    "align": "full"
+}
