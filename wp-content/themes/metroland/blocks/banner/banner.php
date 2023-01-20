@@ -9,6 +9,12 @@
 	<h4 class="uppercase txt--white">Title here</h4>
 	<p>Tortor eros <strong>vestibulum proin</strong> a ut porta ad feugiat id mauris ullamcorper vulputate blandit sagittis eu etiam condimentum a diam nulla egestas potenti platea.Odio tempor malesuada imperdiet a id venenatis aptent venenatis nascetur facilisis habitasse a nisl sapien.Suspendisse justo nullam consectetur duis posuere per ultrices varius mi curabitur curae in erat ac parturient a.</p>
 	<p>Tortor eros vestibulum proin a ut porta ad feugiat id mauris ullamcorper vulputate blandit sagittis eu etiam condimentum a diam nulla egestas potenti platea.Odio tempor malesuada imperdiet a id venenatis aptent venenatis nascetur facilisis habitasse a nisl sapien.Suspendisse justo nullam consectetur duis posuere per ultrices varius mi curabitur curae in erat ac parturient a.</p>
+
+	<div class="btn__group">
+		<a class="btn" href="/" title="">View page</a>
+		<a class="btn btn--solid" href="/" title="">View page</a>
+		<a class="btn btn--light" href="/" title="">View page</a>
+	</div>
 </section>
 <div class="banner__hr">
 	<hr class="hr-styled hr-styled--large">

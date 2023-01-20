@@ -15,6 +15,11 @@ p.lead {
 	font-size: var(--font-size-lead);
 }
 
+p + .btn__group,
+p + .btn {
+	margin-top: var(--spacing-s);
+}
+
 .uppercase { text-transform: uppercase;}
 
 ul,

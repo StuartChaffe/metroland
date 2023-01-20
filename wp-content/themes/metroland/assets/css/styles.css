@@ -2860,6 +2860,11 @@ p.lead {
   font-size: var(--font-size-lead);
 }
 
+p + .btn__group,
+p + .btn {
+  margin-top: var(--spacing-s);
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -3337,39 +3342,56 @@ div[data-type="core/button"] div[data-block] {
   margin-right: 5px;
 }
 
-.btn {
+.btn,
+.wp-block-button__link,
+.wp-block-button__link:visited {
   display: inline-block;
-  border-radius: var(--border-radius);
-  padding: 0 3rem;
-  border: 1px solid var(--color-grey);
+  border-radius: 0;
+  padding: 9px 10px 9px;
+  border: 1px solid var(--color-text-dark);
   color: var(--color-text-dark);
-  height: 40px;
-  line-height: 40px;
-  font-family: var(--display-family);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-family: "Aktiv";
   font-weight: var(--font-weight-bold);
-  font-size: var(--font-size);
+  font-size: 12px;
   text-align: center;
   cursor: pointer;
   transition: all 0.1s ease-in-out;
 }
-.btn:hover, .btn:focus {
-  border-color: var(--color-grey-dark);
+.btn:hover, .btn:focus,
+.wp-block-button__link:hover,
+.wp-block-button__link:focus,
+.wp-block-button__link:visited:hover,
+.wp-block-button__link:visited:focus {
+  background: var(--color-grey);
   outline: 0;
-  color: var(--color-grey-dark);
   text-decoration: none;
-  position: relative;
-  top: -1px;
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+.btn__group,
+.wp-block-button__link__group,
+.wp-block-button__link:visited__group {
+  display: flex;
 }
 
-.btn--primary {
-  background-color: var(--color-primary);
-  border: 1px solid var(--color-primary);
-  color: var(--color-text-reversed);
+.btn--solid {
+  background-color: var(--color-text-base);
+  border: 1px solid var(--color-text-base);
+  color: white;
 }
-.btn--primary:hover, .btn--primary:focus {
-  border-color: var(--color-primary);
-  color: var(--color-primary);
+.btn--solid:hover, .btn--solid:focus {
+  background: var(--color-grey);
+  outline: 0;
+  text-decoration: none;
+}
+
+.btn--light {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+.btn--light:hover, .btn--light:focus {
+  background: var(--color-grey);
 }
 
 .social-links {

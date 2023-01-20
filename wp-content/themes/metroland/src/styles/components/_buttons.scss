@@ -1,36 +1,51 @@
-.btn {
+.btn,
+// input[type="button"],
+// input[type="submit"],
+// button,
+.wp-block-button__link,
+.wp-block-button__link:visited {
 	display: inline-block;
-	border-radius: var(--border-radius);
-	padding: 0 3rem;
-	border: 1px solid var(--color-grey);
+	border-radius: 0;
+	padding: 9px 10px 9px;
+	border: 1px solid var(--color-text-dark);
 	color: var(--color-text-dark);
-	height: 40px;
-	line-height: 40px;
-	font-family: var(--display-family);
+	letter-spacing: .04em;
+	text-transform: uppercase;
+	// font-family: var(--display-family);
+	font-family: "Aktiv";
 	font-weight: var(--font-weight-bold);
-	font-size: var(--font-size);
+	font-size: 12px;
 	text-align: center;
 	cursor: pointer;
 	transition: all 0.1s ease-in-out;
 
 	&:hover, &:focus {
-		border-color: var(--color-grey-dark);
+		background: var(--color-grey);
 		outline: 0;
-		color: var(--color-grey-dark);
 		text-decoration: none;
-		position: relative;
-		top: -1px;
-		box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.10);
+	}
+
+	&__group {
+		display: flex;
+	}
+}
+.btn--solid {
+	background-color: var(--color-text-base);
+	border: 1px solid var(--color-text-base);
+	color: white;
+	&:hover, &:focus {
+		background: var(--color-grey);
+		outline: 0;
+		text-decoration: none;
 	}
 }
 
-.btn--primary {
-	background-color: var(--color-primary);
-	border: 1px solid var(--color-primary);
-	color: var(--color-text-reversed);
+.btn--light {
+	background-color: transparent;
+	border: 1px solid white;
+	color: white;
 
 	&:hover, &:focus {
-		border-color: var(--color-primary);
-		color: var(--color-primary);
+		background: var(--color-grey);
 	}
 }

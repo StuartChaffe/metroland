@@ -18,7 +18,7 @@
 				<h4><a href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>"><?php the_title(); ?></a></h4>
 				<?php the_excerpt(); ?>
 				<br />
-				<a class="btn" href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>">View <?php echo get_post_type(); ?></a>
+				<a class="btn btn--solid" href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>">View <?php echo get_post_type(); ?></a>
 			</div>
 		<?php endwhile; ?>
 	</div>
