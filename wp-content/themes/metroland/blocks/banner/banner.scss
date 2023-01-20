@@ -7,5 +7,10 @@
 	justify-content: center;
 	text-align: center;
 	padding: var(--spacing-xxl) var(--spacing-xxl);
+	padding-bottom: calc(var(--spacing-xxl) + 120px);
 	color: white;
+
+	&__hr {
+		margin-top: -120px;
+	}
 }

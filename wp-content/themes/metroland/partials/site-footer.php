@@ -17,4 +17,5 @@
 		<?php endif; ?>
 		</ul>
 	</div>
+	<hr class="hr-styled">
 </footer>

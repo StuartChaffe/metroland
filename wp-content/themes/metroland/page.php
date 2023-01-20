@@ -7,7 +7,7 @@
 		<?php if (get_field('page_title_overwrite')) { ?>
 			<h1 class="uppercase"><?php echo get_field('page_title_overwrite') ?></h1>
 		<?php } else { ?>
-			<h1><?php the_title(); ?></h1>
+			<h1 class="uppercase"><?php the_title(); ?></h1>
 		<?php } ?>
 		</div>
 	<?php } ?>
