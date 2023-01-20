@@ -21,3 +21,12 @@
 		}
 	}
 }
+
+.search-results {
+	padding-top: var(--spacing);
+	padding-bottom: var(--spacing-xl);
+	&__item {
+		padding: var(--spacing) 0;
+		border-bottom: 1px solid var(--color-grey);
+	}
+}
