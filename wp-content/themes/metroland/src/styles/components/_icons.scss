@@ -4,6 +4,18 @@
     fill: currentColor;
     width: 20px;
 	height: 20px;
+    &-instagram {
+        width: 23px;
+	    height: 23px;
+    }
+    &-facebook {
+        width: 25px;
+	    height: 25px;
+    }
+    &-search {
+        width: 24px;
+        height: 25px;
+    }
 }
 
 .icon--small {

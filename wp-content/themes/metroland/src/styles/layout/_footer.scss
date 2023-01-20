@@ -1,12 +1,14 @@
 .site-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	margin-top: auto;
-	text-align: center;
-	background-color: var(--color-primary);
-	padding: var(--spacing);
+	padding-top: var(--spacing);
+	padding-bottom: var(--spacing);
+	@extend .container;
 }
 
 .site-footer__inner {
-	@extend .container;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;

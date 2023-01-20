@@ -33,8 +33,9 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   font-family: var(--body-family);
-  font-size: var(--font-size);
+  // font-size: var(--font-size);
   line-height: var(--line-height);
+  letter-spacing: .02em;
   text-rendering: optimizeSpeed;
   color: var(--color-text-base);
   background-color: var(--body-background-color);

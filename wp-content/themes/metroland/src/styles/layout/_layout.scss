@@ -3,6 +3,7 @@
 // =============================================================================
 
 .global-container {
+	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
@@ -10,14 +11,17 @@
 
 .container {
 	margin: 0 auto;
-	padding: 0 1em;
+	padding: 0 var(--spacing);
 	width: 100%;
-	max-width: var(--container-width);
+	max-width: var(--container-global);
+	@include mq(large) {
+		padding: 0 var(--spacing-xl);
+	}
 }
 
 .main {
-	@extend .container;
-	max-width: var(--content-width);
+	// /@extend .container;
+	max-width: var(--container);
 	margin-top: var(--spacing-l);
 	margin-bottom: var(--spacing-l);
 	flex: 1;

@@ -1,14 +1,21 @@
 p {
 	margin-top: 0;
 	margin-bottom: var(--spacing-s);
+	font-size: 18px;
 	&:last-of-type {
 		margin-bottom: 0;
+	}
+
+	strong {
+		font-family: "InterMed";
 	}
 }
 
 p.lead {
 	font-size: var(--font-size-lead);
 }
+
+.uppercase { text-transform: uppercase;}
 
 ul,
 ol {
@@ -51,9 +58,13 @@ h3,
 h4,
 h5 {
 	margin: 0;
+	margin-bottom: var(--spacing-s);
 	line-height: var(--line-height-headings);
 	font-weight: var(--font-weight-bold);
+	font-family: var(--heading-family);
 	color: var(--heading-color);
+	line-height: .9;
+    letter-spacing: -.03em;
 }
 
 h1, .heading-1 { font-size: var(--font-size-h1); }

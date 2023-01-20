@@ -3,16 +3,10 @@
 ?>
 
 <section class="banner">
-	<a href="http://www.google.com">Link</a>
-	<?php foreach($accordion as $item) { $counter++; ?>
-		<div class="accordion__item">
-			<button aria-expanded="false" class="accordion__handle" aria-controls="accordion-<?php echo $block['id'] . '_' . $counter; ?>" id="<?php echo sanitize_title($item['accordion_title']); ?>">
-				<h3 class="accordion__title"><?php echo $item['accordion_title']; ?></h3>
-				<div class="accordion__icon">&nbsp;</div>
-			</button>
-			<div class="accordion__body" id="accordion-<?php echo $block['id'] . '_' . $counter; ?>" role="region" aria-labelledby="<?php echo sanitize_title($item['accordion_title']); ?>">
-				<?php echo $item['accordion_body']; ?>
-			</div>
-		</div>
-	<?php } ?>
+	<h1 class="uppercase">Title here</h1>
+	<h2 class="uppercase">Title here</h2>
+	<h3 class="uppercase">Title here</h3>
+	<h4 class="uppercase">Title here</h4>
+	<p>Tortor eros <strong>vestibulum proin</strong> a ut porta ad feugiat id mauris ullamcorper vulputate blandit sagittis eu etiam condimentum a diam nulla egestas potenti platea.Odio tempor malesuada imperdiet a id venenatis aptent venenatis nascetur facilisis habitasse a nisl sapien.Suspendisse justo nullam consectetur duis posuere per ultrices varius mi curabitur curae in erat ac parturient a.</p>
+	<p>Tortor eros vestibulum proin a ut porta ad feugiat id mauris ullamcorper vulputate blandit sagittis eu etiam condimentum a diam nulla egestas potenti platea.Odio tempor malesuada imperdiet a id venenatis aptent venenatis nascetur facilisis habitasse a nisl sapien.Suspendisse justo nullam consectetur duis posuere per ultrices varius mi curabitur curae in erat ac parturient a.</p>
 </section>
