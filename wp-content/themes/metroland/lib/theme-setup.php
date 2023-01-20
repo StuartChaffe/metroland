@@ -41,24 +41,33 @@ function origin_no_js_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'origin_no_js_body_classes', 20 );
 
-
-
 /**
  * Tidy up body classes
  */
 function origin_clean_body_classes( $classes ) {
-    $allowed_classes = [
-        'single',
-        'page',
-        'archive',
-        'admin-bar',
-        'no-js',
-    ];
-    return array_intersect( $classes, $allowed_classes );
+	$allowed_classes = [
+		'single',
+		'page',
+		'archive',
+		'admin-bar',
+		'no-js',
+		'home',
+	];
+	return array_intersect( $classes, $allowed_classes );
 }
 add_filter( 'body_class', 'origin_clean_body_classes', 20 );
 
 
+// function origin_body_class( $classes ) {
+//     global $post;
+    
+//     if ( isset( $post ) ) {
+//         $classes[] = 'page-' . $post->post_name;
+//     }
+//     return $classes;
+// }
+
+// add_filter( 'body_class', 'origin_body_class' );
 
 /**
  * Remove the default WordPress Gutenberg junk added by WP 5.9

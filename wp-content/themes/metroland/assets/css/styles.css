@@ -153,7 +153,7 @@ body:before {
   --font-weight-heavy: var(--font-weight-bold);
   --line-height: 1.2;
   --line-height-headings: 1.15;
-  --color-grey-dark: #6a6a6a;
+  --color-grey-dark: #747474;
   --color-grey: #b7b7b7;
   --color-grey-light: #efefef;
   --color-primary: #ff6138;
@@ -3123,6 +3123,10 @@ input[type=button]:focus {
   margin-right: auto;
 }
 
+.edit-post-visual-editor__post-title-wrapper h1 {
+  font-size: 50px;
+}
+
 /* Stop links being clickable in the block editor */
 .acf-block-preview a {
   pointer-events: none !important;
@@ -3370,14 +3374,14 @@ div[data-type="core/button"] div[data-block] {
   min-height: 100%;
 }
 
-.container, .site-footer, .site-header {
+.container, .site-footer__inner, .site-header {
   margin: 0 auto;
   padding: 0 var(--spacing);
   width: 100%;
   max-width: var(--container-global);
 }
 @media (min-width: 70em) {
-  .container, .site-footer, .site-header {
+  .container, .site-footer__inner, .site-header {
     padding: 0 var(--spacing-xl);
   }
 }
@@ -3450,6 +3454,10 @@ div[data-type="core/button"] div[data-block] {
   margin: 0;
 }
 
+body.home .site-header__nav ul :not(.current_page_item) a {
+  color: var(--color-text-base);
+}
+
 .site-header {
   display: flex;
   justify-content: space-between;
@@ -3478,7 +3486,6 @@ div[data-type="core/button"] div[data-block] {
   display: flex;
   margin: 0 auto;
   justify-content: center;
-  align-items: center;
   width: 100%;
   padding: 0 2rem;
 }
@@ -3519,12 +3526,15 @@ div[data-type="core/button"] div[data-block] {
   padding-left: 0;
   width: 100%;
 }
+.site-header__nav ul :not(.current_page_item) a {
+  color: var(--color-grey-dark);
+}
 .site-header__nav ul li {
   display: flex;
   justify-content: center;
   line-height: 100%;
   flex-grow: 1;
-  border-right: 1px solid var(--color-text-base);
+  border-right: 1px solid var(--color-grey);
 }
 .site-header__nav ul li a {
   display: flex;
@@ -3793,19 +3803,12 @@ div[data-type="core/button"] div[data-block] {
   transform: rotate(90deg);
 }
 
-.site-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: auto;
-  padding-top: var(--spacing);
-  padding-bottom: var(--spacing);
-}
-
 .site-footer__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: var(--spacing);
+  padding-bottom: var(--spacing);
 }
 
 .site-footer p {

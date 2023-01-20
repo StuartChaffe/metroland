@@ -1,17 +1,12 @@
 .site-footer {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-top: auto;
-	padding-top: var(--spacing);
-	padding-bottom: var(--spacing);
-	@extend .container;
-}
-
-.site-footer__inner {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: var(--spacing);
+		padding-bottom: var(--spacing);
+		@extend .container;
+	}
 }
 
 .site-footer p {

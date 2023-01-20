@@ -153,7 +153,7 @@ body:before {
   --font-weight-heavy: var(--font-weight-bold);
   --line-height: 1.2;
   --line-height-headings: 1.15;
-  --color-grey-dark: #6a6a6a;
+  --color-grey-dark: #747474;
   --color-grey: #b7b7b7;
   --color-grey-light: #efefef;
   --color-primary: #ff6138;
@@ -458,6 +458,10 @@ pre {
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.edit-post-visual-editor__post-title-wrapper h1 {
+  font-size: 50px;
 }
 
 /* Stop links being clickable in the block editor */

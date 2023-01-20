@@ -1,3 +1,8 @@
+body.home {
+	.site-header__nav ul :not(.current_page_item) a {
+		color: var(--color-text-base);;
+	}
+}
 .site-header {
 	display: flex;
     justify-content: space-between;
@@ -25,7 +30,7 @@
 		display: flex;
 		margin: 0 auto;
 		justify-content: center;
-		align-items: center;
+		// align-items: center;
 		width: 100%;
 		padding: 0 2rem;
 		@include mq(medium) {
@@ -66,13 +71,18 @@
 			margin: 0;
 			padding-left: 0;
 			width: 100%;
+			:not(.current_page_item) {
+				a {
+					color: var(--color-grey-dark);
+				}
+			}
 			li {
 				display: flex;
 				justify-content: center;
 				line-height: 100%;
 				flex-grow: 1;
 				// width: 100%;
-				border-right: 1px solid var(--color-text-base);
+				border-right: 1px solid var(--color-grey);
 				a {
 					display: flex;
 					align-items: center;
