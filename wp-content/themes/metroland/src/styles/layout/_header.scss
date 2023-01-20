@@ -1,6 +1,6 @@
 body.home {
 	.site-header__nav ul :not(.current_page_item) a {
-		color: var(--color-text-base);;
+		color: var(--color-text-base);
 	}
 }
 .site-header {
@@ -184,6 +184,17 @@ body.home {
 				color: var(--color-primary);
 				cursor: pointer;
 			}
+		}
+	}
+	&__search {
+		position: absolute;
+		width: 100%;
+		padding: var(--spacing-xs) 0;
+		top: calc(100% + 1px);
+		left: 0;
+		background: white;
+		.search-form {
+			@extend .container;
 		}
 	}
 }

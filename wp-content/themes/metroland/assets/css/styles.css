@@ -177,7 +177,7 @@ body:before {
   --spacing-l: 75px;
   --spacing: 50px;
   --spacing-s: 25px;
-  --spacing-xs: 0.25em;
+  --spacing-xs: 16px;
   --container-s: 800px;
   --container: 1300px;
   --container-l: 1430px;
@@ -3001,7 +3001,6 @@ input[type=url],
 input[type=password],
 textarea,
 select {
-  height: 38px;
   padding: 6px 10px;
   background-color: #fff;
   border: 1px solid #D1D1D1;
@@ -3386,6 +3385,29 @@ div[data-type="core/button"] div[data-block] {
   color: white;
 }
 
+.search-form {
+  display: flex;
+}
+.search-form__submit {
+  background-color: transparent;
+  border: 0;
+  margin-right: 10px;
+}
+.search-form__input {
+  background-color: green;
+}
+.search-form input[type=text] {
+  background-color: white;
+  font-family: var(--heading-family);
+  width: 100%;
+  border: 0;
+  padding: 20px;
+  margin-right: 80px;
+}
+.search-form input[type=text]:focus {
+  color: var(--color-text-base);
+}
+
 .global-container {
   margin: 0 auto;
   display: flex;
@@ -3393,14 +3415,14 @@ div[data-type="core/button"] div[data-block] {
   min-height: 100%;
 }
 
-.container, .page-title, .site-footer__inner, .site-header {
+.container, .page-title, .site-footer__inner, .site-header__search .search-form, .site-header {
   margin: 0 auto;
   padding: 0 var(--spacing);
   width: 100%;
   max-width: var(--container-global);
 }
 @media (min-width: 70em) {
-  .container, .page-title, .site-footer__inner, .site-header {
+  .container, .page-title, .site-footer__inner, .site-header__search .search-form, .site-header {
     padding: 0 var(--spacing-xl);
   }
 }
@@ -3648,7 +3670,14 @@ body.home .site-header__nav ul :not(.current_page_item) a {
   color: var(--color-primary);
   cursor: pointer;
 }
-
+.site-header__search {
+  position: absolute;
+  width: 100%;
+  padding: var(--spacing-xs) 0;
+  top: calc(100% + 1px);
+  left: 0;
+  background: white;
+}
 @media only screen and (min-width: 1040px) {
   .menu li:hover > .sub-menu {
     opacity: 1;

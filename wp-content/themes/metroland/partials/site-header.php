@@ -41,4 +41,9 @@
 	<nav class="site-header--nav site-header--nav__mobile">
 		<?php wp_nav_menu( array('theme_location' => 'mobile') ); ?>
 	</nav>
+	<div class="site-header__search">
+		<div class="site-header__search-form">
+			<?php get_template_part('searchform'); ?>
+		</div>
+	</div>
 </header>

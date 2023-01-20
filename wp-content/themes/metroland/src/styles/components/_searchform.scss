@@ -1,0 +1,23 @@
+.search-form {
+	display: flex;
+	&__submit {
+		background-color: transparent;
+		border: 0;
+		margin-right: 10px;
+	}
+	&__input {
+		background-color: green;
+	}
+	input[type="text"] {
+		background-color: white;
+		font-family: var(--heading-family);
+		width: 100%;
+		border: 0;
+		padding: 20px;
+		margin-right: 80px;
+
+		&:focus {
+			color: var(--color-text-base);
+		}
+	}
+}
