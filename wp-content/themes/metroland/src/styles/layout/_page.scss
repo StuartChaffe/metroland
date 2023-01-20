@@ -1,0 +1,11 @@
+.page {
+	&-title {
+		@extend .container;
+		padding-top: var(--spacing);
+		padding-bottom: var(--spacing);
+
+		h1 {
+			margin-bottom: 0;
+		}
+	}
+}

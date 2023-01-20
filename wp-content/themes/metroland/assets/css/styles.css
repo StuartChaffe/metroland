@@ -2890,7 +2890,7 @@ h5 {
   line-height: var(--line-height-headings);
   font-weight: var(--font-weight-bold);
   font-family: var(--heading-family);
-  color: var(--heading-color);
+  color: var(--color-text-base);
   line-height: 0.9;
   letter-spacing: -0.03em;
 }
@@ -3374,14 +3374,14 @@ div[data-type="core/button"] div[data-block] {
   min-height: 100%;
 }
 
-.container, .site-footer__inner, .site-header {
+.container, .page-title, .site-footer__inner, .site-header {
   margin: 0 auto;
   padding: 0 var(--spacing);
   width: 100%;
   max-width: var(--container-global);
 }
 @media (min-width: 70em) {
-  .container, .site-footer__inner, .site-header {
+  .container, .page-title, .site-footer__inner, .site-header {
     padding: 0 var(--spacing-xl);
   }
 }
@@ -3500,7 +3500,6 @@ body.home .site-header__nav ul :not(.current_page_item) a {
   display: block;
   font-size: 2rem;
   margin: 0;
-  margin-right: 2rem;
   z-index: 4;
   width: 95px;
   height: 56px;
@@ -3932,6 +3931,14 @@ body.nav-open {
   margin-top: 1rem;
   padding-top: 0.5rem;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.page-title {
+  padding-top: var(--spacing);
+  padding-bottom: var(--spacing);
+}
+.page-title h1 {
+  margin-bottom: 0;
 }
 
 .accordion {
