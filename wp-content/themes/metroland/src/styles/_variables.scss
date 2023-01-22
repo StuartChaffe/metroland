@@ -95,25 +95,25 @@
 
 	--font-size: calc(1rem + 0.15vw);
 	--font-size-lead: calc(1.2rem + 0.1vw);
-	--font-size-small: calc(0.9rem + 0.1vw);
+	--font-size-small: 14px;
 	--font-size-h1: calc(2rem + 5vw);
 	--font-size-h2: calc(2rem + 2.5vw);
 	--font-size-h3: calc(2rem + 1.75vw);
-	--font-size-h4: calc(1.8rem + 1vw);
+	--font-size-h4: calc(2rem + 1vw);
 	--font-size-h5: calc(1.2rem + 0.2vw);
 
 	@include mq(large) {
 		--font-size-h1: calc(2rem + 10vw);
 		--font-size-h2: calc(2rem + 5vw);
 		--font-size-h3: calc(2rem + 3.5vw);
-		--font-size-h4: calc(1.8rem + 2vw);
+		--font-size-h4: calc(2rem + 2vw);
 		--font-size-h5: calc(1.2rem + 0.2vw);
 	}
 	@include mq(xlarge) {
 		--font-size-h1: 150px;
 		--font-size-h2: 100px;
 		--font-size-h3: 75px;
-		--font-size-h4: 40px;
+		--font-size-h4: 50px;
 		--font-size-h5: calc(1.2rem + 0.2vw);
 	}
 }

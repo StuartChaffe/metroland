@@ -27,6 +27,11 @@
 			&-content {
 				width: 50%;
 				padding: var(--spacing-xl) calc(var(--spacing) * 2) var(--spacing-xl) var(--spacing);
+				@include mq($until: large) {
+					h3 {
+						font-size: var(--font-size-h4);
+					}
+				}
 			}
 		}
 	}

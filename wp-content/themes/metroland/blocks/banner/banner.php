@@ -9,7 +9,7 @@
 				<img src="https://www.metrolandcultures.com/site/assets/files/4387/bb22_web_banner_vertical.png" />
 			</div>
 			<div class="banner-slider__item-content">
-				<h4 class="uppercase txt--white">METROLAND YOUNG ASSOCIATES: COLLECTIVE RHYTHMS</h1>
+				<h3 class="uppercase txt--white">METROLAND YOUNG ASSOCIATES: COLLECTIVE RHYTHMS</h3>
 				<p>Brent Biennial 2022: In the House of my Love has now come to an end! Thank you to everyone who attended the many projects and public programmes over the summer.</p>
 				<p>While the Biennial is over, In the House of my Love continues through a series of community commissions, currently in progress with Asian Women's Resource Centre, SUFRA Foodbank & Kitchen and Young Roots. Stay tuned for further activity!</p>
 				<div class="btn__group">
@@ -22,7 +22,7 @@
 				<img src="https://www.metrolandcultures.com/site/assets/files/5070/mya_website.jpg" />
 			</div>
 			<div class="banner-slider__item-content">
-				<h4 class="uppercase txt--white">Making the Room Sing</h1>
+				<h3 class="uppercase txt--white">Making the Room Sing</h3>
 				<p>An exhibition by artists Amanda Camenish and Therese Westin developed in collaboration with a group of women from the Asian Women’s Resource Centre (AWRC) as part of the Brent Biennial 2022, 'In the House of my Love'.</p>
 				<div class="btn__group">
 					<a class="btn btn--light" href="/" title="">View page</a>

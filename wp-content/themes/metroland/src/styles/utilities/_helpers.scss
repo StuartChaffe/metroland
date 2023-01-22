@@ -83,6 +83,9 @@ img.aligncenter     { display: block; margin-left: auto; margin-right: auto; }
 	&--white {
 		color: white;
 	}
+	&--grey {
+		color: var(--color-grey) !important;
+	}
 	&--black {
 		color: black;
 	}
