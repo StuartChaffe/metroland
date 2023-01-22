@@ -68,11 +68,11 @@ h5 {
 	font-weight: var(--font-weight-bold);
 	font-family: var(--heading-family);
 	color: var(--color-text-base);
-	line-height: .9;
+	line-height: 1.15;
     letter-spacing: -.03em;
 }
 
-h1, .heading-1 { font-size: var(--font-size-h1); }
+h1, .heading-1 { font-size: var(--font-size-h1); line-height: .9; }
 h2, .heading-2 { font-size: var(--font-size-h2); }
 h3, .heading-3 { font-size: var(--font-size-h3); }
 h4, .heading-4 { font-size: var(--font-size-h4); }
