@@ -21,6 +21,7 @@
 
 	&:hover, &:focus {
 		background: var(--color-grey);
+		color: var(--color-text-base);
 		outline: 0;
 		text-decoration: none;
 	}
