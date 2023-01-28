@@ -6,6 +6,7 @@ jQuery(document).ready(function($) {
 		slidesToScroll: 1,
 		autoplay: true,
 		autoplaySpeed: 10000,
+		pauseOnHover: false,
 		arrows: true,
 		infinite: true,
 		dots: false,

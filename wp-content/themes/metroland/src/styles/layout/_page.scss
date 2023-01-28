@@ -6,6 +6,16 @@
 
 		h1 {
 			margin-bottom: 0;
+			margin-left: -6px;
+			@include mq(medium) {
+				margin-left: -7px;
+			}
+			@include mq(large) {
+				margin-left: -12px;
+			}
 		}
+	}
+	&-excerpt {
+		margin-top: var(--spacing);
 	}
 }

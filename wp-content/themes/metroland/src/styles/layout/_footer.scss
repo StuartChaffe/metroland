@@ -18,9 +18,9 @@
 		align-items: center;
 		flex-direction: row;
 		justify-content: space-between;
-		margin-top: 1rem;
 		margin-bottom: 3rem;
 		@include mq(large) {
+			margin-top: 1rem;
 			align-items: flex-start;
 			flex-direction: column;
 			margin-bottom: 0;
@@ -66,9 +66,14 @@
 		ul { 
 			margin-left: 0;
 			padding-left: 0;
+			margin-top: 0;
+			margin-bottom: 0;
 			display: flex;
 			li {
 				margin-bottom: 10px;
+				&:last-child {
+					margin-bottom: 0;
+				}
 			}
 		}
 		&-main {
@@ -91,11 +96,19 @@
 		}
 		&-secondary {
 			margin-left: auto;
+			display: flex;
+			flex-direction: column;
+
+			P {
+				margin-top: auto !important;
+			}
+
 			// @include mq(medium) {
 			// 	width: 25%;
 			// }
 			ul { 
 				flex-direction: column;
+				margin-bottom: 2rem;
 				li {
 					a {
 						@extend .txt--grey;

@@ -28,5 +28,8 @@ jQuery(document).ready(function( $ ) {
 
 	$(".site-header__actions-search").on("click", function(){
 		$(".site-header__search").toggleClass("site-header__search--active");
-	  });
+	});
+	$(".site-header__search-close").on("click", function(){
+		$(".site-header__search").toggleClass("site-header__search--active");
+	});
 });

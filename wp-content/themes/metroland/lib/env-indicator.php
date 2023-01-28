@@ -12,7 +12,7 @@
  */
 function origin_get_environment_color( $env ) {
 	switch ( $env ) {
-		case 'local':
+		case 'test':
 		case 'development':
 			$color = '#555';
 			break;

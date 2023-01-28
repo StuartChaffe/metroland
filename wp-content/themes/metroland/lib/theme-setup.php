@@ -10,7 +10,7 @@ function origin_theme_setup() {
     add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
 }
 add_action('after_setup_theme','origin_theme_setup');
-
+add_post_type_support( 'page', 'excerpt' );
 
 
 /**

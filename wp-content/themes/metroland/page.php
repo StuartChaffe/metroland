@@ -9,6 +9,7 @@
 		<?php } else { ?>
 			<h1 class="uppercase"><?php the_title(); ?></h1>
 		<?php } ?>
+			<div class="page-excerpt"><?php the_excerpt(); ?></div>
 		</div>
 	<?php } ?>
 	

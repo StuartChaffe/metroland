@@ -1,14 +1,14 @@
 {
-    "name": "acf/accordion",
-    "title": "Accordion",
-    "description": "A simple accordion",
-    "category": "metroland",
-    "icon": "admin-comments",
-    "keywords": ["faq"],
-    "acf": {
-        "mode": "preview",
-        "renderTemplate": "accordion.php"
+	"name": "acf/accordion",
+	"title": "Accordion",
+	"description": "A simple accordion",
+	"category": "metroland",
+	"icon": "admin-comments",
+	"keywords": ["faq"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "accordion.php"
 
-    },
-    "align": "full"
+	},
+	"align": "full"
 }

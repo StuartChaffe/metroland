@@ -5,7 +5,7 @@
 <section class="banner">
 	<div class="banner-slider">
 		<div class="banner-slider__item">
-			<div class="banner-slider__item-image">
+			<div class="banner-slider__item-image" style="background-image: url('https://www.metrolandcultures.com/site/assets/files/4387/bb22_web_banner_vertical.png');">
 				<img src="https://www.metrolandcultures.com/site/assets/files/4387/bb22_web_banner_vertical.png" />
 			</div>
 			<div class="banner-slider__item-content">
@@ -18,7 +18,7 @@
 			</div>
 		</div>
 		<div class="banner-slider__item">
-			<div class="banner-slider__item-image">
+			<div class="banner-slider__item-image" style="background-image: url('https://www.metrolandcultures.com/site/assets/files/5070/mya_website.jpg');">
 				<img src="https://www.metrolandcultures.com/site/assets/files/5070/mya_website.jpg" />
 			</div>
 			<div class="banner-slider__item-content">

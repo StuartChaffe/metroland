@@ -219,6 +219,7 @@ body.home {
 			visibility: visible;
 			opacity: 1;
 			transition: all 0.1s ease-in-out;
+			box-shadow: 0 6px 6px 0px rgba(0, 0, 0, 0.05);
 		}
 		&-form {
 			position: relative;
@@ -236,6 +237,9 @@ body.home {
 			width: 30px;
     		height: 30px;
 			transform: rotate(45deg);
+			@include mq(medium) {
+				right: var(--spacing-xl);
+			}
 			span {
 				visibility: hidden;
 				position: absolute;

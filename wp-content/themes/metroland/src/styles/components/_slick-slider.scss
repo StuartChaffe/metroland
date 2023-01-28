@@ -49,7 +49,7 @@
 	top: 0;
 	left: 0;
 	display: flex;
-	align-items: center;
+	// align-items: center;
 	margin-left: 0;
 	margin-right: 0;
 	@include mq(medium) {
@@ -145,14 +145,14 @@ $slick-opacity-not-active: 0.25 !default;
 	display: flex;
     align-items: center;
     justify-content: center;
-	height: 30px;
-	width: 30px;
+	height: 40px;
+	width: 40px;
 	line-height: 0px;
 	font-size: 0px;
 	padding: 0;
 	cursor: pointer;
 	background-color: white;
-	bottom: 50%;
+	top: calc(50vw + 5px);
 	border: none;
 	outline: none;
 	z-index: 9;
@@ -162,10 +162,17 @@ $slick-opacity-not-active: 0.25 !default;
 		transition: .2s transform ease-in-out;
 		background-color: white;
 	}
+
+	@include mq(medium) {
+		height: 30px;
+		width: 30px;
+		top: 50%;
+		transform: translate(0, calc(-50% - 60px));
+	}
 }
 
 .slick-prev {
-	left: 1rem;
+	right: 50px;
 	
 	@include mq(medium) {
 		left: 3rem;
@@ -182,13 +189,15 @@ $slick-opacity-not-active: 0.25 !default;
 		}
 	}
 	&:hover, &:focus {
-		transform: translateX(-0.5rem);
+		@include mq(medium) {
+			transform: translate(-0.5rem, calc(-50% - 60px));
+		}
 	}
 	
 }
 
 .slick-next {
-	right: 1rem;
+	right: 5px;
 	@include mq(medium) {
 		right: 3rem;
 	}
@@ -201,7 +210,9 @@ $slick-opacity-not-active: 0.25 !default;
 		}
 	}
 	&:hover, &:focus {
-		transform: translateX(0.5rem);
+		@include mq(medium) {
+			transform: translate(0.5rem, calc(-50% - 60px));
+		}
 	}
 }
 
@@ -219,9 +230,6 @@ $slick-opacity-not-active: 0.25 !default;
 	margin: 0;
 	width: 100%;
     left: 0;
-	@include mq(medium) {
-		// bottom: 35px;
-	}
 	li {
 		position: relative;
 		display: inline-block;
