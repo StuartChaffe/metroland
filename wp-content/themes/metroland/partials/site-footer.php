@@ -13,19 +13,10 @@
 
 			<div class="site-footer__menus">
 				<div class="site-footer__menus-main">
-					<ul>
-						<li><a href="">What's Happening</a></li>
-						<li><a href="">Get Involved</a></li>
-						<li><a href="">News</a></li>
-						<li><a href="">About</a></li>
-						<li><a href="">Brent 2020</a></li>
-					</ul>
+					<?php wp_nav_menu( array('theme_location' => 'footer') ); ?>
 				</div>	
 				<div class="site-footer__menus-secondary">
-					<ul>
-						<li><a href="" class="txt--grey">What's Happening</a></li>
-						<li><a href="" class="txt--grey">Get Involved</a></li>
-					</ul>
+					<?php wp_nav_menu( array('theme_location' => 'privacy') ); ?>
 
 					<p class="txt--grey">Design: <a class="txt--grey" href="http://peterandpaul.co.uk/">Peter &amp; Paul</a><br />
 					Build: <a class="txt--grey" href="https://stuartchaffe.co.uk/">Stuart Chaffe</a></p>

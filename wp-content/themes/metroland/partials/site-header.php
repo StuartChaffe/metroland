@@ -40,6 +40,21 @@
 	</div>
 	<nav class="site-header--nav site-header--nav__mobile">
 		<?php wp_nav_menu( array('theme_location' => 'mobile') ); ?>
+		<ul class="social-links">
+			<?php if(get_field('twitter', 'options')): ?>
+				<li class="social-links__item"><a href="<?php the_field('twitter', 'options'); ?>" class="social-links__link"><?php echo get_icon('twitter'); ?></a></li>
+			<?php endif; ?>
+			<?php if(get_field('facebook', 'options')): ?>
+				<li class="social-links__item"><a href="<?php the_field('facebook', 'options'); ?>" class="social-links__link"><?php echo get_icon('facebook'); ?></a></li>
+			<?php endif; ?>
+			<?php if(get_field('instagram', 'options')): ?>
+				<li class="social-links__item"><a href="<?php the_field('instagram', 'options'); ?>" class="social-links__link"><?php echo get_icon('instagram'); ?></a></li>
+			<?php endif; ?>
+			<?php if(get_field('youtube', 'options')): ?>
+				<li class="social-links__item"><a href="<?php the_field('youtube', 'options'); ?>" class="social-links__link"><?php echo get_icon('youtube'); ?></a></li>
+			<?php endif; ?>
+				<li class="social-links__item"><a href="/" class="social-links__link"><svg class="icon icon-email" width="23px" height="17px" viewBox="0 0 23 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(1.000000, 1.000000)" stroke="CurrentColor" stroke-width="2"><rect x="0" y="0" width="21" height="15" rx="2"></rect><polyline stroke-linecap="round" stroke-linejoin="round" points="0.296792238 1.18332242 10.6112253 10.2115437 20.7210206 1.18332242"></polyline></g></g></svg></a></li>
+		</ul>
 	</nav>
 	<div class="site-header__search">
 		<div class="site-header__search-form">

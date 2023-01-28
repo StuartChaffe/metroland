@@ -11,7 +11,7 @@
 
 .container {
 	margin: 0 auto;
-	padding: 0 var(--spacing);
+	padding: 0 var(--spacing-s);
 	width: 100%;
 	max-width: var(--container-global);
 	@include mq(large) {

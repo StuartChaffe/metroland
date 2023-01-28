@@ -1,5 +1,6 @@
 @charset "UTF-8";
 body:before {
+  display: none;
   background-color: #fcf8e3;
   border-bottom: 1px solid #fbeed5;
   border-left: 1px solid #fbeed5;
@@ -54,6 +55,7 @@ body:before {
   }
 }
 body:before {
+  display: none;
   background-color: #fcf8e3;
   border-bottom: 1px solid #fbeed5;
   border-left: 1px solid #fbeed5;
@@ -183,6 +185,7 @@ body:before {
   --container-l: 1430px;
   --content-width: var(--container);
   --container-global: 1920px;
+  --nav-width: 1044px;
   --font-size: calc(1rem + 0.15vw);
   --font-size-lead: calc(1.2rem + 0.1vw);
   --font-size-small: 14px;

@@ -32,13 +32,13 @@ body.home {
 	&__inner {
 		display: flex;
 		margin: 0 auto;
-		justify-content: center;
+		justify-content: space-between;
+		align-items: center;
 		// align-items: center;
+		padding: 0;
 		width: 100%;
-		padding: 0 2rem;
 		@include mq(medium) {
 			margin-bottom: 0;
-			padding: 0;
 			justify-content: space-between;
 		}	
 	}
@@ -170,10 +170,21 @@ body.home {
 		}
 	}
 	&__actions {
+		height: 100%;
 		display: flex;
 		align-items: center;
+		margin-right: 3rem;
+		border-right: 1px solid var(--color-grey);
+		@media only screen and (min-width: 1044px) {
+			margin-right: 0;
+			border-right: none;
+		}
 		.social-links {
+			display: none;
 			margin: 0 2rem 0 0;
+			@media only screen and (min-width: 1044px) {
+				display: flex;
+			}
 			&__link {
 				color: var(--color-text-base);
 				&:hover {
@@ -183,6 +194,11 @@ body.home {
 		}
 		&-search {
 			margin-left: 1rem;
+			margin-right: 1rem;
+			@media only screen and (min-width: 1044px) {
+				border-right: none;
+				margin-right: 0;
+			}
 			&:hover {
 				color: var(--color-primary);
 				cursor: pointer;
@@ -196,6 +212,14 @@ body.home {
 		top: calc(100% + 1px);
 		left: 0;
 		background: white;
+		visibility: hidden;
+		opacity: 0;
+		transition: all 0.1s ease-in-out;
+		&--active {
+			visibility: visible;
+			opacity: 1;
+			transition: all 0.1s ease-in-out;
+		}
 		.search-form {
 			@extend .container;
 		}
@@ -289,7 +313,7 @@ body.home {
 .site-header--nav-btn.is-active .site-header--nav-inner,
 .site-header--nav-btn.is-active .site-header--nav-inner::before,
 .site-header--nav-btn.is-active .site-header--nav-inner::after {
-	background-color: var(--color-primary);
+	background-color: white;
 }
 .site-header--nav-btn.is-active {
 	position: fixed;
@@ -321,7 +345,7 @@ body.home {
 .site-header--nav-inner::before,
 .site-header--nav-inner::after {
 	width: 30px;
-	height: 2px;
+	height: 3px;
 	background-color: var(--color-text-base);
 	border-radius: 20px;
 	position: absolute;

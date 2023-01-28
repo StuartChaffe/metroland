@@ -23,3 +23,10 @@ jQuery(document).ready(function( $ ) {
 		return false;
 	});
 });
+
+jQuery(document).ready(function( $ ) {
+
+	$(".site-header__actions-search").on("click", function(){
+		$(".site-header__search").toggleClass("site-header__search--active");
+	  });
+});
