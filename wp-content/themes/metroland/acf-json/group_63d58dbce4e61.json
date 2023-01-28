@@ -24,7 +24,7 @@
         },
         {
             "key": "field_63d59040b081e",
-            "label": "",
+            "label": "Show sidebar links?",
             "name": "show_sidebar",
             "aria-label": "",
             "type": "true_false",
@@ -61,5 +61,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1674940517
+    "modified": 1674941209
 }

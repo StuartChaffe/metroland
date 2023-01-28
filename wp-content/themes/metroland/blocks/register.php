@@ -29,15 +29,16 @@ add_filter( 'allowed_block_types_all', 'allowed_block_types' );
 function allowed_block_types( $allowed_blocks ) {
 
 	return array(
-        'acf/accordion',
+		'acf/accordion',
 		'acf/banner',
+		'acf/content',
 		// 'acf/testimonial',
 
-        'core/paragraph',
+		'core/paragraph',
 		'core/heading',
 		'core/button',
 		'core/list',
-		// 'core/image',
+		'core/image',
 		// 'core/html',
 	);
 
