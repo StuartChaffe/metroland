@@ -59,6 +59,10 @@
 	<div class="site-header__search">
 		<div class="site-header__search-form">
 			<?php get_template_part('searchform'); ?>
+
+			<span class="site-header__search-close">
+				<span>Close search</span>
+			</span>
 		</div>
 	</div>
 </header>
