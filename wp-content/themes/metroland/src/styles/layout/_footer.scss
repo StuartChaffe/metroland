@@ -3,7 +3,6 @@
 	&__inner {
 		display: flex;
 		justify-content: space-between;
-		// align-items: center;
 		padding-top: var(--spacing);
 		padding-bottom: var(--spacing);
 		@extend .container;
@@ -55,6 +54,11 @@
 			width: 25%;
 			ul { 
 				flex-direction: column;
+				li {
+					a {
+						color: white;
+					}
+				}
 			}
 		}
 	}
