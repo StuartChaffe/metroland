@@ -86,18 +86,16 @@ add_action('after_setup_theme', function() {
 });
 
 function wp_list_children() { 
+	global $post; 
+	$id = ( is_page() && $post->post_parent ) ? $post->post_parent : $post->ID;
+	$childpages = wp_list_pages( 'sort_column=menu_order&title_li=&child_of=' . $id . '&echo=0' );
+	//you can add `&depth=1` in the end, so it only shows one level
 
-    global $post; 
+	if ( $childpages ) {    
+		$string = '<ul>' . $childpages . '</ul>';
+	}
 
-    $id = ( is_page() && $post->post_parent ) ? $post->post_parent : $post->ID;
-    $childpages = wp_list_pages( 'sort_column=menu_order&title_li=&child_of=' . $id . '&echo=0' );
-    //you can add `&depth=1` in the end, so it only shows one level
-
-    if ( $childpages ) {    
-        $string = '<ul>' . $childpages . '</ul>';
-    }
-
-    return $string;
+	return $string;
 }
 
 add_shortcode('list_children', 'wp_list_children');

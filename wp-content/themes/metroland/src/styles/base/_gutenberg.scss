@@ -62,9 +62,9 @@ html:where(.editor-styles-wrapper),
 }
 
 // Fix space between image and caption
-.wp-block-image {
-	line-height: 0;
-}
+// .wp-block-image {
+// 	line-height: 0;
+// }
 
 // Full width button
 .wp-block-button.is-style-full,
@@ -97,7 +97,9 @@ div[data-type="core/button"] div[data-block] {
 }
 .block-editor-block-list__block .block-list-appender.block-list-appender {
 	width: 100%;
-	bottom: -10px;
+	// bottom: -10px;
+	bottom: 0;
+	position: relative;
 }
 .block-editor-block-list__block .block-list-appender .block-editor-inserter__toggle.components-button.has-icon, .block-editor-block-list__block .block-list-appender .block-list-appender__toggle {
 	width: 100%;

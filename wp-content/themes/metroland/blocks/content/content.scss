@@ -2,12 +2,43 @@
 	@extend .container !optional;
 	display: flex;
 	justify-content: space-between;
-	background-color: red;
+	// background-color: red;
 	&__sidebar {
-		width: calc(33.3% - 40px);
-		border-right: 1px solid black;
+		width: calc(33.3% - 36px);
+		// border-right: 1px solid black;
+
+		ul {
+			padding-left: 0;
+			li {
+				margin-bottom: 0.25rem;
+				a {
+					@extend .btn;
+					text-align: left;
+					// font-size: 12px;
+					font-weight: 400;
+					font-family: "InterBold";
+					color: var(--color-grey-dark);
+					border-color: var(--color-grey-dark);
+				}
+			}
+		}
 	}
 	&__content {
 		width: 66.6%;
+		background-color: red;
+
+		.wp-block-image {
+			img {
+				width: 100%;
+			}
+		}
+
+		ol {
+			list-style-type: decimal;
+			padding-bottom: 1rem;
+			li {
+				margin-bottom: 1rem;
+			}
+		}
 	}
 }

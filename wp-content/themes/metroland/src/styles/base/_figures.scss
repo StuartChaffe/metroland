@@ -1,11 +1,14 @@
 figure {
 	margin: 0;
+	margin-bottom: var(--spacing);
 }
 
 figcaption {
-	margin-top: 0;
+	font-size: 14px;
+    margin-top: 10px;
 }
 
 figcaption p {
-	font-size: var(--font-size-small);
+	font-size: 14px;
+	margin-top: 10px;
 }

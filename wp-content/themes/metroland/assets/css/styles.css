@@ -228,7 +228,6 @@ h2,
 h3,
 h4,
 p,
-figure,
 blockquote,
 dl,
 dd {
@@ -2871,7 +2870,8 @@ p.lead {
 }
 
 p + .btn__group,
-p + .btn {
+p + .btn,
+.content-block__sidebar ul li p + a {
   margin-top: var(--spacing-s);
 }
 
@@ -2974,14 +2974,17 @@ hr {
 
 figure {
   margin: 0;
+  margin-bottom: var(--spacing);
 }
 
 figcaption {
-  margin-top: 0;
+  font-size: 14px;
+  margin-top: 10px;
 }
 
 figcaption p {
-  font-size: var(--font-size-small);
+  font-size: 14px;
+  margin-top: 10px;
 }
 
 table {
@@ -3194,10 +3197,6 @@ input[type=button]:focus {
   padding-left: 0;
 }
 
-.wp-block-image {
-  line-height: 0;
-}
-
 .wp-block-button.is-style-full,
 .wp-block-button.is-style-full .block-editor-rich-text,
 div[data-type="core/button"] div[data-block] {
@@ -3229,7 +3228,8 @@ div[data-type="core/button"] div[data-block] {
 
 .block-editor-block-list__block .block-list-appender.block-list-appender {
   width: 100%;
-  bottom: -10px;
+  bottom: 0;
+  position: relative;
 }
 
 .block-editor-block-list__block .block-list-appender .block-editor-inserter__toggle.components-button.has-icon, .block-editor-block-list__block .block-list-appender .block-list-appender__toggle {
@@ -3351,7 +3351,7 @@ div[data-type="core/button"] div[data-block] {
   margin-right: 5px;
 }
 
-.btn,
+.btn, .content-block__sidebar ul li a,
 .wp-block-button__link,
 .wp-block-button__link:visited {
   display: inline-block;
@@ -3368,7 +3368,7 @@ div[data-type="core/button"] div[data-block] {
   cursor: pointer;
   transition: all 0.1s ease-in-out;
 }
-.btn:hover, .btn:focus,
+.btn:hover, .content-block__sidebar ul li a:hover, .btn:focus, .content-block__sidebar ul li a:focus,
 .wp-block-button__link:hover,
 .wp-block-button__link:focus,
 .wp-block-button__link:visited:hover,
@@ -4630,14 +4630,36 @@ body.nav-open {
 .content-block {
   display: flex;
   justify-content: space-between;
-  background-color: red;
 }
 .content-block__sidebar {
-  width: calc(33.3% - 40px);
-  border-right: 1px solid black;
+  width: calc(33.3% - 36px);
+}
+.content-block__sidebar ul {
+  padding-left: 0;
+}
+.content-block__sidebar ul li {
+  margin-bottom: 0.25rem;
+}
+.content-block__sidebar ul li a {
+  text-align: left;
+  font-weight: 400;
+  font-family: "InterBold";
+  color: var(--color-grey-dark);
+  border-color: var(--color-grey-dark);
 }
 .content-block__content {
   width: 66.6%;
+  background-color: red;
+}
+.content-block__content .wp-block-image img {
+  width: 100%;
+}
+.content-block__content ol {
+  list-style-type: decimal;
+  padding-bottom: 1rem;
+}
+.content-block__content ol li {
+  margin-bottom: 1rem;
 }
 
 .u-bold {
