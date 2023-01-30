@@ -3,6 +3,26 @@
     "title": "Page title",
     "fields": [
         {
+            "key": "field_63d834bd45196",
+            "label": "Show breadcrumb?",
+            "name": "breadcrumb_show",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
             "key": "field_63ca9ceeb1ca3",
             "label": "Show title?",
             "name": "page_title_show",
@@ -18,16 +38,16 @@
             },
             "message": "",
             "default_value": 1,
-            "ui": 0,
             "ui_on_text": "",
-            "ui_off_text": ""
+            "ui_off_text": "",
+            "ui": 1
         },
         {
             "key": "field_63ca9db0b1ca4",
             "label": "Overwrite title",
             "name": "page_title_overwrite",
             "aria-label": "",
-            "type": "textarea",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": [
@@ -46,9 +66,35 @@
             },
             "default_value": "",
             "maxlength": "",
-            "rows": 2,
             "placeholder": "",
-            "new_lines": "br"
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_63d83e4f40317",
+            "label": "Title size",
+            "name": "page_title_size",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Standard": "Standard",
+                "Small": "Small"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
         }
     ],
     "location": [
@@ -69,5 +115,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1674223660
+    "modified": 1675116148
 }

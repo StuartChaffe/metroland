@@ -189,7 +189,7 @@ body:before {
   --font-size: calc(1rem + 0.15vw);
   --font-size-lead: calc(1.2rem + 0.1vw);
   --font-size-small: 14px;
-  --font-size-h1: calc(2rem + 5vw);
+  --font-size-h1: calc(2rem + 4vw);
   --font-size-h2: calc(2rem + 2.5vw);
   --font-size-h3: calc(2rem + 1.75vw);
   --font-size-h4: calc(2rem + 0.75vw);
@@ -355,7 +355,7 @@ ol {
   list-style: none;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-  padding-left: 1em;
+  padding-left: 1.5rem;
 }
 
 ul ul,
@@ -886,10 +886,16 @@ div[data-type="core/button"] div[data-block] {
   justify-content: space-between;
 }
 .content-block__sidebar {
-  width: calc(33.3% - 36px);
+  width: 33.3%;
+  padding-right: var(--spacing);
 }
 .content-block__sidebar ul {
+  margin-top: 0;
   padding-left: 0;
+}
+.content-block__sidebar ul .current_page_item a {
+  background-color: var(--color-text-base);
+  color: white;
 }
 .content-block__sidebar ul li {
   margin-bottom: 0.25rem;
@@ -903,7 +909,10 @@ div[data-type="core/button"] div[data-block] {
 }
 .content-block__content {
   width: 66.6%;
-  background-color: red;
+}
+.content-block__content--full {
+  margin: 0 auto;
+  width: 66.6%;
 }
 .content-block__content .wp-block-image img {
   width: 100%;

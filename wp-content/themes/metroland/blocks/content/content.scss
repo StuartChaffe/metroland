@@ -2,19 +2,25 @@
 	@extend .container !optional;
 	display: flex;
 	justify-content: space-between;
-	// background-color: red;
 	&__sidebar {
-		width: calc(33.3% - 36px);
-		// border-right: 1px solid black;
+		width: 33.3%;
+		padding-right: var(--spacing);
+		// width: calc(33.3% - 36px);
 
 		ul {
+			margin-top: 0;
 			padding-left: 0;
+			.current_page_item {
+				a {
+					background-color: var(--color-text-base);
+					color: white;
+				}
+			}
 			li {
 				margin-bottom: 0.25rem;
 				a {
 					@extend .btn;
 					text-align: left;
-					// font-size: 12px;
 					font-weight: 400;
 					font-family: "InterBold";
 					color: var(--color-grey-dark);
@@ -25,7 +31,10 @@
 	}
 	&__content {
 		width: 66.6%;
-		background-color: red;
+		&--full {
+			margin: 0 auto;
+			width: 66.6%;
+		}
 
 		.wp-block-image {
 			img {
