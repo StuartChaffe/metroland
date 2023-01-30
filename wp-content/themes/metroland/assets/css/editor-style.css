@@ -180,7 +180,7 @@ body:before {
   --spacing: 50px;
   --spacing-s: 25px;
   --spacing-xs: 16px;
-  --container-s: 800px;
+  --container-s: 700px;
   --container: 1300px;
   --container-l: 1430px;
   --content-width: var(--container);
@@ -884,6 +884,7 @@ div[data-type="core/button"] div[data-block] {
 .content-block {
   display: flex;
   justify-content: space-between;
+  padding-bottom: var(--spacing-l);
 }
 .content-block__sidebar {
   width: 33.3%;
@@ -909,10 +910,7 @@ div[data-type="core/button"] div[data-block] {
 }
 .content-block__content {
   width: 66.6%;
-}
-.content-block__content--full {
   margin: 0 auto;
-  width: 66.6%;
 }
 .content-block__content .wp-block-image img {
   width: 100%;

@@ -33,6 +33,7 @@
 		}
 	}
 	&-excerpt {
+		max-width: var(--container-s);
 		margin-top: var(--spacing);
 	}
 }

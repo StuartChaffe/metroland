@@ -180,7 +180,7 @@ body:before {
   --spacing: 50px;
   --spacing-s: 25px;
   --spacing-xs: 16px;
-  --container-s: 800px;
+  --container-s: 700px;
   --container: 1300px;
   --container-l: 1430px;
   --content-width: var(--container);
@@ -4506,6 +4506,7 @@ body.nav-open {
   margin-bottom: 0;
 }
 .page-excerpt {
+  max-width: var(--container-s);
   margin-top: var(--spacing);
 }
 
@@ -4641,6 +4642,7 @@ body.nav-open {
 .content-block {
   display: flex;
   justify-content: space-between;
+  padding-bottom: var(--spacing-l);
 }
 .content-block__sidebar {
   width: 33.3%;
@@ -4666,10 +4668,7 @@ body.nav-open {
 }
 .content-block__content {
   width: 66.6%;
-}
-.content-block__content--full {
   margin: 0 auto;
-  width: 66.6%;
 }
 .content-block__content .wp-block-image img {
   width: 100%;
