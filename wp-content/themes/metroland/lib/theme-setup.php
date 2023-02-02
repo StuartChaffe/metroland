@@ -99,3 +99,9 @@ function wp_list_children() {
 }
 
 add_shortcode('list_children', 'wp_list_children');
+
+// Removes comments from admin menu
+add_action( 'admin_menu', 'pk_remove_admin_menus' );
+function pk_remove_admin_menus() {
+	remove_menu_page( 'edit-comments.php' );
+}

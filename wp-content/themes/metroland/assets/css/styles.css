@@ -2869,6 +2869,10 @@ p.lead {
   font-size: var(--font-size-lead);
 }
 
+p.small {
+  font-size: var(--font-size-small);
+}
+
 p + .btn__group,
 p + .btn,
 .content-block__sidebar ul li p + a {
@@ -2940,6 +2944,7 @@ h2, .heading-2 {
 
 h3, .heading-3 {
   font-size: var(--font-size-h3);
+  line-height: 1;
 }
 
 h4, .heading-4 {
@@ -3710,14 +3715,14 @@ div[data-type="core/button"] div[data-block] {
   min-height: 100%;
 }
 
-.container, .content-block, .page-title, .site-footer__inner, .site-header__search .search-form, .site-header {
+.container, .pagelinks, .content-block, .page-title, .site-footer__inner, .site-header__search .search-form, .site-header {
   margin: 0 auto;
   padding: 0 var(--spacing-s);
   width: 100%;
   max-width: var(--container-global);
 }
 @media (min-width: 70em) {
-  .container, .content-block, .page-title, .site-footer__inner, .site-header__search .search-form, .site-header {
+  .container, .pagelinks, .content-block, .page-title, .site-footer__inner, .site-header__search .search-form, .site-header {
     padding: 0 var(--spacing-xl);
   }
 }
@@ -4210,6 +4215,7 @@ body.home .site-header__nav ul :not(.current_page_item) a:hover {
 .site-footer {
   font-size: var(--font-size-small);
   color: white;
+  margin-top: var(--spacing-xl);
 }
 .site-footer__inner {
   display: flex;
@@ -4500,7 +4506,6 @@ body.nav-open {
 .page-title {
   padding-top: var(--spacing);
   padding-bottom: var(--spacing);
-  word-wrap: break-word;
 }
 .page-title h1 {
   margin-bottom: 0;
@@ -4679,6 +4684,31 @@ body.nav-open {
 }
 .content-block__content ol li {
   margin-bottom: 1rem;
+}
+
+.pagelinks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-s);
+}
+.pagelinks .card {
+  color: var(--color-text-base);
+  padding-bottom: var(--spacing-s);
+}
+.pagelinks .card img {
+  margin-bottom: var(--spacing-s);
+}
+.pagelinks .card__title {
+  font-weight: var(--font-weight-normal);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  padding-right: 20%;
+}
+.pagelinks .card__excerpt {
+  padding-right: 30%;
+}
+.pagelinks .card:hover {
+  text-decoration: none;
 }
 
 .u-bold {

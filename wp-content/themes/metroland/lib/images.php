@@ -24,3 +24,22 @@ function origin_remove_thumbnail_dimensions( $html, $post_id, $post_image_id ) {
     return $html;
 }
 add_filter( 'post_thumbnail_html', 'origin_remove_thumbnail_dimensions', 10, 3 );
+
+/**
+ * Remove image p tags
+ */
+function filter_ptags_on_images($content){
+	return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', $content);
+}
+add_filter('the_content', 'filter_ptags_on_images');
+
+/**
+ * Allow SVG
+ */
+function add_file_types_to_uploads($file_types){
+	$new_filetypes = array();
+	$new_filetypes['svg'] = 'image/svg+xml';
+	$file_types = array_merge($file_types, $new_filetypes );
+	return $file_types;
+}
+add_filter('upload_mimes', 'add_file_types_to_uploads');

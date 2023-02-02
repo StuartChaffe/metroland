@@ -1,0 +1,13 @@
+{
+	"name": "acf/pagelinks",
+	"title": "Page links",
+	"description": "Link to a list of pages",
+	"category": "metroland",
+	"icon": "grid-view",
+	"keywords": ["pages"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "pagelinks.php"
+	},
+	"align": "full"
+}
