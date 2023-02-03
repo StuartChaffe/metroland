@@ -1,0 +1,35 @@
+.card {
+	color: var(--color-text-base);
+	padding-bottom: var(--spacing-s);
+	&__media {
+		// transition: all 0.1s ease-in-out;
+		img {
+			margin-bottom: var(--spacing-s);
+			width: 100%;
+		}
+	}
+	&__title {
+		font-family: "InterMed";
+		font-weight: var(--font-weight-medium);
+		margin-bottom: 1rem;
+	}
+	&__excerpt{
+		@extend .small;
+	}
+	&__date {
+		@extend .small;
+		margin-top: 1rem;
+	}
+	&:hover {
+		text-decoration: none;
+		color: var(--color-text-base);
+		.card__title {
+			text-decoration: underline;
+			// color: var(--color-primary);
+		}
+		.card__media {
+			transform: scale(1.02,1.02);
+			// transition: all 0.1s ease-in-out;
+		}
+	}
+}

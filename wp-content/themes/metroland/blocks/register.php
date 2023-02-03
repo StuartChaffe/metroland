@@ -32,8 +32,8 @@ function allowed_block_types( $allowed_blocks ) {
 		'acf/accordion',
 		'acf/banner',
 		'acf/content',
+		'acf/news',
 		'acf/pagelinks',
-		// 'acf/testimonial',
 
 		'core/paragraph',
 		'core/heading',

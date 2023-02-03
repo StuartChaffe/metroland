@@ -3,26 +3,13 @@
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: var(--spacing-s);
-
 	.card {
-		color: var(--color-text-base);
-		padding-bottom: var(--spacing-s);
-		img {
-			margin-bottom: var(--spacing-s);
-		}
 		&__title {
-			font-weight: var(--font-weight-normal);
 			text-transform: uppercase;
-			margin-bottom: 1rem;
 			padding-right: 20%;
 		}
 		&__excerpt {
-			padding-right: 30%;
-		}
-
-		&:hover {
-			text-decoration: none;
-			// background-color: var(--color-grey-light);
+			padding-right: 25%;
 		}
 	}
 }

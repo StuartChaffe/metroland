@@ -4,17 +4,17 @@
 
 <?php if($pages) { ?>
 <section class="pagelinks">
-	<?php foreach( $pages as $page ):
-		// $image = get_the_post_thumbnail_url($page);
-		$image = get_the_post_thumbnail($page);
-		$pagetitle = get_the_title($page);
-		$excerpt = get_field('pagelink_desc', $page);
+	<?php foreach( $pages as $id ):
+		$pagetitle = get_the_title($id);
+		$excerpt = get_field('pagelink_desc', $id);
 	?>
-		<a href="<?php esc_url(the_permalink($page) ); ?>" class="card">
-			<?php echo $image; ?>
+		<a href="<?php echo get_the_permalink($id); ?>" class="card">
+			<figure class="card__media">
+				<img src="<?php echo get_the_post_thumbnail_url($id,'Thumb'); ?>" alt="<?php echo get_post_meta($id, '_wp_attachment_image_alt', true); ?>">
+			</figure>
+			
 			<div class="card__title"><p><?php echo $pagetitle; ?></p></div>
 			<div class="card__excerpt"><p class="small"><?php echo $excerpt; ?></p></div>
-			<?php the_excerpt($page); ?>
 		</a>
 	<?php endforeach; ?>
 </section>

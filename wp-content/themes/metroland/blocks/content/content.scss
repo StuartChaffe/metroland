@@ -39,6 +39,7 @@
 		}
 
 		.wp-block-image {
+			margin-bottom: var(--spacing-l);
 			img {
 				width: 100%;
 			}
@@ -49,6 +50,42 @@
 			padding-bottom: 1rem;
 			li {
 				margin-bottom: 1rem;
+			}
+		}
+
+		a {
+			color: var(--color-grey-dark);
+		}
+	}
+
+	&-article {
+		padding-top: var(--spacing);
+		.content-block {
+			padding: 0;
+		}
+		.content-block__sidebar {
+			display: flex;
+			flex-direction: row;
+			align-items: baseline;
+			a {
+				@extend .btn;
+				margin-right: 0.5rem;
+				text-align: left;
+				font-weight: 400;
+				font-family: "InterBold";
+				color: white;
+				border-color: var(--color-grey-dark);
+			}
+		}
+		.content-block__content {
+			width: 50%;
+			margin-left: 0;
+			h1 {
+				margin-top: -10px;
+			}
+			.content-block__content {
+				width: 100%;
+				padding: 0;
 			}
 		}
 	}

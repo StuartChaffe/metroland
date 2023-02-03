@@ -7,9 +7,10 @@
 @import "base/typography";
 @import "base/gutenberg";
 
+@import "components/buttons";
+@import "components/card";
 @import "components/content";
 @import "components/icons";
-@import "components/buttons";
 @import "components/social-links";
 
 @import "../../blocks/*/*.scss";

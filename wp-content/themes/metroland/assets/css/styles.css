@@ -150,10 +150,11 @@ body:before {
   --display-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-weight-light: 100;
   --font-weight-normal: 400;
+  --font-weight-medium: 500;
   --font-weight-bold: 700;
   --font-weight-heavy: 900;
   --font-weight-heavy: var(--font-weight-bold);
-  --line-height: 1.2;
+  --line-height: 1.25;
   --line-height-headings: 1.15;
   --color-grey-dark: #747474;
   --color-grey: #b7b7b7;
@@ -2869,12 +2870,16 @@ p.lead {
   font-size: var(--font-size-lead);
 }
 
-p.small {
+p.small, p.card__date, p.card__excerpt,
+.small p,
+.card__date p,
+.card__excerpt p {
   font-size: var(--font-size-small);
 }
 
 p + .btn__group,
 p + .btn,
+.content-block-article .content-block__sidebar p + a,
 .content-block__sidebar ul li p + a {
   margin-top: var(--spacing-s);
 }
@@ -2979,7 +2984,6 @@ hr {
 
 figure {
   margin: 0;
-  margin-bottom: var(--spacing);
 }
 
 figcaption {
@@ -3188,6 +3192,15 @@ input[type=button]:focus {
   max-width: var(--container-global);
   /* Post title styling */
 }
+figure {
+  text-align: center;
+  margin-bottom: var(--spacing-l);
+}
+figure figcaption {
+  text-align: left;
+  font-size: var(--font-size-small);
+}
+
 /* Main column width */
 .wp-block {
   max-width: var(--container-global);
@@ -3304,6 +3317,33 @@ div[data-type="core/button"] div[data-block] {
   margin-bottom: 0.25em;
 }
 
+.card {
+  color: var(--color-text-base);
+  padding-bottom: var(--spacing-s);
+}
+.card__media img {
+  margin-bottom: var(--spacing-s);
+  width: 100%;
+}
+.card__title {
+  font-family: "InterMed";
+  font-weight: var(--font-weight-medium);
+  margin-bottom: 1rem;
+}
+.card__date {
+  margin-top: 1rem;
+}
+.card:hover {
+  text-decoration: none;
+  color: var(--color-text-base);
+}
+.card:hover .card__title {
+  text-decoration: underline;
+}
+.card:hover .card__media {
+  transform: scale(1.02, 1.02);
+}
+
 .icon {
   display: inline-block;
   vertical-align: middle;
@@ -3356,7 +3396,7 @@ div[data-type="core/button"] div[data-block] {
   margin-right: 5px;
 }
 
-.btn, .content-block__sidebar ul li a,
+.btn, .content-block-article .content-block__sidebar a, .content-block__sidebar ul li a,
 .wp-block-button__link,
 .wp-block-button__link:visited {
   display: inline-block;
@@ -3373,7 +3413,7 @@ div[data-type="core/button"] div[data-block] {
   cursor: pointer;
   transition: all 0.1s ease-in-out;
 }
-.btn:hover, .content-block__sidebar ul li a:hover, .btn:focus, .content-block__sidebar ul li a:focus,
+.btn:hover, .content-block-article .content-block__sidebar a:hover, .content-block__sidebar ul li a:hover, .btn:focus, .content-block-article .content-block__sidebar a:focus, .content-block__sidebar ul li a:focus,
 .wp-block-button__link:hover,
 .wp-block-button__link:focus,
 .wp-block-button__link:visited:hover,
@@ -3715,14 +3755,14 @@ div[data-type="core/button"] div[data-block] {
   min-height: 100%;
 }
 
-.container, .pagelinks, .content-block, .page-title, .site-footer__inner, .site-header__search .search-form, .site-header {
+.container, .pagelinks, .news, .content-block, .page-title, .site-footer__inner, .site-header__search .search-form, .site-header {
   margin: 0 auto;
   padding: 0 var(--spacing-s);
   width: 100%;
   max-width: var(--container-global);
 }
 @media (min-width: 70em) {
-  .container, .pagelinks, .content-block, .page-title, .site-footer__inner, .site-header__search .search-form, .site-header {
+  .container, .pagelinks, .news, .content-block, .page-title, .site-footer__inner, .site-header__search .search-form, .site-header {
     padding: 0 var(--spacing-xl);
   }
 }
@@ -4484,6 +4524,9 @@ body.nav-open {
 
 .page-breadcrumb {
   padding: 0.5rem var(--spacing-s) 0 var(--spacing-s);
+  white-space: nowrap;
+  overflow: hidden;
+  width: calc(100vw - var(--spacing-s));
 }
 @media (min-width: 50em) {
   .page-breadcrumb {
@@ -4501,7 +4544,6 @@ body.nav-open {
 }
 .page-breadcrumb span {
   font-size: 14px;
-  text-transform: uppercase;
 }
 .page-title {
   padding-top: var(--spacing);
@@ -4675,6 +4717,9 @@ body.nav-open {
   width: 66.6%;
   margin: 0 auto;
 }
+.content-block__content .wp-block-image {
+  margin-bottom: var(--spacing-l);
+}
 .content-block__content .wp-block-image img {
   width: 100%;
 }
@@ -4685,30 +4730,83 @@ body.nav-open {
 .content-block__content ol li {
   margin-bottom: 1rem;
 }
+.content-block__content a {
+  color: var(--color-grey-dark);
+}
+.content-block-article {
+  padding-top: var(--spacing);
+}
+.content-block-article .content-block {
+  padding: 0;
+}
+.content-block-article .content-block__sidebar {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.content-block-article .content-block__sidebar a {
+  margin-right: 0.5rem;
+  text-align: left;
+  font-weight: 400;
+  font-family: "InterBold";
+  color: white;
+  border-color: var(--color-grey-dark);
+}
+.content-block-article .content-block__content {
+  width: 50%;
+  margin-left: 0;
+}
+.content-block-article .content-block__content h1 {
+  margin-top: -10px;
+}
+.content-block-article .content-block__content .content-block__content {
+  width: 100%;
+  padding: 0;
+}
+
+.news {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: var(--spacing);
+}
+@media (min-width: 50em) {
+  .news {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing);
+  }
+}
+@media (min-width: 70em) {
+  .news {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing);
+  }
+}
+.news .card {
+  position: relative;
+  padding-bottom: var(--spacing);
+}
+.news .card:nth-child(4n+1):after {
+  content: "";
+  width: calc(100vw - var(--spacing-xl) * 2);
+  max-width: calc(var(--container-global) - var(--spacing-xl) * 2);
+  height: 1px;
+  background: var(--color-grey);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
 
 .pagelinks {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--spacing-s);
 }
-.pagelinks .card {
-  color: var(--color-text-base);
-  padding-bottom: var(--spacing-s);
-}
-.pagelinks .card img {
-  margin-bottom: var(--spacing-s);
-}
 .pagelinks .card__title {
-  font-weight: var(--font-weight-normal);
   text-transform: uppercase;
-  margin-bottom: 1rem;
   padding-right: 20%;
 }
 .pagelinks .card__excerpt {
-  padding-right: 30%;
-}
-.pagelinks .card:hover {
-  text-decoration: none;
+  padding-right: 25%;
 }
 
 .u-bold {

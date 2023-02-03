@@ -1,11 +1,17 @@
 <?php get_header(); ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
-
+	<div class="page-breadcrumb"><span><span><a href="/news">News</a><span><span> / <?php echo do_shortcode('[wpseo_breadcrumb]'); ?></div>
 	<article id="content">
-		<h2><?php the_title(); ?></h2>
-		<time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><?php the_date(); ?> <?php the_time(); ?></time>
-		<?php the_content(); ?>
+		<section class="content-block content-block-article">
+			<?php get_sidebar('news'); ?>
+			<div class="content-block__content">
+				<h1 class="heading-3 uppercase"><?php the_title(); ?></h1>
+				<p class="small"><?php echo get_the_date(); ?></p>
+
+				<?php the_content(); ?>
+			</div>
+		</section>
 	</article>
 
 <?php endwhile; ?>

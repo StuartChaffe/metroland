@@ -11,6 +11,7 @@ function origin_image_defaults() {
 	// Set image sizes
 	add_image_size( 'Banner', 600, 450, true );
 	add_image_size( 'Square', 400, 400, true );
+	add_image_size( 'Thumb', 920, 604, true );
 }
 add_action( 'after_setup_theme', 'origin_image_defaults' );
 

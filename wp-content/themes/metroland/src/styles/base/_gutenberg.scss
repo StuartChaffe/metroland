@@ -44,6 +44,15 @@ html:where(.editor-styles-wrapper),
 	// padding: 0 !important;
 }
 
+figure {
+	text-align: center;
+	margin-bottom: var(--spacing-l);
+	figcaption {
+		text-align: left;
+		font-size: var(--font-size-small);
+	}
+}
+
 /* Main column width */
 .wp-block {
     max-width: var(--container-global);

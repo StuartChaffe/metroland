@@ -17,7 +17,8 @@ p {
 p.lead {
 	font-size: var(--font-size-lead);
 }
-p.small {
+p.small,
+.small p {
 	font-size: var(--font-size-small);
 }
 

@@ -92,3 +92,21 @@ function my_login_logo() { ?>
 	</style>
 <?php }
 add_action( 'login_enqueue_scripts', 'my_login_logo' );
+
+add_filter( 'wpseo_breadcrumb_links', 'yoast_seo_breadcrumb_append_link' );
+
+
+function yoast_seo_breadcrumb_append_link( $links ) {
+    global $post;
+
+    if ( is_single ( 123456 ) ) {
+        $breadcrumb[] = array(
+            'url' => site_url( '/news/' ),
+            'text' => 'News',
+        );
+
+        array_splice( $links, 1, -2, $breadcrumb );
+    }
+
+    return $links;
+}
