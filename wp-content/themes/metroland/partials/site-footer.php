@@ -21,13 +21,13 @@
 			<div class="site-footer__menus">
 				<div class="site-footer__menus-main">
 					<?php wp_nav_menu( array('theme_location' => 'footer') ); ?>
-				</div>	
+				</div>
 				<div class="site-footer__menus-secondary">
 					<?php wp_nav_menu( array('theme_location' => 'privacy') ); ?>
 
 					<p class="txt--grey">Design: <a class="txt--grey" href="http://peterandpaul.co.uk/">Peter &amp; Paul</a><br />
 					Build: <a class="txt--grey" href="https://stuartchaffe.co.uk/">Stuart Chaffe</a></p>
-				</div>	
+				</div>
 			</div>
 		</div>
 	</div>

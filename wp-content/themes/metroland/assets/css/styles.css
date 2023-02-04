@@ -181,7 +181,7 @@ body:before {
   --spacing: 50px;
   --spacing-s: 25px;
   --spacing-xs: 16px;
-  --container-s: 700px;
+  --container-s: 800px;
   --container: 1300px;
   --container-l: 1430px;
   --content-width: var(--container);
@@ -3034,12 +3034,14 @@ input[type=url],
 input[type=password],
 textarea,
 select {
-  padding: 6px 10px;
-  background-color: #fff;
-  border: 1px solid #D1D1D1;
-  border-radius: 4px;
+  padding: 6px 0;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid black;
+  border-radius: 0;
   box-shadow: none;
   box-sizing: border-box;
+  width: 100%;
 }
 
 input[type=email],
@@ -3052,6 +3054,7 @@ input[type=password],
 textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
+  margin-bottom: 1.5rem;
 }
 
 textarea {
@@ -3069,32 +3072,18 @@ input[type=url]:focus,
 input[type=password]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid var(--color-grey-dark);
+  border-bottom: 1px solid white;
   outline: 0;
 }
 
 label {
   display: block;
-  margin: 0.5em 0;
-  font-weight: 600;
+  font-weight: var(--font-weight-normal);
 }
 
 input[type=checkbox],
 input[type=radio] {
   display: inline;
-}
-
-input[type=submit],
-input[type=reset],
-input[type=button] {
-  display: block;
-  padding: 1em;
-  margin: 0.5em 0;
-  background: var(--color-primary);
-  color: #fff;
-  border-radius: var(--border-radius);
-  transition: all 0.2s linear;
-  border: 0;
 }
 
 input[type=submit].center,
@@ -3428,12 +3417,18 @@ div[data-type="core/button"] div[data-block] {
   display: flex;
 }
 
-.btn--solid {
+.btn--solid, input[type=submit],
+input[type=reset],
+input[type=button] {
   background-color: var(--color-text-base);
   border: 1px solid var(--color-text-base);
   color: white;
 }
-.btn--solid:hover, .btn--solid:focus {
+.btn--solid:hover, input[type=submit]:hover,
+input[type=reset]:hover,
+input[type=button]:hover, .btn--solid:focus, input[type=submit]:focus,
+input[type=reset]:focus,
+input[type=button]:focus {
   background: var(--color-grey);
   outline: 0;
   text-decoration: none;
@@ -3446,6 +3441,10 @@ div[data-type="core/button"] div[data-block] {
 }
 .btn--light:hover, .btn--light:focus {
   background: var(--color-grey);
+}
+
+.btn--large {
+  padding: 18px 20px 18px;
 }
 
 .social-links {
@@ -4758,6 +4757,18 @@ body.nav-open {
 .content-block-article .content-block__content .content-block__content {
   width: 100%;
   padding: 0;
+}
+
+.form {
+  max-width: var(--container-s);
+  padding: var(--spacing-s);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background: #fedfdf url("../../src/images/form-bkg.svg");
+}
+.form__title {
+  text-transform: uppercase;
 }
 
 .news {

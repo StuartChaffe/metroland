@@ -1,0 +1,13 @@
+{
+	"name": "acf/form",
+	"title": "Mailchimp form",
+	"description": "Display Mailchimp form",
+	"category": "metroland",
+	"icon": "editor-justify",
+	"keywords": ["form"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "form.php"
+	},
+	"align": "full"
+}

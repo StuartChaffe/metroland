@@ -181,7 +181,7 @@ body:before {
   --spacing: 50px;
   --spacing-s: 25px;
   --spacing-xs: 16px;
-  --container-s: 700px;
+  --container-s: 800px;
   --container: 1300px;
   --container-l: 1430px;
   --content-width: var(--container);
@@ -657,6 +657,10 @@ div[data-type="core/button"] div[data-block] {
   background: var(--color-grey);
 }
 
+.btn--large {
+  padding: 18px 20px 18px;
+}
+
 .card {
   color: var(--color-text-base);
   padding-bottom: var(--spacing-s);
@@ -998,6 +1002,18 @@ div[data-type="core/button"] div[data-block] {
 .content-block-article .content-block__content .content-block__content {
   width: 100%;
   padding: 0;
+}
+
+.form {
+  max-width: var(--container-s);
+  padding: var(--spacing-s);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background: #fedfdf url("../../src/images/form-bkg.svg");
+}
+.form__title {
+  text-transform: uppercase;
 }
 
 .news {
