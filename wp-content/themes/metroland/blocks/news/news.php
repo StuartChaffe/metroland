@@ -5,7 +5,7 @@
 		'orderby' => 'date',
 		'order' => 'DESC',
 	));
-	
+
 ?>
 <section class="news">
 <?php if ($posts->have_posts()) { ?>
@@ -14,7 +14,7 @@
 		<figure class="card__media">
 			<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true); ?>">
 		</figure>
-		
+
 		<div class="card__title"><p><?php the_title(); ?></p></div>
 		<div class="card__excerpt"><?php the_excerpt(); ?></div>
 		<div class="card__date"><p><?php the_date(); ?></p></div>

@@ -1,0 +1,13 @@
+{
+	"name": "acf/events",
+	"title": "All events",
+	"description": "Display all events",
+	"category": "metroland",
+	"icon": "calendar-alt",
+	"keywords": ["events"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "events.php"
+	},
+	"align": "full"
+}

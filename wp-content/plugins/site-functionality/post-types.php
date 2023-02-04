@@ -40,7 +40,7 @@ function origin_cpts() {
 		'capability_type'       => 'post',
 		'hierarchical'          => true,
 		'rewrite'               => array(
-			'slug'                  => 'programme',
+			'slug'                  => 'programmes',
 			'with_front'            => '0'
 		),
 		'query_var'             => true,
@@ -90,7 +90,7 @@ function origin_cpts() {
 		'capability_type'       => 'post',
 		'hierarchical'          => true,
 		'rewrite'               => array(
-			'slug'                  => 'event',
+			'slug'                  => 'events',
 			'with_front'            => '0'
 		),
 		'query_var'             => true,

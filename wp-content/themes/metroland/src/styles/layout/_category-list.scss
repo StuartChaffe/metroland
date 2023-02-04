@@ -1,0 +1,30 @@
+.category-list {
+	display: flex;
+	margin-top: 1rem;
+	.category {
+		background-color: var(--color-text-base);
+		margin-right: 0.3rem;
+		display: inline-block;
+		border-radius: 0;
+		padding: 7px 10px;
+		border: 1px solid var(--color-text-base);
+		color: white;
+		letter-spacing: .04em;
+		text-transform: uppercase;
+		font-family: var(--display-family);
+		font-weight: var(--font-weight-bold);
+		font-size: 12px;
+		&--active {
+			background-color: var(--color-primary);
+			border-color: var(--color-primary);
+			color: var(--color-text-base);
+		}
+		span {
+			font-weight: var(--font-weight-normal);
+			text-transform: capitalize;
+		}
+		p {
+			font-size: 12px;
+		}
+	}
+}

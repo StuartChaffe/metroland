@@ -334,17 +334,19 @@ p:last-of-type {
   margin-bottom: 0;
 }
 p strong {
-  font-family: "InterMed";
+  font-family: "InterBold";
 }
 
 p.lead {
   font-size: var(--font-size-lead);
 }
 
-p.small, p.card__date, p.card__excerpt,
+p.small, .events p.card__address, p.card__date, p.card__excerpt, p.label,
 .small p,
+.events .card__address p,
 .card__date p,
-.card__excerpt p {
+.card__excerpt p,
+.label p {
   font-size: var(--font-size-small);
 }
 
@@ -353,6 +355,13 @@ p + .btn,
 .content-block-article .content-block__sidebar p + a,
 .content-block__sidebar ul li p + a {
   margin-top: var(--spacing-s);
+}
+
+.label {
+  color: white;
+  background-color: var(--color-text-dark);
+  margin-bottom: 0.25rem;
+  padding: 2px 5px;
 }
 
 .uppercase {
@@ -604,6 +613,14 @@ div[data-type="core/button"] div[data-block] {
   margin-right: auto;
 }
 
+.card {
+  border: 0;
+  padding: 0;
+}
+.card:nth-child(4n+1):after {
+  display: none;
+}
+
 input[type=email],
 input[type=number],
 input[type=search],
@@ -752,6 +769,9 @@ input[type=button]:focus {
 .card {
   color: var(--color-text-base);
   padding-bottom: var(--spacing-s);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
 }
 .card__media img {
   margin-bottom: var(--spacing-s);
@@ -1048,6 +1068,9 @@ input[type=button]:focus {
   width: 66.6%;
   margin: 0 auto;
 }
+.content-block__content figure {
+  margin-bottom: var(--spacing-l);
+}
 .content-block__content .wp-block-image img {
   width: 100%;
 }
@@ -1060,6 +1083,20 @@ input[type=button]:focus {
 }
 .content-block__content a {
   color: var(--color-grey-dark);
+}
+.content-block-event {
+  padding-top: var(--spacing);
+}
+.content-block-event .content-block {
+  padding: 0;
+}
+.content-block-event .content-block__sidebar {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+.content-block-event .content-block__content h1 {
+  margin-top: -10px;
 }
 .content-block-article {
   padding-top: var(--spacing);
@@ -1090,6 +1127,54 @@ input[type=button]:focus {
 .content-block-article .content-block__content .content-block__content {
   width: 100%;
   padding: 0;
+}
+
+.events-list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: var(--spacing);
+}
+@media (min-width: 50em) {
+  .events-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing);
+  }
+}
+@media (min-width: 70em) {
+  .events-list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing);
+  }
+}
+.events-title {
+  padding-top: var(--spacing);
+  padding-bottom: var(--spacing);
+}
+.events .card {
+  position: relative;
+  padding-bottom: var(--spacing);
+}
+.events .card:nth-child(4n+1):after {
+  content: "";
+  width: calc(100vw - var(--spacing-xl) * 2);
+  max-width: calc(var(--container-global) - var(--spacing-xl) * 2);
+  height: 1px;
+  background: var(--color-grey);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.events .card__title {
+  margin-bottom: 0;
+}
+.events .card__date {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--color-grey-dark);
+}
+.events .card__address {
+  margin: 1rem 0;
+  color: var(--color-grey-dark);
 }
 
 .form {

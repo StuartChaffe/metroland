@@ -119,11 +119,19 @@ div[data-type="core/button"] div[data-block] {
 	padding: 2rem 1rem;
 	border-radius: 4px;
 	max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 .block-editor-rich-text__editable {
 	max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.card {
+	border: 0;
+	padding: 0;
+	&:nth-child(4n+1):after {
+		display: none;
+	}
 }

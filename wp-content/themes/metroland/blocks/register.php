@@ -34,6 +34,7 @@ function allowed_block_types( $allowed_blocks ) {
 		'acf/content',
 		'acf/form',
 		'acf/news',
+		'acf/events',
 		'acf/pagelinks',
 
 		'core/paragraph',

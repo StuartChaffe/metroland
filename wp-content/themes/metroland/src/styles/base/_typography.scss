@@ -10,7 +10,7 @@ p {
 	}
 
 	strong {
-		font-family: "InterMed";
+		font-family: "InterBold";
 	}
 }
 
@@ -26,6 +26,14 @@ p.small,
 p + .btn__group,
 p + .btn {
 	margin-top: var(--spacing-s);
+}
+
+.label {
+	@extend .small;
+	color: white;
+	background-color: var(--color-text-dark);
+	margin-bottom: 0.25rem;
+	padding: 2px 5px;
 }
 
 .uppercase { text-transform: uppercase;}

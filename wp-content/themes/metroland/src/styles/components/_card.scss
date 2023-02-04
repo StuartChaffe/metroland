@@ -1,6 +1,9 @@
 .card {
 	color: var(--color-text-base);
 	padding-bottom: var(--spacing-s);
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
 	&__media {
 		// transition: all 0.1s ease-in-out;
 		img {
