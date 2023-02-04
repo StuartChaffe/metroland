@@ -2984,6 +2984,7 @@ hr {
 
 figure {
   margin: 0;
+  margin-bottom: 0;
 }
 
 figcaption {
@@ -3194,7 +3195,6 @@ input[type=button]:focus {
 }
 figure {
   text-align: center;
-  margin-bottom: var(--spacing-l);
 }
 figure figcaption {
   text-align: left;
@@ -3297,7 +3297,6 @@ div[data-type="core/button"] div[data-block] {
 }
 .content figure {
   max-width: none;
-  margin: var(--spacing-xl) 0;
 }
 .content figcaption {
   padding: 1em 0;
@@ -4716,9 +4715,6 @@ body.nav-open {
 .content-block__content {
   width: 66.6%;
   margin: 0 auto;
-}
-.content-block__content .wp-block-image {
-  margin-bottom: var(--spacing-l);
 }
 .content-block__content .wp-block-image img {
   width: 100%;
