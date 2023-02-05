@@ -9,6 +9,21 @@
 	$content = get_field('events_content');
 
 ?>
+<div class="category-filter">
+	<select name="cat-dropdown" onchange='document.location.href=this.options[this.selectedIndex].value;'>
+		<option value=""><?php echo esc_attr(__('Showing: All categories')); ?></option>
+		<?php
+			$categories = get_categories($posts);
+			foreach ($categories as $category) {
+				$option .= '<option value="'.get_option('home').'/events/category/'.$category->slug.'">';
+				$option .= $category->cat_name;
+				$option .= ' ('.$category->category_count.')';
+				$option .= '</option>';
+			}
+			echo $option;
+		?>
+	</select>
+</div>
 
 <section class="events">
 	<div class="events-title">

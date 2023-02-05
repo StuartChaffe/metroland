@@ -3802,14 +3802,14 @@ input[type=button]:focus {
   min-height: 100%;
 }
 
-.container, .programmes-title, .programmes-list, .pagelinks, .news, .featured-list, .featured-title, .events-title, .events-list, .content-block, .page-title, .site-footer__inner, .site-header__search .search-form, .site-header {
+.container, .programmes-title, .programmes-list, .pagelinks, .news, .featured-list, .featured-title, .events-title, .events-list, .content-block, .page-title, .site-footer__inner, .site-header__search .search-form, .site-header, .category-filter {
   margin: 0 auto;
   padding: 0 var(--spacing-s);
   width: 100%;
   max-width: var(--container-global);
 }
 @media (min-width: 70em) {
-  .container, .programmes-title, .programmes-list, .pagelinks, .news, .featured-list, .featured-title, .events-title, .events-list, .content-block, .page-title, .site-footer__inner, .site-header__search .search-form, .site-header {
+  .container, .programmes-title, .programmes-list, .pagelinks, .news, .featured-list, .featured-title, .events-title, .events-list, .content-block, .page-title, .site-footer__inner, .site-header__search .search-form, .site-header, .category-filter {
     padding: 0 var(--spacing-xl);
   }
 }
@@ -3850,6 +3850,21 @@ input[type=button]:focus {
 }
 .category-list .category p {
   font-size: 12px;
+}
+
+.category-filter {
+  display: flex;
+  margin-left: auto;
+}
+.category-filter select {
+  width: auto;
+  margin-left: auto;
+  padding-right: 100px;
+  border-bottom: 1px solid var(--color-grey);
+}
+.category-filter select,
+.category-filter option {
+  font-size: var(--font-size-small);
 }
 
 .global-alert {

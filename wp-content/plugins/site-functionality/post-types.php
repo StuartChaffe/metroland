@@ -82,6 +82,7 @@ function origin_cpts() {
 	$gutenberg_enabled	= true;
 
 	$post_type_options = array(
+		'taxonomies'  			=> array( 'category' ),
 		'label'                 => $single_name,
 		'public'                => true,
 		'menu_icon'             => $icon,
