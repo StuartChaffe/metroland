@@ -1145,21 +1145,13 @@ input[type=button]:focus {
 }
 
 .events-list {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 0;
-}
-@media (min-width: 50em) {
-  .events-list {
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing);
-  }
+  padding: 0 calc(var(--spacing-s) - 8px);
+  display: flex;
+  flex-wrap: wrap;
 }
 @media (min-width: 70em) {
   .events-list {
     padding: 0 200px;
-    grid-template-columns: repeat(4, 1fr);
-    gap: var(--spacing);
   }
 }
 .events-title {
@@ -1168,6 +1160,7 @@ input[type=button]:focus {
 }
 .events .card {
   position: relative;
+  padding: 0 calc(var(--spacing-xs) / 2);
   padding-bottom: var(--spacing);
 }
 .events .card:nth-child(4n+1):after {
@@ -1233,10 +1226,15 @@ input[type=button]:focus {
 .form {
   max-width: var(--container-s);
   padding: var(--spacing-s);
-  margin: 0 auto;
+  margin: 0 var(--spacing-s);
   display: flex;
   flex-direction: column;
   background: #fedfdf url("../../src/images/form-bkg.svg");
+}
+@media (min-width: 50em) {
+  .form {
+    margin: 0 auto;
+  }
 }
 .form__title {
   text-transform: uppercase;

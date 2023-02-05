@@ -25,7 +25,7 @@
 			$price = get_field('price', get_the_id());
 			$tickets = get_field('ticket', get_the_id());
 		?>
-		<a href="<?php esc_url( the_permalink() ); ?>" title="Article: <?php the_title(); ?>" class="card">
+		<a href="<?php esc_url( the_permalink() ); ?>" title="Article: <?php the_title(); ?>" class="card card--std">
 			<figure class="card__media">
 				<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true); ?>">
 			</figure>
