@@ -1,9 +1,16 @@
-.events {
+.featured {
+	&-title {
+		@extend .container !optional;
+		padding-top: var(--spacing);
+		padding-bottom: var(--spacing);
+	}
+
 	&-list {
 		@extend .container !optional;
+		display: flex;
 		display: grid;
-		grid-template-columns: repeat(1, 1fr);
-		gap: 0;
+		grid-template-columns: repeat(2, 1fr);
+		gap: var(--spacing);
 		@include mq(medium) {
 			grid-template-columns: repeat(2, 1fr);
 			gap: var(--spacing);
@@ -12,12 +19,6 @@
 			grid-template-columns: repeat(4, 1fr);
 			gap: var(--spacing);
 		}
-	}
-
-	&-title {
-		@extend .container !optional;
-		padding-top: var(--spacing);
-		padding-bottom: var(--spacing);
 	}
 
 	.card {
@@ -32,20 +33,6 @@
 			position: absolute;
 			left: 0;
 			bottom: 0;
-		}
-
-		&__title {
-			margin-bottom: 0;
-		}
-		&__date {
-			margin-top: 0;
-			margin-bottom: 1rem;
-			color: var(--color-grey-dark);
-		}
-		&__address {
-			margin: 1rem 0;
-			color: var(--color-grey-dark);
-			@extend .small;
 		}
 	}
 }

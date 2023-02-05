@@ -45,7 +45,7 @@ html:where(.editor-styles-wrapper),
 }
 
 figure {
-	text-align: center;
+	// text-align: center;
 	// margin-bottom: var(--spacing-l);
 	figcaption {
 		text-align: left;
@@ -122,7 +122,8 @@ div[data-type="core/button"] div[data-block] {
 	margin-left: auto;
 	margin-right: auto;
 }
-.block-editor-rich-text__editable {
+.block-editor-rich-text__editable,
+.wp-block-image {
 	max-width: 900px;
 	margin-left: auto;
 	margin-right: auto;

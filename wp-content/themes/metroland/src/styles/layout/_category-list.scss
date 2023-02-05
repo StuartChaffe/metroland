@@ -3,15 +3,15 @@
 	margin-top: 1rem;
 	.category {
 		background-color: var(--color-text-base);
-		margin-right: 0.3rem;
+		margin-right: 0.25rem;
 		display: inline-block;
 		border-radius: 0;
-		padding: 7px 10px;
+		padding: 8px 10px 4px;
 		border: 1px solid var(--color-text-base);
 		color: white;
 		letter-spacing: .04em;
 		text-transform: uppercase;
-		font-family: var(--display-family);
+		font-family: "AktivBold";
 		font-weight: var(--font-weight-bold);
 		font-size: 12px;
 		&--active {

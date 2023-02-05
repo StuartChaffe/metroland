@@ -1,0 +1,13 @@
+{
+	"name": "acf/programmes",
+	"title": "All programmes",
+	"description": "Display all programmes",
+	"category": "metroland",
+	"icon": "laptop",
+	"keywords": ["programmes"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "programmes.php"
+	},
+	"align": "full"
+}

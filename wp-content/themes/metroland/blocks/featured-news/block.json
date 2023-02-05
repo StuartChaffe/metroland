@@ -1,0 +1,13 @@
+{
+	"name": "acf/featured-news",
+	"title": "Featured news",
+	"description": "Display featured news articles",
+	"category": "metroland",
+	"icon": "star-filled",
+	"keywords": ["news"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "featured-news.php"
+	},
+	"align": "full"
+}

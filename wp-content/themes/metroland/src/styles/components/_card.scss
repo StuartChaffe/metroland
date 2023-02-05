@@ -1,6 +1,6 @@
 .card {
 	color: var(--color-text-base);
-	padding-bottom: var(--spacing-s);
+	padding-bottom: var(--spacing);
 	display: flex;
 	align-items: flex-start;
 	flex-direction: column;
@@ -22,6 +22,7 @@
 	&__date {
 		@extend .small;
 		margin-top: 1rem;
+		color: var(--color-grey-dark);
 	}
 	&:hover {
 		text-decoration: none;
@@ -33,6 +34,21 @@
 		.card__media {
 			transform: scale(1.02,1.02);
 			// transition: all 0.1s ease-in-out;
+		}
+	}
+	.btn {
+		margin-top: 1rem;
+	}
+	&--wide {
+		width: 100%;
+		@include mq(medium) {
+			width: 50%;
+		}
+	}
+	&--std {
+		width: 50%;
+		@include mq(medium) {
+			width: 25%;
 		}
 	}
 }
