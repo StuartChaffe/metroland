@@ -4866,6 +4866,7 @@ body.nav-open {
 }
 @media (min-width: 70em) {
   .events-list {
+    padding: 0 200px;
     grid-template-columns: repeat(4, 1fr);
     gap: var(--spacing);
   }

@@ -1,6 +1,7 @@
 .events {
 	&-list {
 		@extend .container !optional;
+		// padding: 0 calc(var(--spacing-s) + 8px);
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
 		gap: 0;
@@ -9,6 +10,7 @@
 			gap: var(--spacing);
 		}
 		@include mq(large) {
+			padding: 0 200px;
 			grid-template-columns: repeat(4, 1fr);
 			gap: var(--spacing);
 		}
