@@ -1,5 +1,8 @@
 {
-    "/js/scripts.js": "/js/scripts.js?id=7fe94c61f849293cadc3d13f856fc869",
-    "/css/editor-style.css": "/css/editor-style.css?id=23daad2a8fd82b864fd56325a1f9b924",
-    "/css/styles.css": "/css/styles.css?id=6a1ee34a9165d7aa745f09eddfcbadbb"
+    "/svg/sprite.js": "/svg/sprite.js?id=84831b0d761d169030f2db0d3443ffd2",
+    "/js/scripts.js": "/js/scripts.js?id=317964a9638c76d3cc6abbb9ef9c31f4",
+    "/css/editor-style.css": "/css/editor-style.css?id=416c97bec7984e99c3f4cfe114f3c4ff",
+    "/css/styles.css": "/css/styles.css?id=92f35830cee7e695372934188f6c410c",
+    "/svg/sprite.php": "/svg/sprite.php?id=9199f55740faa4de248d34df488c648d",
+    "/svg/sprite.svg": "/svg/sprite.svg?id=9199f55740faa4de248d34df488c648d"
 }

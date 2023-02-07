@@ -32,7 +32,7 @@
 	@extend .container !optional;
 	display: flex;
 	margin-left: auto;
-	margin-bottom: 1rem;
+	margin-bottom: var(--spacing);
 	select {
 		width: auto;
 		margin-left: auto;

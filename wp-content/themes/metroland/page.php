@@ -13,7 +13,7 @@
 		<?php if (has_excerpt()) { ?><div class="page-excerpt"><?php the_excerpt(); ?></div><?php } ?>
 		</div>
 	<?php } ?>
-	
+
 		<?php the_content(); ?>
 	</main>
 <?php endwhile; ?>

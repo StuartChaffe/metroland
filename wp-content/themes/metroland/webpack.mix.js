@@ -1,5 +1,5 @@
 let mix = require('laravel-mix');
-// require('@ayctor/laravel-mix-svg-sprite');
+require('@ayctor/laravel-mix-svg-sprite');
 
 mix
     .sass('src/styles/styles.scss', 'css')
@@ -10,9 +10,9 @@ mix
     })
     .sourceMaps()
     .js('src/js/scripts.js', 'js')
-    // .svgSprite('src/icons/*.svg', 'sprite.svg')
+    .svgSprite('src/icons/*.svg', 'sprite.svg')
     .setPublicPath('assets')
-    // .copy('assets/svg/sprite.svg', 'assets/svg/sprite.php')
+    .copy('assets/svg/sprite.svg', 'assets/svg/sprite.php')
     .browserSync({
         proxy: process.env.MIX_PROXY,
         host: process.env.MIX_HOST,

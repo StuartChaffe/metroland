@@ -7,37 +7,55 @@
 
 	&-list {
 		@extend .container !optional;
-		// display: flex;
 		display: grid;
-		grid-template-columns: 50% 50%;
-		// grid-template-columns: repeat(1, 3fr);
-		gap: var(--spacing-s);
-
-		// 2 columns, 3 rows... 1st item is 1 column, 3 rows.. 2nd is 2 column 1 row, etc.
-
-
-		// @include mq(medium) {
-		// 	grid-template-columns: repeat(2, 1fr);
-		// 	gap: var(--spacing);
-		// }
-		// @include mq(large) {
-		// 	grid-template-columns: repeat(4, 1fr);
-		// 	gap: var(--spacing);
-		// }
-
+		grid-template-columns: repeat(1, 1fr);
+		gap: 0;
+		@include mq(large) {
+			grid-template-columns: 50% 50%;
+			gap: var(--spacing-s);
+		}
 		&--full {
+			flex-direction: row;
+			border-bottom: 1px solid var(--color-grey);
+			margin-bottom: var(--spacing-s);
+			@include mq(large) {
+				border-bottom: 0;
+				margin-bottom: 0;
+				grid-row: 1 / 4;
+				grid-column: 1 / 2;
+				flex-direction: column;
+			}
 			.card__content {
-				width: 70%;
+				width: 100%;
+				@include mq(large) {
+					width: 60%;
+				}
+			}
+			.card__media {
+				width: 20%;
+				flex-shrink: 0;
+				margin-right: var(--spacing-s);
+				@include mq(large) {
+					width: 100%;
+					margin-right: 0;
+				}
 			}
 		}
 		&--small {
 			flex-direction: row;
 			border-bottom: 1px solid var(--color-grey);
-
+			@include mq(large) {
+				&:last-child {
+					border: 0;
+				}
+			}
 			.card__media {
-				width: 246px;
+				width: 20%;
 				flex-shrink: 0;
-				margin-right: 25px;
+				margin-right: var(--spacing-s);
+				@include mq(large) {
+					width: 40%;
+				}
 			}
 		}
 	}
@@ -45,31 +63,20 @@
 	.card {
 		position: relative;
 		padding-bottom: var(--spacing-s);
-		&:nth-child(4n+1):after {
-			content: "";
-			width: calc(100vw - (var(--spacing-xl) * 2));
-			max-width: calc(var(--container-global) - (var(--spacing-xl) * 2));
-			height: 1px;
-			background: var(--color-grey);
-			position: absolute;
-			left: 0;
-			bottom: 0;
+		&__excerpt {
+			display: none;
+			@include mq(large) {
+				display: block;
+			}
 		}
-
-		&__content {
-			display: flex;
-			flex-direction: column;
-		}
-
-		&:first-child {
-			background-color: yellow;
-			grid-row: 1 / 4;
-  			grid-column: 1 / 2;
-		}
-		&:nth-child(2) {
-			background-color: orange;
-			grid-row: 1 / 1;
-  			grid-column: 2 / 2;
-		}
+		// &:first-child {
+		// 	grid-row: 1 / 4;
+  		// 	grid-column: 1 / 2;
+		// }
+		// &:nth-child(2) {
+		// 	background-color: orange;
+		// 	grid-row: 1 / 1;
+  		// 	grid-column: 2 / 2;
+		// }
 	}
 }

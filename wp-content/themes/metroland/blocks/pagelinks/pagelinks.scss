@@ -1,16 +1,15 @@
 .pagelinks {
 	@extend .container !optional;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+
 	grid-template-columns: repeat(1, 1fr);
 	gap: 0;
 	@include mq(medium) {
 		grid-template-columns: repeat(2, 1fr);
-		gap: var(--spacing);
+		gap: var(--spacing-s);
 	}
 	@include mq(large) {
-		grid-template-columns: repeat(4, 1fr);
-		gap: var(--spacing);
+		grid-template-columns: repeat(3, 1fr);
 	}
 
 	.card {

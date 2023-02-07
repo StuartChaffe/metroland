@@ -19,6 +19,7 @@
 
 	.card {
 		position: relative;
+		// padding: 0 calc(var(--spacing-xs) / 2);
 		padding: 0 calc(var(--spacing-xs) / 2);
 		padding-bottom: var(--spacing);
 		&__title {

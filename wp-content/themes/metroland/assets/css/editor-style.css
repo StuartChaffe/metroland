@@ -1192,48 +1192,78 @@ input[type=button]:focus {
 }
 .featured-list {
   display: grid;
-  grid-template-columns: 50% 50%;
-  gap: var(--spacing-s);
+  grid-template-columns: repeat(1, 1fr);
+  gap: 0;
+}
+@media (min-width: 70em) {
+  .featured-list {
+    grid-template-columns: 50% 50%;
+    gap: var(--spacing-s);
+  }
+}
+.featured-list--full {
+  flex-direction: row;
+  border-bottom: 1px solid var(--color-grey);
+  margin-bottom: var(--spacing-s);
+}
+@media (min-width: 70em) {
+  .featured-list--full {
+    border-bottom: 0;
+    margin-bottom: 0;
+    grid-row: 1/4;
+    grid-column: 1/2;
+    flex-direction: column;
+  }
 }
 .featured-list--full .card__content {
-  width: 70%;
+  width: 100%;
+}
+@media (min-width: 70em) {
+  .featured-list--full .card__content {
+    width: 60%;
+  }
+}
+.featured-list--full .card__media {
+  width: 20%;
+  flex-shrink: 0;
+  margin-right: var(--spacing-s);
+}
+@media (min-width: 70em) {
+  .featured-list--full .card__media {
+    width: 100%;
+    margin-right: 0;
+  }
 }
 .featured-list--small {
   flex-direction: row;
   border-bottom: 1px solid var(--color-grey);
 }
+@media (min-width: 70em) {
+  .featured-list--small:last-child {
+    border: 0;
+  }
+}
 .featured-list--small .card__media {
-  width: 246px;
+  width: 20%;
   flex-shrink: 0;
-  margin-right: 25px;
+  margin-right: var(--spacing-s);
+}
+@media (min-width: 70em) {
+  .featured-list--small .card__media {
+    width: 40%;
+  }
 }
 .featured .card {
   position: relative;
   padding-bottom: var(--spacing-s);
 }
-.featured .card:nth-child(4n+1):after {
-  content: "";
-  width: calc(100vw - var(--spacing-xl) * 2);
-  max-width: calc(var(--container-global) - var(--spacing-xl) * 2);
-  height: 1px;
-  background: var(--color-grey);
-  position: absolute;
-  left: 0;
-  bottom: 0;
+.featured .card__excerpt {
+  display: none;
 }
-.featured .card__content {
-  display: flex;
-  flex-direction: column;
-}
-.featured .card:first-child {
-  background-color: yellow;
-  grid-row: 1/4;
-  grid-column: 1/2;
-}
-.featured .card:nth-child(2) {
-  background-color: orange;
-  grid-row: 1/1;
-  grid-column: 2/2;
+@media (min-width: 70em) {
+  .featured .card__excerpt {
+    display: block;
+  }
 }
 
 .form {
@@ -1267,7 +1297,6 @@ input[type=button]:focus {
 @media (min-width: 70em) {
   .news {
     grid-template-columns: repeat(4, 1fr);
-    gap: var(--spacing);
   }
 }
 .news .card {
@@ -1287,20 +1316,18 @@ input[type=button]:focus {
 
 .pagelinks {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   grid-template-columns: repeat(1, 1fr);
   gap: 0;
 }
 @media (min-width: 50em) {
   .pagelinks {
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing);
+    gap: var(--spacing-s);
   }
 }
 @media (min-width: 70em) {
   .pagelinks {
-    grid-template-columns: repeat(4, 1fr);
-    gap: var(--spacing);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 .pagelinks .card__title {

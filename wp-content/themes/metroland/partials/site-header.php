@@ -27,7 +27,7 @@
 					<li class="social-links__item"><a href="/" class="social-links__link"><svg class="icon icon-email" width="23px" height="17px" viewBox="0 0 23 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(1.000000, 1.000000)" stroke="CurrentColor" stroke-width="2"><rect x="0" y="0" width="21" height="15" rx="2"></rect><polyline stroke-linecap="round" stroke-linejoin="round" points="0.296792238 1.18332242 10.6112253 10.2115437 20.7210206 1.18332242"></polyline></g></g></svg></a></li>
 			</ul>
 			<div class="site-header__actions-search">
-				<svg class="icon icon-search" width="24px" height="25px" viewBox="0 0 24 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(2.000000, 2.000000)" stroke="CurrentColor" stroke-width="3"><circle cx="8.73107491" cy="8.73107491" r="8.73107491"></circle><line x1="14.5891942" y1="14.9567191" x2="20.6324751" y2="21" id="Path-2"></line></g></g></svg>
+				<?php echo get_icon('search');?>
 			</div>
 		</div>
 
