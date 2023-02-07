@@ -21,9 +21,11 @@
 			<figure class="card__media">
 				<img src="<?php echo get_the_post_thumbnail_url($id); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id($id), '_wp_attachment_image_alt', true); ?>">
 			</figure>
-			<div class="card__title"><p><?php echo $title; ?></div>
-			<?php if( $excerpt ) { ?><div class="card__excerpt"><p><?php echo $excerpt; ?></p></div><?php } ?>
-			<div class="card__date"><p><?php echo $date; ?></p></div>
+			<div class="card__content">
+				<div class="card__title"><p><?php echo $title; ?></div>
+				<?php if( $excerpt ) { ?><div class="card__excerpt"><p><?php echo $excerpt; ?></p></div><?php } ?>
+				<div class="card__date"><p><?php echo $date; ?></p></div>
+			</div>
 		</a>
 		<?php $counter++; ?>
 		<?php endforeach; ?>
