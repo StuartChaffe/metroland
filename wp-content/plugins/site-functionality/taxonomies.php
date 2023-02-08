@@ -3,10 +3,10 @@
 add_action('init', 'origin_taxonomies');
 
 function origin_taxonomies() {
-	$taxonomy_name		= "client";
-	$single_name		= "Client";
-	$plural_name		= "Clients";
-	$post_type			= "testimonials";
+	$taxonomy_name		= "event_category";
+	$single_name		= "Category";
+	$plural_name		= "Categories";
+	$post_type			= "event";
 	$gutenberg_enabled	= false;
 
 	$labels = array(
@@ -20,7 +20,7 @@ function origin_taxonomies() {
 		'update_item'       => 'Update ' . $single_name,
 		'add_new_item'      => 'Add New ' . $single_name,
 		'new_item_name'     => 'New ' . $single_name . ' Name',
-		'menu_name'         => $single_name
+		'menu_name'         => $plural_name
 	);
 
 	$args = array(
@@ -32,14 +32,14 @@ function origin_taxonomies() {
 		'show_in_rest'      => $gutenberg_enabled,
 		'rewrite'           => array( 'slug' => '' ),
 	);
-	// register_taxonomy( $taxonomy_name, $post_type, $args );
+	register_taxonomy( $taxonomy_name, $post_type, $args );
 
 
 
-	$taxonomy_name		= "department";
-	$single_name		= "Department";
-	$plural_name		= "Departments";
-	$post_type			= "team";
+	$taxonomy_name		= "programme_category";
+	$single_name		= "Category";
+	$plural_name		= "Categories";
+	$post_type			= "programme";
 	$gutenberg_enabled	= false;
 
 	$labels = array(
@@ -53,7 +53,7 @@ function origin_taxonomies() {
 	    'update_item'       => 'Update ' . $single_name,
 	    'add_new_item'      => 'Add New ' . $single_name,
 	    'new_item_name'     => 'New ' . $single_name . ' Name',
-	    'menu_name'         => $single_name
+	    'menu_name'         => $plural_name
 	);
 
 	$args = array(

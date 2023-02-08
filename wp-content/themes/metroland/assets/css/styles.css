@@ -3280,9 +3280,6 @@ div[data-type="core/button"] div[data-block] {
   border: 0;
   padding: 0;
 }
-.card:nth-child(4n+1):after {
-  display: none;
-}
 
 .content > * {
   margin-right: auto;
@@ -4889,16 +4886,6 @@ body.nav-open {
   position: relative;
   padding: 0 calc(var(--spacing-xs) / 2);
   padding-bottom: var(--spacing);
-}
-.events .card:nth-child(4n+1):after {
-  content: "";
-  width: calc(100vw - var(--spacing-xl) * 2);
-  max-width: calc(var(--container-global) - var(--spacing-xl) * 2);
-  height: 1px;
-  background: var(--color-grey);
-  position: absolute;
-  left: 0;
-  bottom: 0;
 }
 .events .card__title {
   margin-bottom: 0;

@@ -4,10 +4,16 @@
 	<div class="page-breadcrumb"><span><span><a href="/whats-happening">Events</a><span><span> / <?php echo do_shortcode('[wpseo_breadcrumb]'); ?></div>
 	<article id="content">
 		<div class="container category-list">
+		<?php
+			$terms = get_terms([
+				'taxonomy' => 'event_category',
+				'hide_empty' => false,
+			]);
+		?>
 			<div class="category category--active"><p>EVENT <span>— Part of: Events</span></p></div>
-			<div class="category"><p>FREE</p></div>
-			<div class="category"><p>Brent Biennials</p></div>
-			<div class="category"><p>Public Programme</p></div>
+		<?php foreach ($terms as $term) { ?>
+			<div class="category"><?php echo $term->name; ?></div>
+		<?php } ?>
 		</div>
 		<div class="page-title">
 			<h1 class="heading-3 uppercase"><?php the_title(); ?></h1>

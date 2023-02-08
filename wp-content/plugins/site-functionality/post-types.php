@@ -32,6 +32,7 @@ function origin_cpts() {
 	$gutenberg_enabled	= true;
 
 	$post_type_options = array(
+		'taxonomies'  			=> array( 'programme_category' ),
 		'label'                 => $single_name,
 		'public'                => true,
 		'menu_icon'             => $icon,
@@ -82,7 +83,7 @@ function origin_cpts() {
 	$gutenberg_enabled	= true;
 
 	$post_type_options = array(
-		'taxonomies'  			=> array( 'category' ),
+		'taxonomies'  			=> array( 'event_category' ),
 		'label'                 => $single_name,
 		'public'                => true,
 		'menu_icon'             => $icon,

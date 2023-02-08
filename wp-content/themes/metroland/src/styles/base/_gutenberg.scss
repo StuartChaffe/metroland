@@ -132,7 +132,7 @@ div[data-type="core/button"] div[data-block] {
 .card {
 	border: 0;
 	padding: 0;
-	&:nth-child(4n+1):after {
-		display: none;
-	}
+	// &:nth-child(4n+1):after {
+	// 	display: none;
+	// }
 }

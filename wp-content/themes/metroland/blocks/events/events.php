@@ -1,6 +1,7 @@
 <?php
 	$posts = new WP_Query( array(
 		'post_type' => 'event',
+		'taxonomy' => 'event_category',
 		// 'posts_per_page' => -1,
 		'orderby' => 'date',
 		'order' => 'DESC',
@@ -9,27 +10,28 @@
 	$content = get_field('events_content');
 
 ?>
-<div class="category-filter">
-	<select name="cat-dropdown" onchange='document.location.href=this.options[this.selectedIndex].value;'>
-		<option value=""><?php echo esc_attr(__('Showing: All categories')); ?></option>
-		<?php
-			$categories = get_categories($posts);
-			foreach ($categories as $category) {
-				$option .= '<option value="'.get_option('home').'/events/category/'.$category->slug.'">';
-				$option .= $category->cat_name;
-				$option .= ' ('.$category->category_count.')';
-				$option .= '</option>';
-			}
-			echo $option;
-		?>
-	</select>
-</div>
 
 <section class="events">
 	<div class="events-title">
 		<?php if ($title) { ?><h2 class="uppercase"><?php echo $title; ?></h2><?php } ?>
 		<?php if ($content) { ?><?php echo $content; ?><?php } ?>
+		<div class="category-filter">
+			<select name="cat-dropdown" onchange='document.location.href=this.options[this.selectedIndex].value;'>
+				<option value=""><?php echo esc_attr(__('Showing: All categories')); ?></option>
+				<?php
+					$categories = get_categories($posts);
+					foreach ($categories as $category) {
+						$option .= '<option value="'.get_option('home').'/events/category/'.$category->slug.'">';
+						$option .= $category->cat_name;
+						$option .= ' ('.$category->category_count.')';
+						$option .= '</option>';
+					}
+					echo $option;
+				?>
+			</select>
+		</div>
 	</div>
+
 
 	<div class="events-list">
 
