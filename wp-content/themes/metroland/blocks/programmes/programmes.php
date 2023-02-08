@@ -10,10 +10,13 @@
 ?>
 
 <section class="programmes">
+	<?php if ($title) { ?>
 	<div class="programmes-title">
 		<?php if ($title) { ?><h2 class="uppercase"><?php echo $title; ?></h2><?php } ?>
 		<?php if ($content) { ?><?php echo $content; ?><?php } ?>
 	</div>
+	<?php } ?>
+
 
 	<div class="programmes-list">
 

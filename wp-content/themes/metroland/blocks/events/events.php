@@ -8,22 +8,25 @@
 	));
 	$title = get_field('events_title');
 	$content = get_field('events_content');
-
 ?>
 
 <section class="events">
 	<div class="events-title">
 		<?php if ($title) { ?><h2 class="uppercase"><?php echo $title; ?></h2><?php } ?>
 		<?php if ($content) { ?><?php echo $content; ?><?php } ?>
+
 		<div class="category-filter">
 			<select name="cat-dropdown" onchange='document.location.href=this.options[this.selectedIndex].value;'>
 				<option value=""><?php echo esc_attr(__('Showing: All categories')); ?></option>
 				<?php
-					$categories = get_categories($posts);
-					foreach ($categories as $category) {
-						$option .= '<option value="'.get_option('home').'/events/category/'.$category->slug.'">';
-						$option .= $category->cat_name;
-						$option .= ' ('.$category->category_count.')';
+					$terms = get_terms([
+						'taxonomy' => 'event_category',
+						'hide_empty' => false,
+					]);
+					foreach ($terms as $term) {
+						$option .= '<option value="'.get_option('home').'/events/category/'.$term->slug.'">';
+						$option .= $term->name;
+
 						$option .= '</option>';
 					}
 					echo $option;

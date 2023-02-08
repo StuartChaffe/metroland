@@ -30,11 +30,10 @@ function origin_taxonomies() {
 		'show_admin_column' => true,
 		'query_var'         => true,
 		'show_in_rest'      => $gutenberg_enabled,
+		'public'            => true,
 		'rewrite'           => array( 'slug' => '' ),
 	);
 	register_taxonomy( $taxonomy_name, $post_type, $args );
-
-
 
 	$taxonomy_name		= "programme_category";
 	$single_name		= "Category";
