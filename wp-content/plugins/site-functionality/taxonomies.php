@@ -7,7 +7,7 @@ function origin_taxonomies() {
 	$single_name		= "Category";
 	$plural_name		= "Categories";
 	$post_type			= "event";
-	$gutenberg_enabled	= false;
+	$gutenberg_enabled	= true;
 
 	$labels = array(
 		'name'              => $single_name,
@@ -29,8 +29,8 @@ function origin_taxonomies() {
 		'show_ui'           => true,
 		'show_admin_column' => true,
 		'query_var'         => true,
-		'show_in_rest'      => $gutenberg_enabled,
 		'public'            => true,
+		'show_in_rest'      => $gutenberg_enabled,
 		'rewrite'           => array( 'slug' => '' ),
 	);
 	register_taxonomy( $taxonomy_name, $post_type, $args );
@@ -39,7 +39,7 @@ function origin_taxonomies() {
 	$single_name		= "Category";
 	$plural_name		= "Categories";
 	$post_type			= "programme";
-	$gutenberg_enabled	= false;
+	$gutenberg_enabled	= true;
 
 	$labels = array(
 	    'name'              => $single_name,
@@ -61,8 +61,9 @@ function origin_taxonomies() {
 	    'show_ui'           => true,
 	    'show_admin_column' => true,
 	    'query_var'         => true,
+		'public'            => true,
 		'show_in_rest'      => $gutenberg_enabled,
 	    'rewrite'           => array( 'slug' => '' ),
 	);
-	// register_taxonomy( $taxonomy_name, $post_type, $args );
+	register_taxonomy( $taxonomy_name, $post_type, $args );
 }

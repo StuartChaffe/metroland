@@ -83,7 +83,7 @@ function origin_cpts() {
 	$gutenberg_enabled	= true;
 
 	$post_type_options = array(
-		'taxonomies'  			=> array( 'event_category' ),
+		// 'taxonomies'  			=> array( 'event_category' ),
 		'label'                 => $single_name,
 		'public'                => true,
 		'menu_icon'             => $icon,
@@ -97,7 +97,7 @@ function origin_cpts() {
 		),
 		'query_var'             => true,
 		'has_archive'           => false,
-		'show_in_rest'			=> $gutenberg_enabled,
+		'show_in_rest'			=> true,
 		'supports'              => array(
 			'title',
 			'editor',

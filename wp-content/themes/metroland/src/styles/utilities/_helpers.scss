@@ -77,6 +77,13 @@ img.aligncenter     { display: block; margin-left: auto; margin-right: auto; }
 	&--black {
 		background-color: black;
 	}
+	&--secondary {
+		background-color: var(--color-secondary);
+
+		+ .site-footer {
+			margin-top: 0;
+		}
+	}
 }
 
 .txt {

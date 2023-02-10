@@ -109,17 +109,6 @@ body:before {
   }
 }
 
-.txt--white {
-  color: white;
-}
-
-.bkg--white {
-  background-color: var(--color-white);
-}
-.bkg--secondary {
-  background-color: var(--color-secondary);
-}
-
 @font-face {
   font-family: "Aktiv";
   src: url("../fonts/AktivGroteskEx-XBold.woff2") format("woff2"), url("../fonts/AktivGroteskEx-XBold.woff") format("woff");
@@ -5047,6 +5036,12 @@ img.aligncenter {
 }
 .bkg--black {
   background-color: black;
+}
+.bkg--secondary {
+  background-color: var(--color-secondary);
+}
+.bkg--secondary + .site-footer {
+  margin-top: 0;
 }
 
 .txt--white {

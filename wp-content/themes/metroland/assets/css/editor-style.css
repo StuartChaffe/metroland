@@ -1528,6 +1528,12 @@ img.aligncenter {
 .bkg--black {
   background-color: black;
 }
+.bkg--secondary {
+  background-color: var(--color-secondary);
+}
+.bkg--secondary + .site-footer {
+  margin-top: 0;
+}
 
 .txt--white {
   color: white;
