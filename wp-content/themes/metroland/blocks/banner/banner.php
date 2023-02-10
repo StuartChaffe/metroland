@@ -1,34 +1,29 @@
 <?php
-	$image	= get_field('banner_image');
+	// $banner	= get_field('banner');
 ?>
 
 <section class="banner">
 	<div class="banner-slider">
+	<?php if( have_rows('banner') ) { ?>
+	<?php while( have_rows('banner') ): the_row();
+		$images		= get_sub_field('images');
+		// $image		= get_sub_field('images');
+		$content	= get_sub_field('content');
+	?>
 		<div class="banner-slider__item">
-			<div class="banner-slider__item-image" style="background-image: url('https://www.metrolandcultures.com/site/assets/files/4387/bb22_web_banner_vertical.png');">
-				<img src="https://www.metrolandcultures.com/site/assets/files/4387/bb22_web_banner_vertical.png" />
+			<div class="banner-slider__item-image" style="background-image: url('<?php echo $images['large']['url'];?>);">
+				<img src="<?php echo $images['large']['url'];?>" />
 			</div>
 			<div class="banner-slider__item-content">
-				<h3 class="uppercase txt--white">METROLAND YOUNG ASSOCIATES: COLLECTIVE RHYTHMS</h3>
-				<p>Brent Biennial 2022: In the House of my Love has now come to an end! Thank you to everyone who attended the many projects and public programmes over the summer.</p>
-				<p>While the Biennial is over, In the House of my Love continues through a series of community commissions, currently in progress with Asian Women's Resource Centre, SUFRA Foodbank & Kitchen and Young Roots. Stay tuned for further activity!</p>
+				<h3 class="uppercase txt--white"><?php echo $content['title']; ?></h3>
+				<?php echo $content['text']; ?>
 				<div class="btn__group">
-					<a class="btn btn--light" href="/" title="">View page</a>
+					<a class="btn btn--light" href="<?php echo $content['link']['url']; ?>" title="<?php echo $content['link']['title']; ?>"><?php echo $content['link']['title']; ?></a>
 				</div>
 			</div>
 		</div>
-		<div class="banner-slider__item">
-			<div class="banner-slider__item-image" style="background-image: url('https://www.metrolandcultures.com/site/assets/files/5070/mya_website.jpg');">
-				<img src="https://www.metrolandcultures.com/site/assets/files/5070/mya_website.jpg" />
-			</div>
-			<div class="banner-slider__item-content">
-				<h3 class="uppercase txt--white">Making the Room Sing</h3>
-				<p>An exhibition by artists Amanda Camenish and Therese Westin developed in collaboration with a group of women from the Asian Women’s Resource Centre (AWRC) as part of the Brent Biennial 2022, 'In the House of my Love'.</p>
-				<div class="btn__group">
-					<a class="btn btn--light" href="/" title="">View page</a>
-				</div>
-			</div>
-		</div>
+		<?php endwhile; ?>
+	<?php } ?>
 	</div>
 </section>
 <div class="banner__hr">

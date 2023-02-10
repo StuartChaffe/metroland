@@ -3812,14 +3812,14 @@ input[type=button]:focus {
   }
 }
 
-.container, .programmes-title, .pagelinks, .news, .featured-list, .featured-title, .events-title, .content-block, .page-title, .site-footer__inner, .site-header__search .search-form, .site-header, .category-filter {
+.container, .programmes-title, .pagelinks, .news, .featured-list, .featured-title, .events-title, .content-block, .page-title, .site-footer__inner, .site-header__search .search-form, .site-header__inner, .category-filter {
   margin: 0 auto;
   padding: 0 var(--spacing-s);
   width: 100%;
   max-width: var(--container-global);
 }
 @media (min-width: 70em) {
-  .container, .programmes-title, .pagelinks, .news, .featured-list, .featured-title, .events-title, .content-block, .page-title, .site-footer__inner, .site-header__search .search-form, .site-header, .category-filter {
+  .container, .programmes-title, .pagelinks, .news, .featured-list, .featured-title, .events-title, .content-block, .page-title, .site-footer__inner, .site-header__search .search-form, .site-header__inner, .category-filter {
     padding: 0 var(--spacing-xl);
   }
 }
@@ -3947,9 +3947,6 @@ body.home .site-header__nav ul :not(.current_page_item) a:hover {
 }
 
 .site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
   position: absolute;
   top: 0;
   transition: all 0.4s ease-in-out;
@@ -3975,7 +3972,6 @@ body.home .site-header__nav ul :not(.current_page_item) a:hover {
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
-  padding: 0;
   width: 100%;
 }
 @media (min-width: 50em) {
