@@ -698,6 +698,44 @@ input[type=button]:focus {
   color: #BF5D58;
 }
 
+.global-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.container-s, .programmes-list, .events-list {
+  margin: 0 auto;
+  padding: 0 var(--spacing-s);
+  width: 100%;
+  max-width: var(--container-s);
+}
+@media (min-width: 70em) {
+  .container-s, .programmes-list, .events-list {
+    padding: 0;
+  }
+}
+
+.container, .programmes-title, .pagelinks, .news, .featured-list, .featured-title, .events-title, .content-block {
+  margin: 0 auto;
+  padding: 0 var(--spacing-s);
+  width: 100%;
+  max-width: var(--container-global);
+}
+@media (min-width: 70em) {
+  .container, .programmes-title, .pagelinks, .news, .featured-list, .featured-title, .events-title, .content-block {
+    padding: 0 var(--spacing-xl);
+  }
+}
+
+.main {
+  max-width: var(--container);
+  margin-top: var(--spacing-l);
+  margin-bottom: var(--spacing-l);
+  flex: 1;
+}
+
 .btn, .content-block-article .content-block__sidebar a, .content-block__sidebar ul li a,
 .wp-block-button__link,
 .wp-block-button__link:visited {
@@ -1022,19 +1060,34 @@ input[type=button]:focus {
   }
 }
 .banner-slider__item-image {
+  position: relative;
   width: 100%;
-  background-size: cover;
-  background-position: center center;
-  min-height: 50vw;
+  height: 65vw;
+  background-image: none;
+  overflow: hidden;
 }
 @media (min-width: 50em) {
   .banner-slider__item-image {
     width: 50%;
+    height: auto;
+    background-size: cover;
+    background-position: center center;
   }
 }
 .banner-slider__item-image img {
   width: 100%;
-  display: none;
+}
+@media (max-width: 49.99em) {
+  .banner-slider__item-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 100%;
+    transform: translate(-50%, -50%);
+    min-width: calc(100% + 2px);
+    min-height: calc(100% + 2px);
+    display: block;
+  }
 }
 .banner-slider__item-content {
   width: 100%;
@@ -1248,7 +1301,7 @@ input[type=button]:focus {
 }
 
 .form {
-  max-width: var(--container-s);
+  max-width: calc(var(--container-s) - var(--spacing-xs));
   padding: var(--spacing-s);
   margin: 0 var(--spacing-s);
   display: flex;
@@ -1495,4 +1548,11 @@ ul, ol {
 ul li, ol li {
   padding-left: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+.banner-slider__item {
+  display: none !important;
+}
+.banner-slider__item:first-of-type {
+  display: flex !important;
 }

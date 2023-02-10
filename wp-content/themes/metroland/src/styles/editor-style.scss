@@ -8,6 +8,8 @@
 @import "base/gutenberg";
 @import "base/forms";
 
+@import "layout/layout";
+
 @import "components/buttons";
 @import "components/card";
 @import "components/content";
@@ -27,5 +29,12 @@ ul, ol {
 	li {
 		padding-left: 0.5rem;
 		margin-bottom: 0.5rem;
+	}
+}
+
+.banner-slider__item {
+	display: none !important;
+	&:first-of-type {
+		display: flex !important;
 	}
 }

@@ -7,19 +7,17 @@
 	<?php if( have_rows('banner') ) { ?>
 	<?php while( have_rows('banner') ): the_row();
 		$images		= get_sub_field('images');
-		// $image		= get_sub_field('images');
 		$content	= get_sub_field('content');
 	?>
 		<div class="banner-slider__item">
-			<div class="banner-slider__item-image" style="background-image: url('<?php echo $images['large']['url'];?>);">
-				<img src="<?php echo $images['large']['url'];?>" />
+			<div class="banner-slider__item-image" style="background-image: url('<?php echo $images['large']['url'];?>');">
+				<?php if ($images['large']) { ?><img class="" src="<?php echo $images['large']['url'];?>" /><?php } ?>
+				<?php if ($images['small']) { ?><img class="hidedesktop" src="<?php echo $images['small']['url'];?>" /><?php } ?>
 			</div>
 			<div class="banner-slider__item-content">
-				<h3 class="uppercase txt--white"><?php echo $content['title']; ?></h3>
-				<?php echo $content['text']; ?>
-				<div class="btn__group">
-					<a class="btn btn--light" href="<?php echo $content['link']['url']; ?>" title="<?php echo $content['link']['title']; ?>"><?php echo $content['link']['title']; ?></a>
-				</div>
+				<?php if ($content['title']) { ?><h3 class="uppercase txt--white"><?php echo $content['title']; ?></h3><?php } ?>
+				<?php if ($content['text']) { ?><?php echo $content['text']; ?><?php } ?>
+				<?php if ($content['link']) { ?><a class="btn btn--light" href="<?php echo $content['link']['url']; ?>" title="<?php echo $content['link']['title']; ?>"><?php echo $content['link']['title']; ?></a><?php } ?>
 			</div>
 		</div>
 		<?php endwhile; ?>

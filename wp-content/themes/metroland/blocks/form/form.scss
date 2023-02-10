@@ -1,5 +1,5 @@
 .form {
-	max-width: var(--container-s);
+	max-width: calc(var(--container-s) - var(--spacing-xs));
 	padding: var(--spacing-s);
 	margin: 0 var(--spacing-s);
 	display: flex;

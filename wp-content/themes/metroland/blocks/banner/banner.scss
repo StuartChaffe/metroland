@@ -16,16 +16,29 @@
 				flex-direction: row;
 			}
 			&-image {
+				position: relative;
 				width: 100%;
-				background-size: cover;
-				background-position: center center;
-				min-height: 50vw;
+				height: 65vw;
+				background-image: none;
+				overflow: hidden;
 				@include mq(medium) {
 					width: 50%;
+					height: auto;
+					background-size: cover;
+					background-position: center center;
 				}
 				img {
 					width: 100%;
-					display: none;
+					@include mq($until: medium) {
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						max-width: 100%;
+						transform: translate(-50%, -50%);
+						min-width: calc(100% + 2px);
+						min-height: calc(100% + 2px);
+						display: block;
+					}
 				}
 			}
 			&-content {
