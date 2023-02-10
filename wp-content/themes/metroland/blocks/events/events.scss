@@ -1,14 +1,14 @@
 .events {
 	&-list {
-		padding: 0 calc(var(--spacing-s) - 8px);
-		@extend .container !optional;
+		// padding: 0 calc(var(--spacing-s) - 8px);
+		@extend .container-s !optional;
 		display: flex;
 		flex-wrap: wrap;
 		@include mq(medium) {
 		}
-		@include mq(large) {
-			padding: 0 200px;
-		}
+		// @include mq(large) {
+		// 	padding: 0 200px;
+		// }
 	}
 
 	&-title {

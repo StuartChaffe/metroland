@@ -181,7 +181,7 @@ body:before {
   --spacing: 50px;
   --spacing-s: 25px;
   --spacing-xs: 16px;
-  --container-s: 800px;
+  --container-s: 900px;
   --container: 1300px;
   --container-l: 1430px;
   --content-width: var(--container);
@@ -758,7 +758,7 @@ input[type=button]:focus {
 }
 
 .btn--large {
-  padding: 18px 20px 18px;
+  padding: 18px 20px 12px;
 }
 
 .card {
@@ -1142,14 +1142,8 @@ input[type=button]:focus {
 }
 
 .events-list {
-  padding: 0 calc(var(--spacing-s) - 8px);
   display: flex;
   flex-wrap: wrap;
-}
-@media (min-width: 70em) {
-  .events-list {
-    padding: 0 200px;
-  }
 }
 .events-title {
   padding-top: var(--spacing);
@@ -1326,14 +1320,8 @@ input[type=button]:focus {
 }
 
 .programmes-list {
-  padding: 0 calc(var(--spacing-s) - 8px);
   display: flex;
   flex-wrap: wrap;
-}
-@media (min-width: 70em) {
-  .programmes-list {
-    padding: 0 200px;
-  }
 }
 .programmes-title {
   padding-top: var(--spacing);

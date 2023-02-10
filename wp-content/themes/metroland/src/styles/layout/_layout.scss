@@ -9,6 +9,15 @@
 	min-height: 100%;
 }
 
+.container-s {
+	margin: 0 auto;
+	padding: 0 var(--spacing-s);
+	width: 100%;
+	max-width: var(--container-s);
+	@include mq(large) {
+		padding: 0;
+	}
+}
 .container {
 	margin: 0 auto;
 	padding: 0 var(--spacing-s);
