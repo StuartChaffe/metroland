@@ -110,6 +110,26 @@
                     "layout": "block",
                     "sub_fields": [
                         {
+                            "key": "field_63e67a7e4a18d",
+                            "label": "Date",
+                            "name": "date",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
                             "key": "field_63e65aa548661",
                             "label": "Title",
                             "name": "title",
@@ -189,5 +209,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1676041162
+    "modified": 1676049034
 }

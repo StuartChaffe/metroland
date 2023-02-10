@@ -15,6 +15,7 @@
 				<?php if ($images['small']) { ?><img class="hidedesktop" src="<?php echo $images['small']['url'];?>" /><?php } ?>
 			</div>
 			<div class="banner-slider__item-content">
+				<?php if ($content['date']) { ?><p class="small"><?php echo $content['date']; ?></p><?php } ?>
 				<?php if ($content['title']) { ?><h3 class="uppercase txt--white"><?php echo $content['title']; ?></h3><?php } ?>
 				<?php if ($content['text']) { ?><?php echo $content['text']; ?><?php } ?>
 				<?php if ($content['link']) { ?><a class="btn btn--light" href="<?php echo $content['link']['url']; ?>" title="<?php echo $content['link']['title']; ?>"><?php echo $content['link']['title']; ?></a><?php } ?>
