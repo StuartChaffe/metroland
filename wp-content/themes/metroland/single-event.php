@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
-	<div class="page-breadcrumb"><span><span><a href="/whats-happening">Events</a><span><span> / <?php echo do_shortcode('[wpseo_breadcrumb]'); ?></div>
+	<div class="page-breadcrumb"><span><span><a href="/events">Events</a><span><span> / <?php echo do_shortcode('[wpseo_breadcrumb]'); ?></div>
 	<article id="content">
 		<div class="container category-list">
 		<?php

@@ -11,11 +11,16 @@
 ?>
 
 <section class="events">
+	<?php if ($title || $content) { ?>
 	<div class="events-title">
 		<?php if ($title) { ?><h2 class="uppercase"><?php echo $title; ?></h2><?php } ?>
 		<?php if ($content) { ?><?php echo $content; ?><?php } ?>
+	</div>
+	<?php } ?>
 
-		<div class="category-filter">
+
+	<div class="events-list">
+	<div class="category-filter">
 			<select name="cat-dropdown" onchange='document.location.href=this.options[this.selectedIndex].value;'>
 				<option value=""><?php echo esc_attr(__('Showing: All categories')); ?></option>
 				<?php
@@ -33,10 +38,6 @@
 				?>
 			</select>
 		</div>
-	</div>
-
-
-	<div class="events-list">
 
 	<?php if ($posts->have_posts()) { ?>
 		<?php while($posts->have_posts()) : $posts->the_post();

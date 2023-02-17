@@ -63,6 +63,10 @@
 	.card {
 		position: relative;
 		padding-bottom: var(--spacing-s);
+		margin-bottom: var(--spacing-s);
+		@include mq(medium) {
+			margin-bottom: 0;
+		}
 		&__excerpt {
 			display: none;
 			@include mq(large) {

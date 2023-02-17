@@ -2,13 +2,19 @@
 
 <?php while ( have_posts() ) : the_post(); ?>
 <div class="has--hr bkg--secondary">
-	<div class="page-breadcrumb"><span><span><a href="/whats-happening/programmes">Programmes</a><span><span> / <?php echo do_shortcode('[wpseo_breadcrumb]'); ?></div>
+	<div class="page-breadcrumb"><span><span><a href="/programmes">Programmes</a><span><span> / <?php echo do_shortcode('[wpseo_breadcrumb]'); ?></div>
 	<article id="content">
 		<div class="container category-list">
-			<div class="category category--active"><p>Programme</p></div>
-			<div class="category"><p>FREE</p></div>
-			<div class="category"><p>Brent Biennials</p></div>
-			<div class="category"><p>Public Programme</p></div>
+		<?php
+			$terms = get_terms([
+				'taxonomy' => 'programme_category',
+				'hide_empty' => false,
+			]);
+		?>
+			<div class="category category--active"><p>PROGRAMME</p></div>
+		<?php foreach ($terms as $term) { ?>
+			<div class="category"><?php echo $term->name; ?></div>
+		<?php } ?>
 		</div>
 		<div class="page-title">
 			<h1 class="uppercase"><?php the_title(); ?></h1>

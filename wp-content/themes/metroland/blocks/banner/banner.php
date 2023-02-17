@@ -1,7 +1,15 @@
 <?php
-	// $banner	= get_field('banner');
+	$type	= get_field('banner_type');
 ?>
 
+<?php echo $type; ?>
+<?php if ($type == 'Programmes') { ?>
+<section class="banner">
+ ThiS IS ISIASIAS
+</section>
+<?php } ?>
+
+<?php if ($type == 'Standard') { ?>
 <section class="banner">
 	<div class="banner-slider">
 	<?php if( have_rows('banner') ) { ?>
@@ -29,3 +37,4 @@
 	<hr class="hr-styled hr-styled--large">
 	<hr class="hr-styled hr-styled--half">
 </div>
+<?php } ?>

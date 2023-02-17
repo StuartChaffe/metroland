@@ -9,6 +9,10 @@
 		// @include mq(large) {
 		// 	padding: 0 200px;
 		// }
+		.category-filter {
+			padding-right: 0;
+			display: none;
+		}
 	}
 
 	&-title {

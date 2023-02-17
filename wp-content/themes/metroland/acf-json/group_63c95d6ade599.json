@@ -3,6 +3,32 @@
     "title": "Banner",
     "fields": [
         {
+            "key": "field_63ef9a0ff3b1a",
+            "label": "Type",
+            "name": "banner_type",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Standard": "Standard",
+                "Programmes": "Programmes"
+            },
+            "default_value": "Standard",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
             "key": "field_63e65a504865c",
             "label": "Banner",
             "name": "banner",
@@ -10,7 +36,15 @@
             "type": "repeater",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_63ef9a0ff3b1a",
+                        "operator": "==",
+                        "value": "Standard"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -189,6 +223,37 @@
                     "parent_repeater": "field_63e65a504865c"
                 }
             ]
+        },
+        {
+            "key": "field_63ef9a3ff3b1b",
+            "label": "Select programme(s)",
+            "name": "select_programme",
+            "aria-label": "",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_63ef9a0ff3b1a",
+                        "operator": "==",
+                        "value": "Programmes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "programme"
+            ],
+            "taxonomy": "",
+            "return_format": "id",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 1
         }
     ],
     "location": [
@@ -209,5 +274,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1676049034
+    "modified": 1676647065
 }

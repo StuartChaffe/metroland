@@ -3267,7 +3267,8 @@ input[type=button]:focus {
 
 .btn, .content-block-article .content-block__sidebar a, .content-block__sidebar ul li a,
 .wp-block-button__link,
-.wp-block-button__link:visited {
+.wp-block-button__link:visited,
+.is-style-outline a {
   display: inline-block;
   border-radius: 0;
   padding: 8px 10px 4px;
@@ -3286,7 +3287,9 @@ input[type=button]:focus {
 .wp-block-button__link:hover,
 .wp-block-button__link:focus,
 .wp-block-button__link:visited:hover,
-.wp-block-button__link:visited:focus {
+.wp-block-button__link:visited:focus,
+.is-style-outline a:hover,
+.is-style-outline a:focus {
   background: var(--color-grey);
   color: var(--color-text-base);
   outline: 0;
@@ -3294,24 +3297,26 @@ input[type=button]:focus {
 }
 .btn__group,
 .wp-block-button__link__group,
-.wp-block-button__link:visited__group {
+.wp-block-button__link:visited__group,
+.is-style-outline a__group {
   display: flex;
 }
 
 .btn--solid, input[type=submit],
 input[type=reset],
-input[type=button] {
+input[type=button], .is-style-fill a {
   background-color: var(--color-text-base);
   border: 1px solid var(--color-text-base);
-  color: white;
+  color: white !important;
 }
 .btn--solid:hover, input[type=submit]:hover,
 input[type=reset]:hover,
 input[type=button]:hover, .btn--solid:focus, input[type=submit]:focus,
 input[type=reset]:focus,
-input[type=button]:focus {
+input[type=button]:focus, .is-style-fill a:hover, .is-style-fill a:focus {
   background: var(--color-grey);
   outline: 0;
+  color: var(--color-text-dark) !important;
   text-decoration: none;
 }
 
@@ -3321,11 +3326,21 @@ input[type=button]:focus {
   color: white;
 }
 .btn--light:hover, .btn--light:focus {
-  background: var(--color-grey);
+  background-color: var(--color-text-base);
 }
 
-.btn--large {
-  padding: 18px 20px 12px;
+.is-style-outline a {
+  padding: 8px 10px 4px !important;
+  background-color: transparent;
+  border: 1px solid white !important;
+}
+.is-style-outline a:hover, .is-style-outline a:focus {
+  background: var(--color-grey) !important;
+}
+
+.btn--large, .is-style-fill a,
+.is-style-outline a {
+  padding: 18px 20px 12px !important;
 }
 
 .social-links {
@@ -4648,6 +4663,9 @@ body.nav-open {
 .content-block__content figure {
   margin-bottom: var(--spacing-l);
 }
+.content-block__content .content-block__content {
+  width: 100%;
+}
 .content-block__content ol {
   list-style-type: decimal;
   padding-bottom: 1rem;
@@ -4706,6 +4724,10 @@ body.nav-open {
 .events-list {
   display: flex;
   flex-wrap: wrap;
+}
+.events-list .category-filter {
+  padding-right: 0;
+  display: none;
 }
 .events-title {
   padding-top: var(--spacing);
@@ -4799,6 +4821,12 @@ body.nav-open {
 .featured .card {
   position: relative;
   padding-bottom: var(--spacing-s);
+  margin-bottom: var(--spacing-s);
+}
+@media (min-width: 50em) {
+  .featured .card {
+    margin-bottom: 0;
+  }
 }
 .featured .card__excerpt {
   display: none;

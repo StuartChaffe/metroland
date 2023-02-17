@@ -3,7 +3,8 @@
 // input[type="submit"],
 // button,
 .wp-block-button__link,
-.wp-block-button__link:visited {
+.wp-block-button__link:visited,
+.is-style-outline a {
 	display: inline-block;
 	border-radius: 0;
 	padding: 8px 10px 4px;
@@ -30,16 +31,18 @@
 		display: flex;
 	}
 }
-.btn--solid {
+.btn--solid, .is-style-fill a {
 	background-color: var(--color-text-base);
 	border: 1px solid var(--color-text-base);
-	color: white;
+	color: white !important;
 	&:hover, &:focus {
 		background: var(--color-grey);
 		outline: 0;
+		color: var(--color-text-dark) !important;
 		text-decoration: none;
 	}
 }
+
 
 .btn--light {
 	background-color: transparent;
@@ -47,10 +50,23 @@
 	color: white;
 
 	&:hover, &:focus {
-		background: var(--color-grey);
+		background-color: var(--color-text-base);
 	}
+}
+.is-style-outline a {
+	padding: 8px 10px 4px !important;
+	background-color: transparent;
+	border: 1px solid white !important;
+	&:hover, &:focus {
+		background: var(--color-grey) !important;
+	}
+}
+.is-style-fill a,
+.is-style-outline a {
+	@extend .btn--large;
 }
 
 .btn--large {
-	padding: 18px 20px 12px;
+	padding: 18px 20px 12px !important;
 }
+
