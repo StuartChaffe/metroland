@@ -2,14 +2,36 @@
 	$type	= get_field('banner_type');
 ?>
 
-<?php echo $type; ?>
 <?php if ($type == 'Programmes') { ?>
-<section class="banner">
- ThiS IS ISIASIAS
+<section class="banner banner-programme">
+	<div class="banner-slider">
+		<div class="banner-slider__item ">
+			<div class="banner-slider__item-image" style="background-image: url('https://www.metrolandcultures.com/site/assets/files/4399/bb22_hero-image2_1.png');">
+				<img decoding="async" class="" src="https://www.metrolandcultures.com/site/assets/files/4399/bb22_hero-image2_1.png">
+			</div>
+			<div class="banner-slider__item-content">
+				Programme
+				Brent Biennial 2022
+				Brent Biennial 2022
+				<p>The second edition of the Brent Biennial, In the House of my Love, brings together artists and community groups whose works explore the many meanings of homemaking. It presents a series of artworks in the south of the borough, open and free for audiences to visit between 8 July - 11 September.</p>
+				<a href="" class="btn btn--solid btn--large">Find out more</a>
+			</div>
+		</div>
+		<div class="banner-slider__item">
+			<div class="banner-slider__item-image" style="background-image: url('https://metroland.test:3000/wp-content/uploads/bb22_web_banner_vertical.png');">
+				<img decoding="async" class="" src="https://metroland.test:3000/wp-content/uploads/bb22_web_banner_vertical.png">
+			</div>
+			<div class="banner-slider__item-content">
+				Programme
+				Brent Biennial 2022
+				Brent Biennial 2022
+				<p>The second edition of the Brent Biennial, In the House of my Love, brings together artists and community groups whose works explore the many meanings of homemaking. It presents a series of artworks in the south of the borough, open and free for audiences to visit between 8 July - 11 September.</p>
+				<a href="" class="btn btn--solid btn--large">Find out more</a>
+			</div>
+		</div>
+	</div>
 </section>
-<?php } ?>
-
-<?php if ($type == 'Standard') { ?>
+<?php } else { ?>
 <section class="banner">
 	<div class="banner-slider">
 	<?php if( have_rows('banner') ) { ?>

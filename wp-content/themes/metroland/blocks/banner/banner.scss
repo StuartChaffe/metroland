@@ -56,4 +56,25 @@
 			}
 		}
 	}
+
+	&-programme{
+		.banner-slider__item-image {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background-size: cover;
+			img {
+				position: absolute;
+				width: 100%;
+				// display: none;
+			}
+		}
+		.banner-slider__item-content {
+
+		}
+
+		.slick-prev, .slick-next {
+			transform: translate(0, -50%);
+		}
+	}
 }

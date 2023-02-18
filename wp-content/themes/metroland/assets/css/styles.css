@@ -4628,6 +4628,19 @@ body.nav-open {
     font-size: var(--font-size-h4);
   }
 }
+.banner-programme .banner-slider__item-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.banner-programme .banner-slider__item-image img {
+  position: absolute;
+  width: 100%;
+}
+.banner-programme .slick-prev, .banner-programme .slick-next {
+  transform: translate(0, -50%);
+}
 
 .content-block {
   display: flex;
