@@ -6,11 +6,11 @@
 ?>
 <aside class="content-block__sidebar" role="complmentary">
 <?php if ($when) { ?>
-	<p class="label">When</p>
+	<p class="label label--black">When</p>
 	<p class="small"><?php echo $when; ?></p>
 <?php } ?>
 <?php if ($where) { ?>
-	<p class="label">Where</p>
+	<p class="label label--black">Where</p>
 	<p class="small"><?php echo $where; ?></p>
 <?php } ?>
 <?php if ($notes) { ?>

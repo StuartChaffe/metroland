@@ -31,6 +31,9 @@
 		display: flex;
 	}
 }
+a.btn {
+	padding: 8px 10px 8px;
+}
 .btn--solid, .is-style-fill a {
 	background-color: var(--color-text-base);
 	border: 1px solid var(--color-text-base);
@@ -50,7 +53,8 @@
 	color: white;
 
 	&:hover, &:focus {
-		background-color: var(--color-text-base);
+		// color: white;
+		background-color: var(--color-grey);
 	}
 }
 .is-style-outline a {
