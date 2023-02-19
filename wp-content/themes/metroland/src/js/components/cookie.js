@@ -21,5 +21,4 @@
 		localStorage.setItem('hideCookieBanner', 'true');
 		cookieAlert.classList.remove('is-visible');
 	});
-
 }());

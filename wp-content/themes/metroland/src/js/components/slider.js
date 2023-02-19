@@ -10,5 +10,9 @@ jQuery(document).ready(function($) {
 		arrows: true,
 		infinite: true,
 		dots: false,
-	}); 
+	});
+
+	var lightbox = GLightbox({
+		selector: '.wp-block-image a'
+	  });
 });

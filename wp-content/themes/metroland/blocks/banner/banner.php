@@ -38,7 +38,7 @@
 	</div>
 </section>
 <?php } else { ?>
-<section class="banner">
+<section class="banner<?php if ($type == 'Programmes') { ?> banner-programme<?php } ?>">
 	<div class="banner-slider">
 	<?php if( have_rows('banner') ) { ?>
 	<?php while( have_rows('banner') ): the_row();
@@ -51,10 +51,21 @@
 				<?php if ($images['small']) { ?><img class="hidedesktop" src="<?php echo $images['small']['url'];?>" /><?php } ?>
 			</div>
 			<div class="banner-slider__item-content">
+				<?php if ($type == 'Programmes') { ?>
+				<p class="label label--primary">Programme</p>
+				<p class="banner-programme__title">Brent Biennial 2022</p>
+
+				<p class="label label--black">Brent Biennial 2022</p>
+				<div class="banner-programme__excerpt">
+					<p>The second edition of the Brent Biennial, In the House of my Love, brings together artists and community groups whose works explore the many meanings of homemaking. It presents a series of artworks in the south of the borough, open and free for audiences to visit between 8 July - 11 September.</p>
+				</div>
+				<a href="" class="btn btn--solid btn--large">Find out more</a>
+				<?php } else { ?>
 				<?php if ($content['date']) { ?><p class="small"><?php echo $content['date']; ?></p><?php } ?>
 				<?php if ($content['title']) { ?><h3 class="uppercase txt--white"><?php echo $content['title']; ?></h3><?php } ?>
 				<?php if ($content['text']) { ?><?php echo $content['text']; ?><?php } ?>
 				<?php if ($content['link']) { ?><a class="btn btn--light" href="<?php echo $content['link']['url']; ?>" title="<?php echo $content['link']['title']; ?>"><?php echo $content['link']['title']; ?></a><?php } ?>
+				<?php } ?>
 			</div>
 		</div>
 		<?php endwhile; ?>

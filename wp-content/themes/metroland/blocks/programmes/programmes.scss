@@ -1,7 +1,7 @@
 .programmes {
 	&-list {
 		// padding: 0 calc(var(--spacing-s) - 8px);
-		@extend .container-s !optional;
+		@extend .container !optional;
 		display: flex;
 		flex-wrap: wrap;
 		@include mq(medium) {

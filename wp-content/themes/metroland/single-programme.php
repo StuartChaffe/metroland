@@ -6,10 +6,11 @@
 	<article id="content">
 		<div class="container category-list">
 		<?php
-			$terms = get_terms([
-				'taxonomy' => 'programme_category',
-				'hide_empty' => false,
-			]);
+			$terms = wp_get_post_terms( $post->ID, 'programme_category' );
+			// $terms = get_terms([
+			// 	'taxonomy' => 'programme_category',
+			// 	'hide_empty' => false,
+			// ]);
 		?>
 			<div class="category category--active"><p>PROGRAMME</p></div>
 		<?php foreach ($terms as $term) { ?>

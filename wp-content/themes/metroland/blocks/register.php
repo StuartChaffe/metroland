@@ -44,6 +44,8 @@ function allowed_block_types( $allowed_blocks ) {
 		'core/button',
 		'core/list',
 		'core/image',
+		'core/gallery',
+		'core/separator',
 		// 'core/html',
 	);
 
