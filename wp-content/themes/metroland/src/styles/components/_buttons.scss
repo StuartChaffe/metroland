@@ -40,7 +40,7 @@ a.btn {
 	border: 1px solid var(--color-text-base);
 	color: white !important;
 	&:hover, &:focus {
-		background: var(--color-grey);
+		background: var(--color-grey) !important;
 		outline: 0;
 		color: var(--color-text-dark) !important;
 		text-decoration: none;

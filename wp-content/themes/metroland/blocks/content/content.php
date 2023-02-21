@@ -1,6 +1,6 @@
 <?php
 	$sidebar = get_field('show_sidebar');
-	$allowed_blocks = array( 'core/heading', 'core/paragraph', 'core/button', 'core/image', 'core/list', 'core/separator', 'core/gallery' );
+	$allowed_blocks = array( 'core/heading', 'core/paragraph', 'core/button', 'core/image', 'core/list', 'core/separator', 'core/gallery', 'core/embed' );
 ?>
 
 <?php if($allowed_blocks) { ?>

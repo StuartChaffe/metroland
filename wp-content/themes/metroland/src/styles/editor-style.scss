@@ -38,3 +38,18 @@ ul, ol {
 		display: flex !important;
 	}
 }
+.wp-block-post-content {
+	a {
+		color: var(--color-text-link);
+		text-decoration: none;
+	}
+	h2 {
+		font-size: 32px !important;
+	}
+	h3 {
+		font-size: 24px !important;
+	}
+	h4 {
+		font-size: 20px !important;
+	}
+}

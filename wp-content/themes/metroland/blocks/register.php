@@ -43,11 +43,12 @@ function allowed_block_types( $allowed_blocks ) {
 
 		'core/paragraph',
 		'core/heading',
-		'core/button',
+		'core/buttons',
 		'core/list',
 		'core/image',
 		'core/gallery',
 		'core/separator',
+		'core/embed',
 		// 'core/html',
 	);
 

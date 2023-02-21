@@ -123,12 +123,18 @@ div[data-type="core/button"] div[data-block] {
 	margin-right: auto;
 }
 .block-editor-rich-text__editable,
-.wp-block-image {
+.wp-block-image,
+.wp-block-buttons {
 	max-width: 900px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
+.wp-block-button__link {
+	padding: 18px 20px 12px !important;
+	color: white !important;
+	background-color: var(--color-text-base);
+}
 .card {
 	border: 0;
 	padding: 0;
