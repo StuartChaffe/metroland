@@ -39,5 +39,8 @@
 	&-excerpt {
 		max-width: var(--container-s);
 		margin-top: var(--spacing);
+		@include mq(large) {
+			max-width: 60%;
+		}
 	}
 }

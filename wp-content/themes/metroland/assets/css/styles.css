@@ -5184,6 +5184,11 @@ body.nav-open {
   max-width: var(--container-s);
   margin-top: var(--spacing);
 }
+@media (min-width: 70em) {
+  .page-excerpt {
+    max-width: 60%;
+  }
+}
 
 .accordion {
   max-width: var(--content-width);
