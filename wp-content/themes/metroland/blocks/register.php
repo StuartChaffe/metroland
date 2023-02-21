@@ -49,6 +49,7 @@ function allowed_block_types( $allowed_blocks ) {
 		'core/gallery',
 		'core/separator',
 		'core/embed',
+		// 'core/youtube',
 		// 'core/html',
 	);
 

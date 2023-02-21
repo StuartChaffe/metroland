@@ -124,7 +124,8 @@ div[data-type="core/button"] div[data-block] {
 }
 .block-editor-rich-text__editable,
 .wp-block-image,
-.wp-block-buttons {
+.wp-block-buttons,
+.wp-block-embed {
 	max-width: 900px;
 	margin-left: auto;
 	margin-right: auto;
