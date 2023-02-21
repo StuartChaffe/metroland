@@ -4,6 +4,7 @@
 	display: flex;
 	align-items: flex-start;
 	flex-direction: column;
+	max-width: none;
 	&__media {
 		// transition: all 0.1s ease-in-out;
 		img {

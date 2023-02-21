@@ -1,0 +1,13 @@
+{
+	"name": "acf/featured-events",
+	"title": "Featured events",
+	"description": "Display featured events",
+	"category": "metroland",
+	"icon": "star-filled",
+	"keywords": ["events"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "featured-events.php"
+	},
+	"align": "full"
+}

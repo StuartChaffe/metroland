@@ -20,7 +20,7 @@
 
 
 	<div class="events-list">
-	<div class="category-filter">
+		<div class="category-filter">
 			<select name="cat-dropdown" onchange='document.location.href=this.options[this.selectedIndex].value;'>
 				<option value=""><?php echo esc_attr(__('Showing: All categories')); ?></option>
 				<?php

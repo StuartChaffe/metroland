@@ -785,10 +785,8 @@ input[type=button]:focus {
   outline: 0;
   text-decoration: none;
 }
-.btn__group,
-.wp-block-button__link__group,
-.wp-block-button__link:visited__group,
-.is-style-outline a__group {
+
+.btn__group {
   display: flex;
 }
 
@@ -843,6 +841,7 @@ input[type=button]:focus, .is-style-fill a:hover, .is-style-fill a:focus {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+  max-width: none;
 }
 .card__media img {
   margin-bottom: var(--spacing-s);
@@ -1310,9 +1309,18 @@ input[type=button]:focus, .is-style-fill a:hover, .is-style-fill a:focus {
   display: flex;
   flex-wrap: wrap;
 }
+@media (min-width: 70em) {
+  .events-list {
+    padding: 0 200px;
+  }
+}
 .events-list .category-filter {
   padding-right: 0;
   display: none;
+}
+.events-list .btn__group {
+  width: 100%;
+  justify-content: center;
 }
 .events-title {
   padding-top: var(--spacing);
@@ -1325,6 +1333,9 @@ input[type=button]:focus, .is-style-fill a:hover, .is-style-fill a:focus {
 }
 .events .card__title {
   margin-bottom: 0;
+}
+.events .card__title + .card__excerpt {
+  margin-top: 1rem;
 }
 .events .card__date {
   margin-top: 0;
@@ -1421,6 +1432,11 @@ input[type=button]:focus, .is-style-fill a:hover, .is-style-fill a:focus {
     display: block;
   }
 }
+.featured .btn__group {
+  width: 100%;
+  justify-content: center;
+  grid-template-columns: 100% 100%;
+}
 
 .form {
   max-width: calc(var(--container-s) - var(--spacing-xs));
@@ -1495,8 +1511,19 @@ input[type=button]:focus, .is-style-fill a:hover, .is-style-fill a:focus {
 }
 
 .programmes-list {
+  justify-content: center;
+  margin-bottom: var(--spacing-l);
   display: flex;
   flex-wrap: wrap;
+}
+@media (min-width: 70em) {
+  .programmes-list {
+    padding: 0 200px;
+  }
+}
+.programmes-list .btn__group {
+  width: 100%;
+  justify-content: center;
 }
 .programmes-title {
   padding-top: var(--spacing);

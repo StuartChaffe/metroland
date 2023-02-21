@@ -1,0 +1,13 @@
+{
+	"name": "acf/featured-programmes",
+	"title": "Featured programmes",
+	"description": "Display featured programmes",
+	"category": "metroland",
+	"icon": "star-filled",
+	"keywords": ["programmes"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "featured-programmes.php"
+	},
+	"align": "full"
+}

@@ -1,6 +1,7 @@
 <?php
 	$title = get_field('featured_title');
 	$featured = get_field( 'select_feature' );
+	$button = get_field( 'button' );
 
 	$counter = 1;
 ?>
@@ -31,4 +32,9 @@
 		<?php endforeach; ?>
 	<?php } ?>
 	</div>
+	<?php if ( 'true' == get_field('button') ) { ?>
+	<div class="btn__group">
+		<a href="/news" class="btn btn--large">All news</a>
+	</div>
+	<?php } ?>
 </section>

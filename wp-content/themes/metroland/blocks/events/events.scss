@@ -6,12 +6,17 @@
 		flex-wrap: wrap;
 		@include mq(medium) {
 		}
-		// @include mq(large) {
-		// 	padding: 0 200px;
-		// }
+		@include mq(large) {
+			padding: 0 200px;
+		}
 		.category-filter {
 			padding-right: 0;
 			display: none;
+		}
+
+		.btn__group {
+			width: 100%;
+			justify-content: center;
 		}
 	}
 
@@ -28,6 +33,9 @@
 
 		&__title {
 			margin-bottom: 0;
+			+ .card__excerpt {
+				margin-top: 1rem;
+			}
 		}
 		&__date {
 			margin-top: 0;

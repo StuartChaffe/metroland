@@ -35,6 +35,8 @@ function allowed_block_types( $allowed_blocks ) {
 		'acf/form',
 		'acf/news',
 		'acf/featured-news',
+		'acf/featured-programmes',
+		'acf/featured-events',
 		'acf/events',
 		'acf/programmes',
 		'acf/pagelinks',

@@ -1,9 +1,9 @@
 {
-    "key": "group_63dfb07e9a166",
-    "title": "Featured news",
+    "key": "group_63f4f55231ef3",
+    "title": "Featured events",
     "fields": [
         {
-            "key": "field_63dfb07e5f908",
+            "key": "field_63f4f55235321",
             "label": "Title",
             "name": "featured_title",
             "aria-label": "",
@@ -23,7 +23,27 @@
             "append": ""
         },
         {
-            "key": "field_63dfb1a45f909",
+            "key": "field_63f4f602c2cd7",
+            "label": "Content",
+            "name": "featured_content",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_63f4f55235328",
             "label": "Select featured",
             "name": "select_feature",
             "aria-label": "",
@@ -37,7 +57,7 @@
                 "id": ""
             },
             "post_type": [
-                "post"
+                "event"
             ],
             "taxonomy": "",
             "return_format": "id",
@@ -46,7 +66,7 @@
             "ui": 1
         },
         {
-            "key": "field_63f4f94128086",
+            "key": "field_63f4f8c1764ce",
             "label": "Show 'All' button?",
             "name": "button",
             "aria-label": "",
@@ -60,7 +80,7 @@
                 "id": ""
             },
             "message": "",
-            "default_value": 0,
+            "default_value": 1,
             "ui_on_text": "",
             "ui_off_text": "",
             "ui": 1
@@ -71,7 +91,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/featured-news"
+                "value": "acf\/featured-events"
             }
         ]
     ],
@@ -84,5 +104,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1676999021
+    "modified": 1676998934
 }

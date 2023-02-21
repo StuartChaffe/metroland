@@ -2,12 +2,19 @@
 	&-list {
 		// padding: 0 calc(var(--spacing-s) - 8px);
 		@extend .container !optional;
+		justify-content: center;
+		margin-bottom: var(--spacing-l);
 		display: flex;
 		flex-wrap: wrap;
 		@include mq(medium) {
 		}
 		@include mq(large) {
-			// padding: 0 200px;
+			padding: 0 200px;
+		}
+
+		.btn__group {
+			width: 100%;
+			justify-content: center;
 		}
 	}
 

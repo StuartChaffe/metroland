@@ -3,7 +3,7 @@
 		padding: 0.5rem var(--spacing-s) 0 var(--spacing-s);
 		white-space: nowrap;
 		overflow: hidden;
-		width: calc(100vw - var(--spacing-s));
+		@extend .container !optional;
 		@include mq(medium) {
 			padding: 0.5rem var(--spacing-s) 0 var(--spacing-s);
 		}
