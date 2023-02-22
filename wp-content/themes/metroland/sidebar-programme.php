@@ -20,7 +20,7 @@
 <?php if ($link) { ?>
 	<a class="btn btn--solid btn--large" href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>"><?php if ($link['title']) { ?><?php echo $link['title']; ?> <?php } else { ?>Venue location<?php } ?></a>
 <?php } ?>
-<?php if ($file) { ?>
+<?php if ($file['file']) { ?>
 	<a class="btn btn--solid btn--large" href="<?php echo $file['file']['url']; ?>"><?php if ($file['link_text']) { ?><?php echo $file['link_text']; ?> <?php } else { ?>Download file<?php } ?></a>
 <?php } ?>
 

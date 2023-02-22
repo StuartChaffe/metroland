@@ -45,6 +45,7 @@
 			margin-bottom: var(--spacing-l);
 		}
 		figure:not(:first-of-type) {
+			margin: var(--spacing) 0;
 			// margin-bottom: var(--spacing);
 			// margin-top: var(--spacing-l);
 		}
@@ -63,7 +64,7 @@
 			height: 0;
 			overflow: hidden;
 
-			margin: 50px 0;
+			margin: var(--spacing) 0;
 			text-align: center;
 			width: 100%;
 
@@ -118,7 +119,8 @@
 		}
 	}
 
-	&-event {
+	&-event,
+	&-programme {
 		padding-top: var(--spacing);
 		.content-block {
 			padding: 0;

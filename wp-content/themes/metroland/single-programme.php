@@ -1,34 +1,28 @@
 <?php get_header(); ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
-<div class="has--hr bkg--secondary">
+<article id="content" class="bkg--secondary">
 	<div class="page-breadcrumb"><span><span><a href="/programmes">Programmes</a><span><span> / <?php echo do_shortcode('[wpseo_breadcrumb]'); ?></div>
-	<article id="content">
-		<div class="container category-list">
-		<?php
-			$terms = wp_get_post_terms( $post->ID, 'programme_category' );
-			// $terms = get_terms([
-			// 	'taxonomy' => 'programme_category',
-			// 	'hide_empty' => false,
-			// ]);
-		?>
-			<div class="category category--active"><p>PROGRAMME</p></div>
-		<?php foreach ($terms as $term) { ?>
-			<div class="category"><?php echo $term->name; ?></div>
-		<?php } ?>
+	<div class="container category-list">
+	<?php
+		$terms = wp_get_post_terms( $post->ID, 'programme_category' );
+	?>
+		<div class="category category--active"><p>PROGRAMME</p></div>
+	<?php foreach ($terms as $term) { ?>
+		<div class="category"><?php echo $term->name; ?></div>
+	<?php } ?>
+	</div>
+	<div class="page-title">
+		<h1 class="uppercase"><?php the_title(); ?></h1>
+	</div>
+	<section class="content-block content-block-programme hide">
+		<?php get_sidebar('programme'); ?>
+		<div class="content-block__content">
+			<?php the_content(); ?>
 		</div>
-		<div class="page-title">
-			<h1 class="uppercase"><?php the_title(); ?></h1>
-		</div>
-		<section class="content-block content-block-event">
-			<?php get_sidebar('programme'); ?>
-			<div class="content-block__content">
-				<?php the_content(); ?>
-			</div>
-		</section>
-	</article>
-	<hr class="hr-styled hr-styled--large">
-</div>
+	</section>
+	<?php the_content(); ?>
+</article>
 <?php endwhile; ?>
 
 <?php get_footer(); ?>

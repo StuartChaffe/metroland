@@ -5009,6 +5009,11 @@ body.home .site-header__nav ul :not(.current_page_item) a:hover {
   font-size: var(--font-size-small);
 }
 
+.hr-styled + .site-footer,
+article + .site-footer {
+  margin-top: 0;
+}
+
 body.nav-open {
   overflow: hidden;
 }
@@ -5421,6 +5426,9 @@ body.nav-open {
 .content-block__content figure:first-of-type {
   margin-bottom: var(--spacing-l);
 }
+.content-block__content figure:not(:first-of-type) {
+  margin: var(--spacing) 0;
+}
 .content-block__content .content-block__content {
   width: 100%;
 }
@@ -5429,7 +5437,7 @@ body.nav-open {
   padding: 30px 0 56.25% 0;
   height: 0;
   overflow: hidden;
-  margin: 50px 0;
+  margin: var(--spacing) 0;
   text-align: center;
   width: 100%;
 }
@@ -5475,18 +5483,18 @@ body.nav-open {
 .content-block__content h4 {
   font-size: 20px !important;
 }
-.content-block-event {
+.content-block-event, .content-block-programme {
   padding-top: var(--spacing);
 }
-.content-block-event .content-block {
+.content-block-event .content-block, .content-block-programme .content-block {
   padding: 0;
 }
-.content-block-event .content-block__sidebar {
+.content-block-event .content-block__sidebar, .content-block-programme .content-block__sidebar {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
 }
-.content-block-event .content-block__content h1 {
+.content-block-event .content-block__content h1, .content-block-programme .content-block__content h1 {
   margin-top: -10px;
 }
 .content-block-article {
@@ -5520,6 +5528,9 @@ body.nav-open {
   padding: 0;
 }
 
+.events {
+  background-color: white;
+}
 .events-list {
   display: flex;
   flex-wrap: wrap;
@@ -5536,6 +5547,7 @@ body.nav-open {
 .events-list .btn__group {
   width: 100%;
   justify-content: center;
+  margin-bottom: var(--spacing);
 }
 .events-title {
   padding-top: var(--spacing);

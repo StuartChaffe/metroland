@@ -64,7 +64,7 @@
 	}
 	&__menus {
 		display: flex;
-		ul { 
+		ul {
 			margin-left: 0;
 			padding-left: 0;
 			margin-top: 0;
@@ -82,7 +82,7 @@
 			@include mq(medium) {
 				width: 75%;
 			}
-			ul { 
+			ul {
 				flex-wrap: wrap;
 				li {
 					width: 100%;
@@ -107,7 +107,7 @@
 			// @include mq(medium) {
 			// 	width: 25%;
 			// }
-			ul { 
+			ul {
 				flex-direction: column;
 				margin-bottom: 2rem;
 				li {
@@ -124,4 +124,11 @@
 	color: white;
 	margin: 0;
 	font-size: var(--font-size-small);
+}
+
+.hr-styled,
+article {
+	+ .site-footer {
+		margin-top: 0;
+	}
 }
