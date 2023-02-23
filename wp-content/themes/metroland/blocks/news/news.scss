@@ -14,15 +14,15 @@
 	.card {
 		position: relative;
 		padding-bottom: var(--spacing);
-		&:nth-child(4n+1):after {
-			content: "";
-			width: calc(100vw - (var(--spacing-xl) * 2));
-			max-width: calc(var(--container-global) - (var(--spacing-xl) * 2));
-			height: 1px;
-			background: var(--color-grey);
-			position: absolute;
-			left: 0;
-			bottom: 0;
-		}
+		// &:nth-child(4n+1):after {
+		// 	content: "";
+		// 	width: calc(100vw - (var(--spacing-xl) * 2));
+		// 	max-width: calc(var(--container-global) - (var(--spacing-xl) * 2));
+		// 	height: 1px;
+		// 	background: var(--color-grey);
+		// 	position: absolute;
+		// 	left: 0;
+		// 	bottom: 0;
+		// }
 	}
 }

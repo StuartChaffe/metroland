@@ -7,6 +7,9 @@ function origin_scripts() {
 	if ( !is_admin() ) {
 		wp_enqueue_style( 'styles', mix( 'assets/css/styles.css' ), array(), null );
 
+		wp_register_script( 'mixitup', get_template_directory_uri().'/assets/js/mixitup.min.js', array( 'jquery' ), null, true );
+		wp_enqueue_script( 'mixitup' );
+
 		wp_register_script( 'slick', get_template_directory_uri().'/assets/js/slick.js', array( 'jquery' ), null, true );
 		wp_enqueue_script( 'slick' );
 
@@ -18,6 +21,19 @@ function origin_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'origin_scripts', 100 );
+
+
+// function blockgallery_frontend_scripts() {
+// 	if ( has_block( 'blocks/featured-events' ) ) {
+// 		wp_enqueue_script(
+// 			'mixitup',
+//         		plugins_url( get_template_directory_uri().'/assets/js/mixitup.min.js', __FILE__ ),
+// 			array( 'jquery', 'mixitup' ),
+// 			filemtime( plugin_dir_path( __FILE__ ) . 'dist/mixitup.min.js' )
+// 		);
+// 	}
+// }
+// add_action( 'wp_enqueue_scripts', 'blockgallery_frontend_scripts' );
 
 
 

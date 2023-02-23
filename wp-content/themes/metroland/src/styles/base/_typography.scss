@@ -30,10 +30,11 @@ p + .btn {
 
 .label {
 	@extend .small;
-	padding: 8px 10px 4px;
+	// padding: 8px 10px 4px;
+	padding: 6px 6px 2px;
 	// padding: 2px 5px;
 	letter-spacing: .04em;
-	text-transform: uppercase;
+	// text-transform: uppercase;
 	font-family: "AktivBold";
 	font-weight: var(--font-weight-bold);
 	font-size: 12px !important;

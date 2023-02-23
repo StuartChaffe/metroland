@@ -81,6 +81,26 @@
             "new_lines": "br"
         },
         {
+            "key": "field_63f6441e19e30",
+            "label": "Notes",
+            "name": "notes",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 4,
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
             "key": "field_63deb47b0743e",
             "label": "Price",
             "name": "price",
@@ -135,5 +155,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1675539666
+    "modified": 1677083727
 }

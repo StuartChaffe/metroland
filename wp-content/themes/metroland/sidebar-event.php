@@ -1,6 +1,7 @@
 <?php
 	$when = get_field('when', get_the_id());
 	$where = get_field('where', get_the_id());
+	$notes = get_field('notes', get_the_id());
 	$price = get_field('price', get_the_id());
 	$tickets = get_field('ticket', get_the_id());
 ?>
@@ -13,6 +14,9 @@
 <?php if ($where) { ?>
 	<p class="label label--black">Where</p>
 	<p class="small"><?php echo $where; ?></p>
+<?php } ?>
+<?php if ($notes) { ?>
+	<p class="small"><?php echo $notes; ?></p>
 <?php } ?>
 <?php if ($price) { ?>
 	<p class="label label--black">Price</p>

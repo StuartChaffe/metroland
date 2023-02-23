@@ -358,9 +358,8 @@ p + .btn,
 }
 
 .label {
-  padding: 8px 10px 4px;
+  padding: 6px 6px 2px;
   letter-spacing: 0.04em;
-  text-transform: uppercase;
   font-family: "AktivBold";
   font-weight: var(--font-weight-bold);
   font-size: 12px !important;
@@ -893,6 +892,20 @@ input[type=button]:focus, .is-style-fill a:hover, .is-style-fill a:focus {
     width: 25%;
   }
 }
+.card-tags {
+  display: flex;
+  position: absolute;
+  right: 13px;
+  top: 5px;
+}
+.card-tags .tag {
+  padding: 6px 6px 2px;
+  background-color: white;
+  font-family: "AktivBold";
+  font-weight: var(--font-weight-bold);
+  font-size: 12px;
+  margin-left: 0.2rem;
+}
 
 .content > * {
   margin-right: auto;
@@ -1369,6 +1382,9 @@ input[type=button]:focus, .is-style-fill a:hover, .is-style-fill a:focus {
   padding: 0 calc(var(--spacing-xs) / 2);
   padding-bottom: var(--spacing);
 }
+.events .card:nth-child(4n+1) {
+  margin-bottom: var(--spacing);
+}
 .events .card__title {
   margin-bottom: 0;
 }
@@ -1380,8 +1396,10 @@ input[type=button]:focus, .is-style-fill a:hover, .is-style-fill a:focus {
   margin-bottom: 1rem;
   color: var(--color-grey-dark);
 }
+.events .card__excerpt {
+  margin-bottom: 1rem;
+}
 .events .card__address {
-  margin: 1rem 0;
   color: var(--color-grey-dark);
 }
 
@@ -1598,16 +1616,6 @@ input[type=button]:focus, .is-style-fill a:hover, .is-style-fill a:focus {
 .news .card {
   position: relative;
   padding-bottom: var(--spacing);
-}
-.news .card:nth-child(4n+1):after {
-  content: "";
-  width: calc(100vw - var(--spacing-xl) * 2);
-  max-width: calc(var(--container-global) - var(--spacing-xl) * 2);
-  height: 1px;
-  background: var(--color-grey);
-  position: absolute;
-  left: 0;
-  bottom: 0;
 }
 
 .pagelinks {
@@ -1848,4 +1856,13 @@ ul li, ol li {
 }
 .wp-block-post-content h4 {
   font-size: 20px !important;
+}
+
+.card--std {
+  max-width: 25%;
+  min-width: 25%;
+}
+
+.programmes-list {
+  padding: 0 var(--spacing);
 }
