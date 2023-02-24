@@ -8,7 +8,7 @@
 
 	&-slider {
 		&__item {
-			display: flex !important;
+			display: flex;
 			flex-direction: column;
 			height: 100%;
 			color: white;
@@ -61,7 +61,11 @@
 		}
 	}
 
-	&-programme {
+	&-detailed {
+		background-color: white;
+		@include mq(medium) {
+			background-color: black;
+		}
 		&__title {
 			background-color: var(--color-primary);
 			color: var(--color-text-base);
@@ -70,41 +74,61 @@
 			font-weight: var(--font-weight-bold);
 			font-size: 22px;
 			padding: 0.5rem;
-			margin-bottom: 5rem;
+			margin-bottom: 0rem;
+			@include mq(medium) {
+				margin-bottom: 8rem;
+			}
 		}
 		&__excerpt {
+			width: 100%;
 			color: var(--color-text-base);
 			background-color: white;
-			padding: 0.5rem 1rem 0.5rem 0.5rem;
+			padding: 1rem 2rem 0 0;
 			margin-bottom: 1rem;
+			@include mq(medium) {
+				width: 50%;
+				max-width: 480px;
+				padding: 0.5rem 1rem 0.5rem 0.5rem;
+			}
 		}
+
 		.banner-slider__item {
 			align-items: self-start;
 			&-image {
+				@include mq(medium) {
 					position: absolute;
 					width: 100%;
 					height: 100%;
 					background-size: cover;
-				img {
-					position: absolute;
-					width: 100%;
-					// display: none;
+					img {
+						position: absolute;
+						width: 100%;
+						// display: none;
+					}
 				}
 			}
 			&-content {
-				padding-left: var(--spacing-xl);
-				padding-top: var(--spacing);
-				// background-color: white;
+				margin-top: -67px;
+				padding: 0 var(--spacing-s) var(--spacing) var(--spacing-s);
+				// padding-left: var(--spacing-xl);
+				// padding-top: var(--spacing);
 				display: flex;
 				flex-direction: column;
 				align-items: flex-start;
+				width: 100%;
+				@include mq(medium) {
+					margin-top: 0;
+					padding: var(--spacing) var(--spacing) var(--spacing) var(--spacing-xl);
+				}
 				.label {
 					margin-bottom: 0;
 				}
 			}
 		}
 		.slick-track {
-			min-height: 100vh;
+			@include mq(medium) {
+				min-height: 100vh;
+			}
 		}
 
 		.slick-prev, .slick-next {

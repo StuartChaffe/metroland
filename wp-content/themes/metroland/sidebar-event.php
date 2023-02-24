@@ -11,6 +11,7 @@
 	<p class="small"><?php echo $when['date']; ?> <br />
 	<?php echo $when['time']; ?></p>
 <?php } ?>
+
 <?php if ($where) { ?>
 	<p class="label label--black">Where</p>
 	<p class="small"><?php echo $where; ?></p>

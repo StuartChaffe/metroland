@@ -2,43 +2,7 @@
 	$type	= get_field('banner_type');
 ?>
 
-<?php if ($type == 'Programmes') { ?>
-<section class="banner banner-programme">
-	<div class="banner-slider">
-		<div class="banner-slider__item">
-			<div class="banner-slider__item-image" style="background-image: url('https://www.metrolandcultures.com/site/assets/files/4399/bb22_hero-image2_1.png');">
-				<img decoding="async" class="" src="https://www.metrolandcultures.com/site/assets/files/4399/bb22_hero-image2_1.png">
-			</div>
-			<div class="banner-slider__item-content">
-				<p class="label label--primary">Programme</p>
-				<p class="banner-programme__title">Brent Biennial 2022</p>
-
-				<p class="label label--black">Brent Biennial 2022</p>
-				<div class="banner-programme__excerpt">
-					<p>The second edition of the Brent Biennial, In the House of my Love, brings together artists and community groups whose works explore the many meanings of homemaking. It presents a series of artworks in the south of the borough, open and free for audiences to visit between 8 July - 11 September.</p>
-				</div>
-				<a href="" class="btn btn--solid btn--large">Find out more</a>
-			</div>
-		</div>
-		<div class="banner-slider__item">
-			<div class="banner-slider__item-image" style="background-image: url('https://metroland.test:3000/wp-content/uploads/bb22_web_banner_vertical.png');">
-				<img decoding="async" class="" src="https://metroland.test:3000/wp-content/uploads/bb22_web_banner_vertical.png">
-			</div>
-			<div class="banner-slider__item-content">
-				<p class="label label--primary">Programme</p>
-				<p class="banner-programme__title">Brent Biennial 2022</p>
-
-				<p class="label label--black">Brent Biennial 2022</p>
-				<div class="banner-programme__excerpt">
-					<p>The second edition of the Brent Biennial, In the House of my Love, brings together artists and community groups whose works explore the many meanings of homemaking. It presents a series of artworks in the south of the borough, open and free for audiences to visit between 8 July - 11 September.</p>
-				</div>
-				<a href="" class="btn btn--solid btn--large">Find out more</a>
-			</div>
-		</div>
-	</div>
-</section>
-<?php } else { ?>
-<section class="banner<?php if ($type == 'Programmes') { ?> banner-programme<?php } ?>">
+<section class="banner<?php if ($type == 'Detailed') { ?> banner-detailed<?php } ?>">
 	<div class="banner-slider">
 	<?php if( have_rows('banner') ) { ?>
 	<?php while( have_rows('banner') ): the_row();
@@ -51,15 +15,17 @@
 				<?php if ($images['small']) { ?><img class="hidedesktop" src="<?php echo $images['small']['url'];?>" /><?php } ?>
 			</div>
 			<div class="banner-slider__item-content">
-				<?php if ($type == 'Programmes') { ?>
-				<p class="label label--primary">Programme</p>
-				<p class="banner-programme__title">Brent Biennial 2022</p>
+				<?php if ($type == 'Detailed') { ?>
+				<?php if ($content['label_detailed']) { ?><p class="label label--primary uppercase"><?php echo $content['label_detailed']; ?></p><?php } ?>
+				<?php if ($content['title_detailed']) { ?><p class="banner-detailed__title"><?php echo $content['title_detailed']; ?></p><?php } ?>
 
-				<p class="label label--black">Brent Biennial 2022</p>
-				<div class="banner-programme__excerpt">
-					<p>The second edition of the Brent Biennial, In the House of my Love, brings together artists and community groups whose works explore the many meanings of homemaking. It presents a series of artworks in the south of the borough, open and free for audiences to visit between 8 July - 11 September.</p>
-				</div>
-				<a href="" class="btn btn--solid btn--large">Find out more</a>
+				<?php if ($content['text_label_detailed']) { ?><p class="label label--black uppercase"><?php echo $content['text_label_detailed']; ?></p><?php } ?>
+				<?php if ($content['text_detailed']) { ?>
+					<div class="banner-detailed__excerpt"><?php echo $content['text_detailed']; ?></div>
+				<?php } ?>
+				<?php if ($content['link_detailed']) { ?>
+					<?php if ($content['link_detailed']) { ?><a class="btn btn--solid btn--large" href="<?php echo $content['link_detailed']['url']; ?>" title="<?php echo $content['link_detailed']['title']; ?>"><?php echo $content['link_detailed']['title']; ?></a><?php } ?>
+				<?php } ?>
 				<?php } else { ?>
 				<?php if ($content['date']) { ?><p class="small"><?php echo $content['date']; ?></p><?php } ?>
 				<?php if ($content['title']) { ?><h3 class="uppercase txt--white"><?php echo $content['title']; ?></h3><?php } ?>
@@ -72,6 +38,7 @@
 	<?php } ?>
 	</div>
 </section>
+<?php if ($type == 'Standard') { ?>
 <div class="banner__hr">
 	<hr class="hr-styled hr-styled--large">
 	<hr class="hr-styled hr-styled--half">

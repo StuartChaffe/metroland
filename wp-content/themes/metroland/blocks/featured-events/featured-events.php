@@ -5,7 +5,7 @@
 	$button = get_field( 'button' );
 ?>
 
-<section class="events">
+<section class="events" id="events">
 	<?php if ($title || $content ) { ?>
 	<div class="events-title">
 		<?php if ($title) { ?><h2 class="uppercase"><?php echo $title; ?></h2><?php } ?>

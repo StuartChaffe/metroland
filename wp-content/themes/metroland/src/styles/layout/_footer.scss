@@ -1,7 +1,10 @@
 .site-footer {
 	font-size: var(--font-size-small);
 	color: white;
-	margin-top: var(--spacing-xl);
+	margin-top: var(--spacing);
+	@include mq(medium) {
+		margin-top: var(--spacing-xl);
+	}
 	&__inner {
 		display: flex;
 		flex-direction: column;

@@ -1,4 +1,5 @@
 .events {
+	--offset: 200px;
 	background-color: white;
 	&-list {
 		// padding: 0 calc(var(--spacing-s) - 8px);
@@ -32,9 +33,13 @@
 		position: relative;
 		padding: 0 calc(var(--spacing-xs) / 2);
 		padding-bottom: var(--spacing);
-		&:nth-child(4n+1) {
+		@include mq(medium) {
+			border-bottom: 1px solid var(--color-grey);
 			margin-bottom: var(--spacing);
 		}
+		// &:nth-child(4n+1) {
+		// 	margin-bottom: var(--spacing);
+		// }
 
 		// &:nth-child(4n+1):after {
 		// 	@include mq(medium) {

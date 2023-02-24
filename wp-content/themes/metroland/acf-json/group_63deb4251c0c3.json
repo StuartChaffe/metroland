@@ -3,6 +3,24 @@
     "title": "Event details",
     "fields": [
         {
+            "key": "field_63f743ca41f45",
+            "label": "Display date",
+            "name": "date",
+            "aria-label": "",
+            "type": "date_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "l d F",
+            "return_format": "l d F",
+            "first_day": 1
+        },
+        {
             "key": "field_63deb4250743a",
             "label": "When",
             "name": "when",
@@ -155,5 +173,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1677083727
+    "modified": 1677156537
 }

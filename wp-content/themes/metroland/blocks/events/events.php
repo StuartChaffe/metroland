@@ -1,15 +1,27 @@
 <?php
+	$date = new DateTime();
+	// $today = $date->getTimestamp();
+	$today = date("Ymd");
 	$posts = new WP_Query( array(
 		'post_type' => 'event',
 		'taxonomy' => 'event_category',
 		// 'posts_per_page' => -1,
 		'orderby' => 'menu_order',
 		'order' => 'ASC',
+		'meta_key' => 'date',
+		'meta_query'    => array(
+			'relation'      => 'AND',
+			array(
+				'key'       => 'date',
+				'compare'   => '>=',
+				'value'     => $today,
+			)
+		)
 	));
 	$title = get_field('events_title');
 	$content = get_field('events_content');
 ?>
-
+<?php if ($posts->have_posts()) { ?>
 <section class="events">
 	<?php if ($title || $content) { ?>
 	<div class="events-title">
@@ -37,18 +49,17 @@
 		</select>
 	</div>
 	<div class="events-list list-filter">
-	<?php if ($posts->have_posts()) { ?>
+
 		<?php while($posts->have_posts()) : $posts->the_post();
 			$when = get_field('when', get_the_id());
 			$where = get_field('where', get_the_id());
+			$dates = get_field('date', get_the_id());
 			$price = get_field('price', get_the_id());
 			$tickets = get_field('ticket', get_the_id());
-			// $terms = wp_get_post_terms('event_category', get_the_id());
 			$terms = get_the_terms(get_the_id(), 'event_category');
 			$tags = get_the_terms(get_the_id(), 'event_tags');
-			// $terms = wp_get_post_terms( $post->ID, 'event_category' );
 		?>
-		<a href="<?php esc_url( the_permalink() ); ?>" class="mix card card--std" >
+		<a href="<?php esc_url( the_permalink() ); ?>" title="Article: <?php the_title(); ?>" class="mix <?php foreach ($terms as $term) { ?><?php echo $term->slug . ' '; ?><?php } ?>card card--std" data-filter="<?php foreach ($terms as $term) { ?><?php echo $term->slug . ' '; ?><?php } ?>">
 			<figure class="card__media">
 				<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true); ?>">
 			</figure>
@@ -63,7 +74,69 @@
 			<span class="btn btn--solid">Find out more</span>
 		</a>
 		<?php endwhile; wp_reset_query(); ?>
-	<?php } ?>
+
 
 	</div>
 </section>
+<?php } ?>
+
+<?php
+	$date = new DateTime();
+	$today = date("Ymd");
+	$posts = new WP_Query( array(
+		'post_type' => 'event',
+		'taxonomy' => 'event_category',
+		// 'posts_per_page' => -1,
+		'orderby' => 'menu_order',
+		'order' => 'ASC',
+		'meta_key' => 'date',
+		'meta_query'    => array(
+			'relation'      => 'AND',
+			array(
+				'key'       => 'date',
+				'compare'   => '<=',
+				'value'     => $today,
+			)
+		)
+	));
+	$pasttitle = get_field('past_events_title');
+	$pastcontent = get_field('past_events_content');
+?>
+<?php if ($posts->have_posts()) { ?>
+<section class="events">
+	<?php if ($pasttitle || $content) { ?>
+	<div class="events-title">
+		<?php if ($pasttitle) { ?><h2 class="uppercase"><?php echo $pasttitle; ?></h2><?php } ?>
+		<?php if ($pastcontent) { ?><?php echo $pastcontent; ?><?php } ?>
+	</div>
+	<?php } ?>
+
+	<div class="events-list list-filter">
+		<?php while($posts->have_posts()) : $posts->the_post();
+			$when = get_field('when', get_the_id());
+			$where = get_field('where', get_the_id());
+			$dates = get_field('date', get_the_id());
+			$price = get_field('price', get_the_id());
+			$tickets = get_field('ticket', get_the_id());
+			$terms = get_the_terms(get_the_id(), 'event_category');
+			$tags = get_the_terms(get_the_id(), 'event_tags');
+		?>
+		<a href="<?php esc_url( the_permalink() ); ?>" title="Article: <?php the_title(); ?>" class="mix <?php foreach ($terms as $term) { ?><?php echo $term->slug . ' '; ?><?php } ?>card card--std" data-filter="<?php foreach ($terms as $term) { ?><?php echo $term->slug . ' '; ?><?php } ?>">
+			<figure class="card__media">
+				<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true); ?>">
+			</figure>
+			<?php if ($tags) { ?><div class="card-tags"><?php foreach ($tags as $tag) { ?><div class="tag"><?php echo $tag->name; ?></div><?php } ?></div><?php } ?>
+			<div class="card__title"><p><?php the_title(); ?></p></div>
+			<?php if ($when['date']) { ?><div class="card__date"><?php echo $when['date']; ?><?php if ($when['time']) { ?><br /><?php echo $when['time']; ?><?php } ?></div><?php } ?>
+
+			<?php if (get_the_excerpt()) { ?><div class="card__excerpt"><?php the_excerpt(); ?></div><?php } ?>
+
+			<?php if ($where) { ?><div class="card__address"><p><?php echo $where; ?></p></div><?php } ?>
+
+			<span class="btn btn--solid">Find out more</span>
+		</a>
+		<?php endwhile; wp_reset_query(); ?>
+
+	</div>
+</section>
+<?php } ?>
