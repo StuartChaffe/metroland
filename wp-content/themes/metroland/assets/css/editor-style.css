@@ -644,6 +644,19 @@ div[data-type="core/button"] div[data-block] {
   padding: 0;
 }
 
+figure.wp-block-gallery.has-nested-images {
+  display: flex;
+  flex-wrap: wrap;
+  margin: var(--spacing) 0;
+}
+figure.wp-block-gallery.has-nested-images figure.wp-block-image figcaption {
+  background: none;
+  position: relative;
+  text-align: left;
+  color: var(--color-text-base);
+  padding: 0;
+}
+
 .category-filter {
   display: none;
 }
@@ -1347,6 +1360,7 @@ input[type=button]:focus, .is-style-fill a:hover, .is-style-fill a:focus {
 .content-block__content {
   width: 100%;
   margin: 0 auto;
+  line-height: 1.25;
 }
 @media (min-width: 50em) {
   .content-block__content {
@@ -1754,6 +1768,16 @@ input[type=button]:focus, .is-style-fill a:hover, .is-style-fill a:focus {
 .news .card {
   position: relative;
   padding-bottom: var(--spacing);
+}
+.news .card:nth-child(4n+1):after {
+  content: "";
+  width: calc(100vw - var(--spacing-xl) * 2);
+  max-width: calc(var(--container-global) - var(--spacing-xl) * 2);
+  height: 1px;
+  background: var(--color-grey);
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .pagelinks {

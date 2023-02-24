@@ -44,6 +44,7 @@ function allowed_block_types( $allowed_blocks ) {
 		'core/paragraph',
 		'core/heading',
 		'core/buttons',
+		'core/button',
 		'core/list',
 		'core/image',
 		'core/gallery',

@@ -3,7 +3,7 @@
 	color: white;
 	margin-top: var(--spacing);
 	@include mq(medium) {
-		margin-top: var(--spacing-xl);
+		margin-top: var(--spacing);
 	}
 	&__inner {
 		display: flex;

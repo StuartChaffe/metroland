@@ -144,6 +144,19 @@ div[data-type="core/button"] div[data-block] {
 	// }
 }
 
+figure.wp-block-gallery.has-nested-images {
+	display: flex;
+    flex-wrap: wrap;
+	margin: var(--spacing) 0;
+	figure.wp-block-image figcaption {
+		background: none;
+		position: relative;
+		text-align: left;
+		color: var(--color-text-base);
+		padding: 0;
+	}
+}
+
 .category-filter {
 	display: none;
 }

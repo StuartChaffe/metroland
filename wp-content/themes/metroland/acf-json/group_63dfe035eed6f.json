@@ -29,6 +29,24 @@
             "placeholder": ""
         },
         {
+            "key": "field_63f8edf39e67f",
+            "label": "Display date",
+            "name": "date",
+            "aria-label": "",
+            "type": "date_picker",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "l d F",
+            "return_format": "d\/m\/Y",
+            "first_day": 1
+        },
+        {
             "key": "field_63dfe035f1c80",
             "label": "When",
             "name": "when",
@@ -181,5 +199,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1677010489
+    "modified": 1677258336
 }
