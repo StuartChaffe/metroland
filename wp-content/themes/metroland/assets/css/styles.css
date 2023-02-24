@@ -5516,6 +5516,11 @@ body.nav-open {
     width: 66.6%;
   }
 }
+@media (min-width: 80em) {
+  .content-block__content {
+    padding-right: 10%;
+  }
+}
 .content-block__content figure:first-of-type {
   margin-bottom: var(--spacing-l);
 }

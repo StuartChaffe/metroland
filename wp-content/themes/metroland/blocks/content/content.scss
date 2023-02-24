@@ -50,6 +50,9 @@
 		@include mq(medium) {
 			width: 66.6%;
 		}
+		@include mq(xlarge) {
+			padding-right: 10%;
+		}
 		&--full {
 			// margin: 0 auto;
 			// width: 66.6%;
