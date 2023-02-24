@@ -31,13 +31,20 @@
 .category-filter {
 	@extend .container !optional;
 	display: flex;
-	margin-left: auto;
+	// margin-left: auto;
 	margin-bottom: var(--spacing);
-	select {
-		width: auto;
+	@include mq(medium) {
 		margin-left: auto;
+	}
+	select {
+		display: none;
+		width: auto;
 		padding-right: 100px;
 		border-bottom: 1px solid var(--color-grey);
+		@include mq(medium) {
+			display: flex;
+			margin-left: auto;
+		}
 	}
 	select,
 	option {

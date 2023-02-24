@@ -1,4 +1,4 @@
-<aside class="content-block__sidebar" role="complmentary">
+<aside class="content-block__sidebar hidemobile" role="complmentary">
 	<?php // echo do_shortcode('[list_children]'); ?>
 
 	<?php if ($post->post_parent) {

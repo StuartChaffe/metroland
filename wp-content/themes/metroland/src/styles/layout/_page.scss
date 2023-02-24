@@ -1,8 +1,8 @@
 .page {
 	&-breadcrumb {
 		padding: 0.5rem var(--spacing-s) 0 var(--spacing-s);
-		white-space: nowrap;
-		overflow: hidden;
+		// white-space: nowrap;
+		// overflow: hidden;
 		@extend .container !optional;
 		@include mq(medium) {
 			padding: 0.5rem var(--spacing-s) 0 var(--spacing-s);
@@ -21,9 +21,13 @@
 	}
 	&-title {
 		@extend .container;
-		padding-top: var(--spacing);
-		padding-bottom: var(--spacing);
+		padding-top: var(--spacing-s);
+		padding-bottom: var(--spacing-s);
 		// word-wrap: break-word;
+		@include mq(medium) {
+			padding-top: var(--spacing);
+			padding-bottom: var(--spacing);
+		}
 		h1 {
 			margin-bottom: 0;
 			// max-width: 600px;
@@ -38,7 +42,10 @@
 	}
 	&-excerpt {
 		max-width: var(--container-s);
-		margin-top: var(--spacing);
+		margin-top: var(--spacing-s);
+		@include mq(medium) {
+			margin-top: var(--spacing);
+		}
 		@include mq(large) {
 			max-width: 60%;
 		}
