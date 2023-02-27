@@ -16,7 +16,6 @@
 		touch-action: pan-y;
 	-webkit-tap-highlight-color: transparent;
 }
-
 .slick-list {
 	position: relative;
 	display: block;
@@ -79,10 +78,15 @@
 	float: left;
 	position: relative;
     overflow: hidden;
+	opacity: 0.2;
+	transition: opacity 0.8s;
 
 	> div {
 		width: 100%;
 	}
+}
+.slick-active, .slick-current {
+    opacity: 1;
 }
 [dir='rtl'] .slick-slide {
 	float: right;

@@ -3501,9 +3501,15 @@ input[type=button]:focus, .is-style-fill a:hover, .is-style-fill a:focus {
   float: left;
   position: relative;
   overflow: hidden;
+  opacity: 0.2;
+  transition: opacity 0.8s;
 }
 .slick-slide > div {
   width: 100%;
+}
+
+.slick-active, .slick-current {
+  opacity: 1;
 }
 
 [dir=rtl] .slick-slide {
