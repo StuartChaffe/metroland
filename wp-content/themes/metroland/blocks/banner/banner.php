@@ -1,8 +1,9 @@
 <?php
 	$type	= get_field('banner_type');
+	$size	= get_field('banner_size');
 ?>
 
-<section class="banner<?php if ($type == 'Detailed') { ?> banner-detailed<?php } ?>">
+<section class="banner<?php if ($type == 'Detailed') { ?> banner-detailed<?php } ?><?php if ($size == 'True') { ?> banner-full<?php } ?>">
 	<div class="banner-slider">
 	<?php if( have_rows('banner') ) { ?>
 	<?php while( have_rows('banner') ): the_row();

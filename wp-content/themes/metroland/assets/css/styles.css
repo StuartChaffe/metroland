@@ -5346,6 +5346,11 @@ body.nav-open {
 .banner__hr {
   margin-top: -120px;
 }
+@media (min-width: 50em) {
+  .banner-full .slick-track {
+    min-height: 100vh;
+  }
+}
 .banner-slider__item {
   display: flex;
   flex-direction: column;
@@ -5474,11 +5479,6 @@ body.nav-open {
 }
 .banner-detailed .banner-slider__item-content .label {
   margin-bottom: 0;
-}
-@media (min-width: 50em) {
-  .banner-detailed .slick-track {
-    min-height: 100vh;
-  }
 }
 .banner-detailed .slick-prev, .banner-detailed .slick-next {
   transform: translate(0, -50%);

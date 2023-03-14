@@ -5,6 +5,13 @@
 	&__hr {
 		margin-top: -120px;
 	}
+	&-full {
+		.slick-track {
+			@include mq(medium) {
+				min-height: 100vh;
+			}
+		}
+	}
 
 	&-slider {
 		&__item {
@@ -125,11 +132,11 @@
 				}
 			}
 		}
-		.slick-track {
-			@include mq(medium) {
-				min-height: 100vh;
-			}
-		}
+		// .slick-track {
+		// 	@include mq(medium) {
+		// 		min-height: 100vh;
+		// 	}
+		// }
 
 		.slick-prev, .slick-next {
 			transform: translate(0, -50%);
