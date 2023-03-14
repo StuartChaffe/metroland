@@ -39,6 +39,10 @@
 				// margin-left: -12px;
 			}
 		}
+
+		+ .content-block {
+			padding-top: 0;
+		}
 	}
 	&-excerpt {
 		max-width: var(--container-s);
@@ -48,6 +52,23 @@
 		}
 		@include mq(large) {
 			max-width: 60%;
+		}
+	}
+	&-content {
+		> h1,
+		> h2,
+		> h3,
+		> h4,
+		> h5,
+		> h6,
+		> p
+		{
+			margin-left: auto;
+			margin-right: auto;
+			padding-left: var(--spacing-xl);
+			padding-right: var(--spacing-xl);
+			width: 100%;
+			max-width: var(--container-global);
 		}
 	}
 }

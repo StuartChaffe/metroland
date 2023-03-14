@@ -1,4 +1,5 @@
 .featured {
+	padding-bottom: var(--spacing);
 	&-title {
 		@extend .container !optional;
 		padding-top: var(--spacing);

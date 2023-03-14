@@ -6,6 +6,7 @@
 	padding-bottom: 0;
 	@include mq(medium) {
 		flex-direction: row;
+		// padding-top: var(--spacing-l);
 		padding-bottom: var(--spacing-l);
 	}
 	&__sidebar {

@@ -14,6 +14,7 @@
 	}
 
 	&-slider {
+		margin-bottom: var(--spacing-l);
 		&__item {
 			display: flex;
 			flex-direction: column;

@@ -5235,6 +5235,9 @@ body.nav-open {
 .page-title h1 {
   margin-bottom: 0;
 }
+.page-title + .content-block {
+  padding-top: 0;
+}
 .page-excerpt {
   max-width: var(--container-s);
   margin-top: var(--spacing-s);
@@ -5248,6 +5251,20 @@ body.nav-open {
   .page-excerpt {
     max-width: 60%;
   }
+}
+.page-content > h1,
+.page-content > h2,
+.page-content > h3,
+.page-content > h4,
+.page-content > h5,
+.page-content > h6,
+.page-content > p {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--spacing-xl);
+  padding-right: var(--spacing-xl);
+  width: 100%;
+  max-width: var(--container-global);
 }
 
 .single-programme > * {
@@ -5350,6 +5367,9 @@ body.nav-open {
   .banner-full .slick-track {
     min-height: 100vh;
   }
+}
+.banner-slider {
+  margin-bottom: var(--spacing-l);
 }
 .banner-slider__item {
   display: flex;
@@ -5731,6 +5751,9 @@ body.nav-open {
   color: var(--color-grey-dark);
 }
 
+.featured {
+  padding-bottom: var(--spacing);
+}
 .featured-title {
   padding-top: var(--spacing);
   padding-bottom: var(--spacing);
