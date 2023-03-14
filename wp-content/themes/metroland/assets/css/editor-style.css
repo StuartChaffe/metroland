@@ -1500,6 +1500,10 @@ input[type=button]:focus, .is-style-fill a:hover, .is-style-fill a:focus {
   padding: 0;
 }
 
+.wp-block-gallery.has-nested-images figure.wp-block-image {
+  flex-grow: 0;
+}
+
 .events {
   --offset: 200px;
   background-color: white;
