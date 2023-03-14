@@ -100,7 +100,7 @@
 			</figure>
 
 			<div class="card__title"><p><?php the_title(); ?></p></div>
-			<div class="card__excerpt"><?php the_excerpt(); ?></div>
+			<?php if (has_excerpt()) { ?><div class="card__excerpt"><?php the_excerpt(); ?></div><?php } ?>
 
 			<span class="btn btn--solid">Find out more</span>
 		</a>

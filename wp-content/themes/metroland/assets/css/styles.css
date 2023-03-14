@@ -5250,6 +5250,15 @@ body.nav-open {
   }
 }
 
+.single-programme > * {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--spacing-xl);
+  padding-right: var(--spacing-xl);
+  width: 100%;
+  max-width: var(--container-global);
+}
+
 .accordion {
   max-width: var(--content-width);
   margin-top: var(--spacing-xl);
