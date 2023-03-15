@@ -711,6 +711,16 @@ ul li, ol li {
   align-items: flex-start;
 }
 
+.wp-block .programmes-title,
+.wp-block .programmes-list {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.pagelinks {
+  grid-template-columns: repeat(2, 1fr) !important;
+}
+
 input[type=email],
 input[type=number],
 input[type=search],
@@ -1394,6 +1404,22 @@ input[type=button]:focus, .is-style-fill a:hover, .is-style-fill a:focus {
 }
 .content-block__content figure:not(:first-of-type) {
   margin: var(--spacing) 0;
+}
+.content-block__content .programmes-title,
+.content-block__content .programmes-list,
+.content-block__content .pagelinks {
+  padding-left: 0;
+  padding-right: 0;
+}
+.content-block__content .programmes-title figure,
+.content-block__content .programmes-list figure,
+.content-block__content .pagelinks figure {
+  margin-bottom: 0;
+}
+.content-block__content .programmes-title a,
+.content-block__content .programmes-list a,
+.content-block__content .pagelinks a {
+  color: var(--color-text-base);
 }
 .content-block__content .content-block__content {
   width: 100%;

@@ -73,6 +73,18 @@
 				// width: 100%;
 			}
 		}
+		.programmes-title,
+		.programmes-list,
+		.pagelinks {
+			padding-left: 0;
+			padding-right: 0;
+			figure {
+				margin-bottom: 0;
+			}
+			a {
+				color: var(--color-text-base);
+			}
+		}
 		.content-block__content {
 			width: 100%;
 		}

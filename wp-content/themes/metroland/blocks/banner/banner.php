@@ -15,7 +15,6 @@
 				<?php if ($images['large']) { ?><img class="" src="<?php echo $images['large']['url'];?>" /><?php } ?>
 				<?php if ($images['small']) { ?><img class="hidedesktop" src="<?php echo $images['small']['url'];?>" /><?php } ?>
 			</div>
-			<?php if ($type == 'Detailed') { ?>
 			<div class="banner-slider__item-content">
 				<?php if ($type == 'Detailed') { ?>
 				<?php if ($content['label_detailed']) { ?><p class="label label--primary uppercase"><?php echo $content['label_detailed']; ?></p><?php } ?>
@@ -35,7 +34,6 @@
 				<?php if ($content['link']) { ?><a class="btn btn--light" href="<?php echo $content['link']['url']; ?>" title="<?php echo $content['link']['title']; ?>"><?php echo $content['link']['title']; ?></a><?php } ?>
 				<?php } ?>
 			</div>
-			<?php } ?>
 		</div>
 		<?php endwhile; ?>
 	<?php } ?>

@@ -209,3 +209,11 @@ ul, ol {
 	align-items: flex-start;
 }
 
+.wp-block .programmes-title,
+.wp-block .programmes-list {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+.pagelinks {
+	grid-template-columns: repeat(2, 1fr) !important;
+}
