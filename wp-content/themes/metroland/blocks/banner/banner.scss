@@ -68,7 +68,21 @@
 			}
 		}
 	}
-
+	&-images {
+		.banner-slider {
+			margin-bottom: 0;
+		}
+		.banner-slider__item {
+			align-items: self-start;
+			width: 100%;
+			&-image {
+				width: 100%;
+			}
+		}
+		.slick-prev, .slick-next {
+			transform: translate(0, -50%);
+		}
+	}
 	&-detailed {
 		background-color: white;
 		@include mq(medium) {

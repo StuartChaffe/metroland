@@ -61,7 +61,11 @@
 		?>
 		<a href="<?php esc_url( the_permalink() ); ?>" title="Article: <?php the_title(); ?>" class="mix <?php foreach ($terms as $term) { ?><?php echo $term->slug . ' '; ?><?php } ?>card card--std" data-filter="<?php foreach ($terms as $term) { ?><?php echo $term->slug . ' '; ?><?php } ?>">
 			<figure class="card__media">
+			<?php if(has_post_thumbnail()) { ?>
 				<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true); ?>">
+				<?php } else { ?>
+				<img src="<?php echo get_template_directory_uri(); ?>/src/images/noimage.png" alt="No image" />
+			<?php } ?>
 			</figure>
 			<?php if ($tags) { ?><div class="card-tags"><?php foreach ($tags as $tag) { ?><div class="tag"><?php echo $tag->name; ?></div><?php } ?></div><?php } ?>
 			<div class="card__title"><p><?php the_title(); ?></p></div>
@@ -123,7 +127,11 @@
 		?>
 		<a href="<?php esc_url( the_permalink() ); ?>" title="Article: <?php the_title(); ?>" class="mix <?php foreach ($terms as $term) { ?><?php echo $term->slug . ' '; ?><?php } ?>card card--std" data-filter="<?php foreach ($terms as $term) { ?><?php echo $term->slug . ' '; ?><?php } ?>">
 			<figure class="card__media">
+			<?php if(has_post_thumbnail()) { ?>
 				<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true); ?>">
+				<?php } else { ?>
+				<img src="<?php echo get_template_directory_uri(); ?>/src/images/noimage.png" alt="No image" />
+			<?php } ?>
 			</figure>
 			<?php if ($tags) { ?><div class="card-tags"><?php foreach ($tags as $tag) { ?><div class="tag"><?php echo $tag->name; ?></div><?php } ?></div><?php } ?>
 			<div class="card__title"><p><?php the_title(); ?></p></div>

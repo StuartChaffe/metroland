@@ -3,7 +3,7 @@
 	$size	= get_field('banner_size');
 ?>
 
-<section class="banner<?php if ($type == 'Detailed') { ?> banner-detailed<?php } ?><?php if ($size == 'True') { ?> banner-full<?php } ?>">
+<section class="banner<?php if ($type == 'Detailed') { ?> banner-detailed<?php } ?><?php if ($type == 'Images') { ?> banner-images<?php } ?><?php if ($size == 'True') { ?> banner-full<?php } ?>">
 	<div class="banner-slider">
 	<?php if( have_rows('banner') ) { ?>
 	<?php while( have_rows('banner') ): the_row();
@@ -11,10 +11,11 @@
 		$content	= get_sub_field('content');
 	?>
 		<div class="banner-slider__item">
-			<div class="banner-slider__item-image" style="background-image: url('<?php echo $images['large']['url'];?>');">
+			<div class="banner-slider__item-image" <?php if ($type == ! 'Images') { ?>style="background-image: url('<?php echo $images['large']['url'];?>');"<?php } ?>>
 				<?php if ($images['large']) { ?><img class="" src="<?php echo $images['large']['url'];?>" /><?php } ?>
 				<?php if ($images['small']) { ?><img class="hidedesktop" src="<?php echo $images['small']['url'];?>" /><?php } ?>
 			</div>
+			<?php if ($type == 'Detailed') { ?>
 			<div class="banner-slider__item-content">
 				<?php if ($type == 'Detailed') { ?>
 				<?php if ($content['label_detailed']) { ?><p class="label label--primary uppercase"><?php echo $content['label_detailed']; ?></p><?php } ?>
@@ -34,6 +35,7 @@
 				<?php if ($content['link']) { ?><a class="btn btn--light" href="<?php echo $content['link']['url']; ?>" title="<?php echo $content['link']['title']; ?>"><?php echo $content['link']['title']; ?></a><?php } ?>
 				<?php } ?>
 			</div>
+			<?php } ?>
 		</div>
 		<?php endwhile; ?>
 	<?php } ?>

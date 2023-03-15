@@ -1243,6 +1243,19 @@ input[type=button]:focus, .is-style-fill a:hover, .is-style-fill a:focus {
 .banner-slider__item-content a {
   padding: 8px 10px 4px;
 }
+.banner-images .banner-slider {
+  margin-bottom: 0;
+}
+.banner-images .banner-slider__item {
+  align-items: self-start;
+  width: 100%;
+}
+.banner-images .banner-slider__item-image {
+  width: 100%;
+}
+.banner-images .slick-prev, .banner-images .slick-next {
+  transform: translate(0, -50%);
+}
 .banner-detailed {
   background-color: white;
 }

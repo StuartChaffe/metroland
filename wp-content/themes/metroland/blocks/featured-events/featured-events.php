@@ -29,7 +29,11 @@
 		?>
 		<a href="<?php esc_url( the_permalink($id) ); ?>" title="Article: <?php echo $title; ?>" class="card card--std">
 			<figure class="card__media">
+			<?php if(has_post_thumbnail($id)) { ?>
 				<img src="<?php echo get_the_post_thumbnail_url($id); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id($id), '_wp_attachment_image_alt', true); ?>">
+				<?php } else { ?>
+				<img src="<?php echo get_template_directory_uri(); ?>/src/images/noimage.png" alt="No image" />
+			<?php } ?>
 			</figure>
 
 			<div class="card__title"><p><?php echo $title; ?></p></div>

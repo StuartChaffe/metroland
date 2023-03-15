@@ -18,7 +18,8 @@
             },
             "choices": {
                 "Standard": "Standard",
-                "Detailed": "Detailed"
+                "Detailed": "Detailed",
+                "Images": "Images"
             },
             "default_value": "Standard",
             "return_format": "value",
@@ -155,7 +156,15 @@
                     "type": "group",
                     "instructions": "",
                     "required": 0,
-                    "conditional_logic": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_63ef9a0ff3b1a",
+                                "operator": "!=",
+                                "value": "Images"
+                            }
+                        ]
+                    ],
                     "wrapper": {
                         "width": "",
                         "class": "",
@@ -431,5 +440,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1678813516
+    "modified": 1678880775
 }
