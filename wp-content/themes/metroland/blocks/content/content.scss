@@ -220,6 +220,7 @@
 		.content-block__content {
 			width: 100%;
 			margin-left: 0;
+			padding-right: 0;
 			@include mq(medium) {
 				width: 50%;
 			}
@@ -229,6 +230,9 @@
 			.content-block__content {
 				width: 100%;
 				padding: 0;
+			}
+			.content-block__sidebar {
+				display: none;
 			}
 		}
 	}

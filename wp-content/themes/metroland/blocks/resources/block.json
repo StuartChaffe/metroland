@@ -1,0 +1,13 @@
+{
+	"name": "acf/resources",
+	"title": "All resources",
+	"description": "Display all resources",
+	"category": "metroland",
+	"icon": "welcome-view-site",
+	"keywords": ["resources"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "resources.php"
+	},
+	"align": "full"
+}

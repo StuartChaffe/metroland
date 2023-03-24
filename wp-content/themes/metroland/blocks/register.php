@@ -37,8 +37,10 @@ function allowed_block_types( $allowed_blocks ) {
 		'acf/featured-news',
 		'acf/featured-programmes',
 		'acf/featured-events',
+		'acf/featured-resources',
 		'acf/events',
 		'acf/programmes',
+		'acf/resources',
 		'acf/pagelinks',
 
 		'core/paragraph',
@@ -51,6 +53,7 @@ function allowed_block_types( $allowed_blocks ) {
 		'core/separator',
 		'core/embed',
 		'core/spacer',
+		'core/shortcode',
 		// 'core/youtube',
 		// 'core/html',
 	);

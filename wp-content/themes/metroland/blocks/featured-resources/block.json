@@ -1,0 +1,13 @@
+{
+	"name": "acf/featured-resources",
+	"title": "Featured resources",
+	"description": "Display featured resources",
+	"category": "metroland",
+	"icon": "star-filled",
+	"keywords": ["resources"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "featured-resources.php"
+	},
+	"align": "full"
+}
