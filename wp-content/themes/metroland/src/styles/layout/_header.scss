@@ -230,6 +230,7 @@ body.home {
 		&--active {
 			visibility: visible;
 			opacity: 1;
+			display: block;
 			transition: all 0.1s ease-in-out;
 			box-shadow: 0 6px 6px 0px rgba(0, 0, 0, 0.05);
 		}
