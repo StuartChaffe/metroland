@@ -3386,7 +3386,7 @@ input[type=button]:focus,
 
 .btn--light {
   background-color: transparent;
-  border: 1px solid white;
+  border: 1px solid white !important;
   color: white;
 }
 .btn--light:hover, .btn--light:focus {
@@ -4757,6 +4757,9 @@ body.home .site-header__nav ul :not(.current_page_item) a:hover {
 .site-header__actions-search p {
   margin-left: 0.5rem;
   color: var(--color-grey-dark);
+}
+.site-header__actions-contact {
+  padding-left: 1.5rem;
 }
 .site-header__search {
   position: absolute;
@@ -6192,6 +6195,11 @@ body.nav-open {
 
 .u-right-align {
   text-align: right !important;
+}
+
+.u-flex {
+  display: flex;
+  flex-direction: column;
 }
 
 .mt-xxl {

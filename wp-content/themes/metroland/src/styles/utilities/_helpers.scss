@@ -11,6 +11,7 @@
 .u-left-align { text-align: left!important; }
 .u-center { text-align: center!important; }
 .u-right-align { text-align: right!important; }
+.u-flex {display: flex; flex-direction: column;  }
 
 // Margins
 .mt-xxl { margin-top: var(--spacing-xxl)!important; }

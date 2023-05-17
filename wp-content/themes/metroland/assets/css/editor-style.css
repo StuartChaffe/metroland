@@ -910,7 +910,7 @@ input[type=button]:focus,
 
 .btn--light {
   background-color: transparent;
-  border: 1px solid white;
+  border: 1px solid white !important;
   color: white;
 }
 .btn--light:hover, .btn--light:focus {
@@ -1985,6 +1985,11 @@ input[type=button]:focus,
 
 .u-right-align {
   text-align: right !important;
+}
+
+.u-flex {
+  display: flex;
+  flex-direction: column;
 }
 
 .mt-xxl {
