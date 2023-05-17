@@ -829,14 +829,14 @@ input[type=button]:focus {
   }
 }
 
-.container, .resources-title, .resources-list, .programmes-title, .programmes-list, .pagelinks, .news, .featured-list, .featured-title, .events-title, .events-list, .content-block, .page-content > .wp-block-columns {
+.container, .resources-title, .resources-list, .programmes-title, .programmes-list, .pagelinks, .news, .featured-list, .featured-title, .events-title, .events-list, .content-block {
   margin: 0 auto;
   padding: 0 var(--spacing-s);
   width: 100%;
   max-width: var(--container-global);
 }
 @media (min-width: 70em) {
-  .container, .resources-title, .resources-list, .programmes-title, .programmes-list, .pagelinks, .news, .featured-list, .featured-title, .events-title, .events-list, .content-block, .page-content > .wp-block-columns {
+  .container, .resources-title, .resources-list, .programmes-title, .programmes-list, .pagelinks, .news, .featured-list, .featured-title, .events-title, .events-list, .content-block {
     padding: 0 var(--spacing-xl);
   }
 }
@@ -848,10 +848,6 @@ input[type=button]:focus {
   flex: 1;
 }
 
-.wp-block-column figure {
-  margin-bottom: 0 !important;
-}
-
 .btn, .content-block-article .content-block__sidebar a, .content-block__sidebar ul li a,
 .wp-block-button__link,
 .wp-block-button__link:visited,
@@ -859,7 +855,7 @@ input[type=button]:focus {
   display: inline-block;
   border-radius: 0;
   padding: 8px 10px 4px;
-  border: 1px solid var(--color-text-dark);
+  border: 1px solid var(--color-text-dark) !important;
   color: var(--color-text-dark);
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -893,7 +889,8 @@ a.btn, .content-block-article .content-block__sidebar a, .content-block__sidebar
 
 .btn--solid, .content-block__content .wp-block-button__link, input[type=submit],
 input[type=reset],
-input[type=button], .is-style-fill a {
+input[type=button],
+.is-style-fill a {
   background-color: var(--color-text-base);
   border: 1px solid var(--color-text-base);
   color: white !important;
@@ -902,7 +899,9 @@ input[type=button], .is-style-fill a {
 input[type=reset]:hover,
 input[type=button]:hover, .btn--solid:focus, .content-block__content .wp-block-button__link:focus, input[type=submit]:focus,
 input[type=reset]:focus,
-input[type=button]:focus, .is-style-fill a:hover, .is-style-fill a:focus {
+input[type=button]:focus,
+.is-style-fill a:hover,
+.is-style-fill a:focus {
   background: var(--color-grey) !important;
   outline: 0;
   color: var(--color-text-dark) !important;

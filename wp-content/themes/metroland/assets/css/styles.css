@@ -3143,6 +3143,19 @@ input[type=button]:focus {
   color: #BF5D58;
 }
 
+.wp-block-column figure {
+  margin-bottom: 0 !important;
+}
+.wp-block-column:first-of-type {
+  margin-right: 2rem;
+}
+.wp-block-column:last-of-type {
+  padding-left: 2rem;
+}
+.wp-block-column .wp-block-buttons {
+  margin-bottom: 0 !important;
+}
+
 .content > * {
   margin-right: auto;
   margin-left: auto;
@@ -3314,7 +3327,7 @@ input[type=button]:focus {
   display: inline-block;
   border-radius: 0;
   padding: 8px 10px 4px;
-  border: 1px solid var(--color-text-dark);
+  border: 1px solid var(--color-text-dark) !important;
   color: var(--color-text-dark);
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -3348,7 +3361,8 @@ a.btn, .content-block-article .content-block__sidebar a, .content-block__sidebar
 
 .btn--solid, .content-block__content .wp-block-button__link, input[type=submit],
 input[type=reset],
-input[type=button], .is-style-fill a {
+input[type=button],
+.is-style-fill a {
   background-color: var(--color-text-base);
   border: 1px solid var(--color-text-base);
   color: white !important;
@@ -3357,7 +3371,9 @@ input[type=button], .is-style-fill a {
 input[type=reset]:hover,
 input[type=button]:hover, .btn--solid:focus, .content-block__content .wp-block-button__link:focus, input[type=submit]:focus,
 input[type=reset]:focus,
-input[type=button]:focus, .is-style-fill a:hover, .is-style-fill a:focus {
+input[type=button]:focus,
+.is-style-fill a:hover,
+.is-style-fill a:focus {
   background: var(--color-grey) !important;
   outline: 0;
   color: var(--color-text-dark) !important;
@@ -4421,10 +4437,6 @@ iframe.wait-autoplay {
   margin-top: var(--spacing-l);
   margin-bottom: var(--spacing-l);
   flex: 1;
-}
-
-.wp-block-column figure {
-  margin-bottom: 0 !important;
 }
 
 .category-list {

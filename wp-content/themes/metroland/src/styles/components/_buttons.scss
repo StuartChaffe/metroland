@@ -8,7 +8,7 @@
 	display: inline-block;
 	border-radius: 0;
 	padding: 8px 10px 4px;
-	border: 1px solid var(--color-text-dark);
+	border: 1px solid var(--color-text-dark) !important;
 	color: var(--color-text-dark);
 	letter-spacing: .04em;
 	text-transform: uppercase;
@@ -26,16 +26,19 @@
 		outline: 0;
 		text-decoration: none;
 	}
-
-
 }
+// .wp-block-button__link {
+// 	background: red;
+// 	color: white !important;
+// }
 .btn__group {
 	display: flex;
 }
 a.btn {
 	padding: 8px 10px 8px;
 }
-.btn--solid, .is-style-fill a {
+.btn--solid, .is-style-fill a,
+.is-style-fill a {
 	background-color: var(--color-text-base);
 	border: 1px solid var(--color-text-base);
 	color: white !important;
