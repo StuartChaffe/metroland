@@ -54,6 +54,7 @@ function allowed_block_types( $allowed_blocks ) {
 		'core/embed',
 		'core/spacer',
 		'core/shortcode',
+		'core/columns',
 		// 'core/youtube',
 		// 'core/html',
 	);

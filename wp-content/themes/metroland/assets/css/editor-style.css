@@ -343,13 +343,19 @@ p.lead {
   font-size: var(--font-size-lead);
 }
 
-p.small, .resources p.card__address, .events p.card__address, p.card__date, p.card__excerpt, p.label,
+p.small,
 .small p,
 .resources .card__address p,
 .events .card__address p,
 .card__date p,
 .card__excerpt p,
-.label p {
+.label p,
+.small,
+.resources .card__address,
+.events .card__address,
+.card__date,
+.card__excerpt,
+.label {
   font-size: var(--font-size-small);
 }
 
@@ -823,14 +829,14 @@ input[type=button]:focus {
   }
 }
 
-.container, .resources-title, .resources-list, .programmes-title, .programmes-list, .pagelinks, .news, .featured-list, .featured-title, .events-title, .events-list, .content-block {
+.container, .resources-title, .resources-list, .programmes-title, .programmes-list, .pagelinks, .news, .featured-list, .featured-title, .events-title, .events-list, .content-block, .page-content > .wp-block-columns {
   margin: 0 auto;
   padding: 0 var(--spacing-s);
   width: 100%;
   max-width: var(--container-global);
 }
 @media (min-width: 70em) {
-  .container, .resources-title, .resources-list, .programmes-title, .programmes-list, .pagelinks, .news, .featured-list, .featured-title, .events-title, .events-list, .content-block {
+  .container, .resources-title, .resources-list, .programmes-title, .programmes-list, .pagelinks, .news, .featured-list, .featured-title, .events-title, .events-list, .content-block, .page-content > .wp-block-columns {
     padding: 0 var(--spacing-xl);
   }
 }
@@ -840,6 +846,10 @@ input[type=button]:focus {
   margin-top: var(--spacing-l);
   margin-bottom: var(--spacing-l);
   flex: 1;
+}
+
+.wp-block-column figure {
+  margin-bottom: 0 !important;
 }
 
 .btn, .content-block-article .content-block__sidebar a, .content-block__sidebar ul li a,

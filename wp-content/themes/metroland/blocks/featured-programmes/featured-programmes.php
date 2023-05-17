@@ -40,7 +40,7 @@
 	<?php } ?>
 	<?php if ( 'true' == get_field('button') ) { ?>
 	<div class="btn__group">
-		<a href="/programmes" class="btn btn--large">All programmes</a>
+		<a href="/programmes" class="btn btn--large">All exhibitions</a>
 	</div>
 	<?php } ?>
 

@@ -79,6 +79,10 @@ body.home {
 					color: var(--color-grey-dark);
 				}
 			}
+			.current_page_parent > a,
+			.current-menu-item a {
+				color: var(--color-text-base);
+			}
 			li {
 				position: relative;
 				display: flex;
@@ -204,6 +208,8 @@ body.home {
 			}
 		}
 		&-search {
+			display: flex;
+			align-items: center;
 			margin-left: 1rem;
 			margin-right: 1rem;
 			@media only screen and (min-width: 1044px) {
@@ -213,6 +219,10 @@ body.home {
 			&:hover {
 				color: var(--color-primary);
 				cursor: pointer;
+			}
+			p {
+				margin-left: 0.5rem;
+				color: var(--color-grey-dark);
 			}
 		}
 	}

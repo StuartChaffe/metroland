@@ -1,6 +1,7 @@
 <?php
+	$content = get_field('content');
 	$sidebar = get_field('show_sidebar');
-	$allowed_blocks = array( 'core/heading', 'core/paragraph', 'core/buttons', 'core/image', 'core/list', 'core/separator', 'core/gallery', 'core/embed', 'core/spacer', 'acf/banner', 'acf/featured-programmes', 'acf/pagelinks');
+	$allowed_blocks = array( 'core/heading', 'core/paragraph', 'core/buttons', 'core/image', 'core/list', 'core/separator', 'core/gallery', 'core/embed', 'core/spacer', 'core/columns', 'acf/banner', 'acf/featured-programmes', 'acf/pagelinks');
 ?>
 
 <?php if($allowed_blocks) { ?>
@@ -16,7 +17,10 @@
 ?>
 
 	<div class="content-block__content">
+		<?php if($allowed_blocks) { ?>
 		<?php echo '<InnerBlocks allowedBlocks="' . esc_attr( wp_json_encode( $allowed_blocks ) ) . '" />'; ?>
+		<?php } ?>
+		<?php if($content) { ?><?php echo $content;?><?php } ?>
 	</div>
 </section>
 <?php if ( 'programme' == get_post_type() || 'event' == get_post_type() ) { ?>

@@ -35,3 +35,13 @@
 	margin-bottom: var(--spacing-l);
 	flex: 1;
 }
+
+.page-content > .wp-block-columns {
+	@extend .container !optional;
+}
+
+.wp-block-column {
+	figure {
+		margin-bottom: 0 !important;
+	}
+}
