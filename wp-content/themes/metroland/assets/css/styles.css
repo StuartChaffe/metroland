@@ -2912,10 +2912,6 @@ p + .btn,
   background-color: var(--color-primary);
 }
 
-.uppercase {
-  text-transform: uppercase;
-}
-
 ul,
 ol {
   list-style: none;
