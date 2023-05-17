@@ -3143,6 +3143,10 @@ input[type=button]:focus {
   color: #BF5D58;
 }
 
+.wp-block-columns {
+  margin-bottom: var(--spacing) !important;
+}
+
 .wp-block-column figure {
   margin-bottom: 0 !important;
 }

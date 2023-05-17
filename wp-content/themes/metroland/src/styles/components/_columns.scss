@@ -1,7 +1,9 @@
 .page-content > .wp-block-columns {
 	@extend .container !optional;
 }
-
+.wp-block-columns {
+	margin-bottom: var(--spacing) !important;
+}
 .wp-block-column {
 	figure {
 		margin-bottom: 0 !important;
