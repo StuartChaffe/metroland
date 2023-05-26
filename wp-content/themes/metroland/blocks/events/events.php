@@ -5,7 +5,7 @@
 	$posts = new WP_Query( array(
 		'post_type' => 'event',
 		'taxonomy' => 'event_category',
-		// 'posts_per_page' => -1,
+		'posts_per_page' => -1,
 		'orderby' => 'menu_order',
 		'order' => 'ASC',
 		'meta_key' => 'date',
@@ -90,7 +90,7 @@
 	$posts = new WP_Query( array(
 		'post_type' => 'event',
 		'taxonomy' => 'event_category',
-		// 'posts_per_page' => -1,
+		'posts_per_page' => -1,
 		'orderby' => 'menu_order',
 		'order' => 'ASC',
 		'meta_key' => 'date',
