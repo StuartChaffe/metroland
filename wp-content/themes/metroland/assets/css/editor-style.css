@@ -339,6 +339,10 @@ p strong {
   font-family: "InterBold";
 }
 
+.has-small-font-size {
+  font-size: 14px;
+}
+
 p.lead {
   font-size: var(--font-size-lead);
 }
