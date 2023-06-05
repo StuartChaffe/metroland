@@ -19,8 +19,8 @@
 			</figure>
 
 			<div class="card__title"><p><?php echo $pagetitle; ?></p></div>
-			<?php if($excerpt) { ?><div class="card__excerpt"><p class="small"><?php echo $excerpt; ?></p></div><?php } ?>
-			<?php if($wpexcerpt) { ?><div class="card__excerpt"><p class="small"><?php echo $wpexcerpt; ?></p></div><?php } ?>
+			<?php if($excerpt) { ?><div class="card__excerpt"><p class="small"><?php echo $excerpt; ?></p></div>
+			<?php } else if($wpexcerpt) { ?><div class="card__excerpt"><p class="small"><?php echo $wpexcerpt; ?></p></div><?php } ?>
 		</a>
 	<?php endforeach; ?>
 </section>
