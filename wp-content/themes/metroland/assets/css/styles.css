@@ -5621,6 +5621,9 @@ body.nav-open {
 .content-block__content figure:not(:first-of-type) {
   margin: var(--spacing) 0;
 }
+.content-block__content .banner {
+  margin-bottom: var(--spacing);
+}
 .content-block__content .programmes-title,
 .content-block__content .programmes-list,
 .content-block__content .pagelinks {
