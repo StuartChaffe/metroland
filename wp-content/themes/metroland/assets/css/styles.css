@@ -5662,6 +5662,9 @@ body.nav-open {
 .content-block__content ul {
   list-style-type: disc;
 }
+.content-block__content ul li {
+  margin-bottom: 1rem;
+}
 .content-block__content ol {
   padding-bottom: 1rem;
 }
