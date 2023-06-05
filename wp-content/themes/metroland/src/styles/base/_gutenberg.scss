@@ -171,7 +171,11 @@ ul, ol {
 		margin-bottom: 0.5rem;
 	}
 }
-
+ol {
+	.editor-styles-wrapper .block-editor-block-list__block {
+		list-style: auto;
+	}
+}
 .banner-slider__item {
 	display: none !important;
 	&:first-of-type {
