@@ -677,11 +677,11 @@ ul li, ol li {
 }
 
 .editor-styles-wrapper .content-block__content ol li {
-  list-style: auto !important;
+  list-style: decimal !important;
 }
 
 .editor-styles-wrapper .block-editor-block-list__block {
-  list-style: auto;
+  list-style: auto !important;
 }
 
 .banner-slider__item {
