@@ -5410,9 +5410,6 @@ body.nav-open {
     min-height: 100vh;
   }
 }
-.banner-slider {
-  margin-bottom: var(--spacing-l);
-}
 .banner-slider__item {
   display: flex;
   flex-direction: column;
@@ -5627,6 +5624,9 @@ body.nav-open {
 }
 .content-block__content .banner {
   margin-bottom: var(--spacing);
+}
+.content-block__content .banner-slider {
+  margin-bottom: var(--spacing-l);
 }
 .content-block__content .programmes-title,
 .content-block__content .programmes-list,
