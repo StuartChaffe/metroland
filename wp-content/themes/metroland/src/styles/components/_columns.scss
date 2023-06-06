@@ -17,4 +17,16 @@
 	.wp-block-buttons {
 		margin-bottom: 0 !important;
 	}
+	.wp-block-buttons {
+		display: flex;
+		flex-direction: column;
+		margin: 2rem 0 var(--spacing) 0;
+	}
+	.wp-block-button + .wp-block-button {
+		margin-top: 1rem;
+	}
+	.wp-block-button__link {
+		@extend .btn--solid;
+		@extend .btn--large;
+	}
 }
