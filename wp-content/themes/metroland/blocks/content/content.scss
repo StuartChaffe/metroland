@@ -142,7 +142,7 @@
 		}
 		.wp-block-button__link {
 			@extend .btn--solid;
-			@extend .btn--large;
+			@extend .btn;
 		}
 		h2, h3, h4 {
 			text-transform: uppercase;

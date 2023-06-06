@@ -2895,6 +2895,7 @@ p.small,
 p + .btn__group,
 p + .btn,
 .content-block-article .content-block__sidebar p + a,
+.content-block__content p + .wp-block-button__link,
 .content-block__sidebar ul li p + a {
   margin-top: var(--spacing-s);
 }
@@ -3245,7 +3246,7 @@ input[type=button]:focus {
 .card:hover .card__media {
   transform: scale(1.02, 1.02);
 }
-.card .btn, .card .content-block-article .content-block__sidebar a, .content-block-article .content-block__sidebar .card a, .card .content-block__sidebar ul li a, .content-block__sidebar ul li .card a {
+.card .btn, .card .content-block-article .content-block__sidebar a, .content-block-article .content-block__sidebar .card a, .card .content-block__content .wp-block-button__link, .content-block__content .card .wp-block-button__link, .card .content-block__sidebar ul li a, .content-block__sidebar ul li .card a {
   margin-top: 1rem;
 }
 .card--wide {
@@ -3331,7 +3332,7 @@ input[type=button]:focus {
   margin-right: 5px;
 }
 
-.btn, .content-block-article .content-block__sidebar a, .content-block__sidebar ul li a,
+.btn, .content-block-article .content-block__sidebar a, .content-block__content .wp-block-button__link, .content-block__sidebar ul li a,
 .wp-block-button__link,
 .wp-block-button__link:visited,
 .is-style-outline a {
@@ -3366,7 +3367,7 @@ input[type=button]:focus {
   display: flex;
 }
 
-a.btn, .content-block-article .content-block__sidebar a, .content-block__sidebar ul li a {
+a.btn, .content-block-article .content-block__sidebar a, .content-block__content a.wp-block-button__link, .content-block__sidebar ul li a {
   padding: 8px 10px 8px;
 }
 
@@ -3409,7 +3410,7 @@ input[type=button]:focus, .wp-block-column .wp-block-button__link:focus,
   background: var(--color-grey) !important;
 }
 
-.btn--large, .content-block__content .wp-block-button__link, .wp-block-column .wp-block-button__link, .is-style-fill a,
+.btn--large, .wp-block-column .wp-block-button__link, .is-style-fill a,
 .is-style-outline a {
   padding: 18px 20px 12px !important;
 }
@@ -5605,7 +5606,7 @@ body.nav-open {
   color: var(--color-grey-dark);
   border-color: var(--color-grey-dark);
 }
-.content-block__sidebar .btn + .btn, .content-block-article .content-block__sidebar a + .btn, .content-block-article .content-block__sidebar .btn + a, .content-block-article .content-block__sidebar a + a, .content-block__sidebar ul li a + .btn, .content-block__sidebar ul li .btn + a, .content-block__sidebar ul li a + a {
+.content-block__sidebar .btn + .btn, .content-block-article .content-block__sidebar a + .btn, .content-block-article .content-block__sidebar .btn + a, .content-block-article .content-block__sidebar a + a, .content-block__sidebar .content-block__content .wp-block-button__link + .btn, .content-block-article .content-block__sidebar .content-block__content .wp-block-button__link + a, .content-block__content .content-block__sidebar .wp-block-button__link + .btn, .content-block__content .content-block-article .content-block__sidebar .wp-block-button__link + a, .content-block-article .content-block__content .content-block__sidebar .wp-block-button__link + a, .content-block__sidebar .content-block__content .btn + .wp-block-button__link, .content-block-article .content-block__sidebar .content-block__content a + .wp-block-button__link, .content-block__content .content-block__sidebar .btn + .wp-block-button__link, .content-block__content .content-block-article .content-block__sidebar a + .wp-block-button__link, .content-block-article .content-block__content .content-block__sidebar a + .wp-block-button__link, .content-block__sidebar .content-block__content .wp-block-button__link + .wp-block-button__link, .content-block__content .content-block__sidebar .wp-block-button__link + .wp-block-button__link, .content-block__sidebar ul li a + .btn, .content-block__sidebar ul li .content-block__content a + .wp-block-button__link, .content-block__content .content-block__sidebar ul li a + .wp-block-button__link, .content-block__sidebar ul li .btn + a, .content-block__sidebar ul li .content-block__content .wp-block-button__link + a, .content-block__content .content-block__sidebar ul li .wp-block-button__link + a, .content-block__sidebar ul li a + a {
   margin-top: 1rem;
 }
 .content-block__content {
