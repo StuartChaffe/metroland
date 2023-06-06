@@ -27,6 +27,6 @@
 	}
 	.wp-block-button__link {
 		@extend .btn--solid;
-		@extend .btn;
+		// @extend .btn--large;
 	}
 }
