@@ -41,9 +41,3 @@
 	<?php } ?>
 	</div>
 </section>
-<?php if ($type == 'Standard') { ?>
-<div class="banner__hr">
-	<hr class="hr-styled hr-styled--large">
-	<hr class="hr-styled hr-styled--half">
-</div>
-<?php } ?>

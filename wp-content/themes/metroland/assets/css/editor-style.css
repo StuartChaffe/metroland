@@ -1185,7 +1185,7 @@ input[type=button]:focus,
 }
 
 .banner {
-  background: black;
+  background: var(--color-primary);
   width: 100%;
 }
 .banner__hr {
