@@ -7,15 +7,14 @@
 .is-style-outline a {
 	display: inline-block;
 	border-radius: 0;
-	padding: 8px 10px 4px;
+	padding: 8px 10px;
 	border: 1px solid var(--color-text-dark) !important;
 	color: var(--color-text-dark);
 	letter-spacing: .04em;
-	text-transform: uppercase;
+	// text-transform: uppercase;
 	// font-family: var(--display-family);
-	font-family: "AktivBold";
-	font-weight: var(--font-weight-bold);
-	font-size: 12px;
+	font-family: "CircularBold";
+	font-size: 14px;
 	text-align: center;
 	cursor: pointer;
 	transition: all 0.1s ease-in-out;
@@ -75,6 +74,6 @@ a.btn {
 }
 
 .btn--large {
-	padding: 18px 20px 12px !important;
+	padding: 12px 20px 12px !important;
 }
 

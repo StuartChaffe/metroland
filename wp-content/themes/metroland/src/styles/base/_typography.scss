@@ -3,14 +3,14 @@ p {
 	margin-bottom: var(--spacing-s);
 	font-size: 16px;
 	@include mq(medium) {
-		font-size: 18px;
+		font-size: 20px;
 	}
 	&:last-of-type {
 		margin-bottom: 0;
 	}
 
 	strong {
-		font-family: "InterBold";
+		font-family: "CircularBold";
 	}
 }
 .has-small-font-size {
@@ -35,12 +35,11 @@ p + .btn {
 .label {
 	@extend .small;
 	// padding: 8px 10px 4px;
-	padding: 8px 6px 3px;
+	padding: 8px 6px 8px;
 	// padding: 2px 5px;
 	letter-spacing: .04em;
 	// text-transform: uppercase;
-	font-family: "AktivBold";
-	font-weight: var(--font-weight-bold);
+	font-family: "CircularBold";
 	font-size: 12px !important;
 	margin-bottom: 0.25rem;
 	&--black {
@@ -102,7 +101,7 @@ h5 {
 	font-weight: var(--font-weight-bold);
 	font-family: var(--heading-family);
 	color: var(--color-text-base);
-	letter-spacing: -.03em;
+	// letter-spacing: -.03em;
 }
 
 h1, .heading-1 { font-size: var(--font-size-h1); line-height: .9; }

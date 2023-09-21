@@ -63,7 +63,7 @@
 					}
 				}
 				a {
-					padding: 8px 10px 4px;
+					padding: 8px 10px;
 				}
 			}
 		}
@@ -91,9 +91,8 @@
 		&__title {
 			background-color: var(--color-primary);
 			color: var(--color-text-base);
-			text-transform: uppercase;
-			font-family: var(--heading-family);
-			font-weight: var(--font-weight-bold);
+			// text-transform: uppercase;
+			font-family: "CircularBlack";
 			font-size: 22px;
 			padding: 0.5rem;
 			margin-bottom: 0rem;

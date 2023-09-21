@@ -1,49 +1,41 @@
 @font-face {
-	font-family: "Aktiv";
-	src: url('../fonts/AktivGroteskEx-XBold.woff2') format('woff2'),
-		url('../fonts/AktivGroteskEx-XBold.woff') format('woff');
-	font-weight: 900;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: "AktivBold";
-	src: url('../fonts/aktivgrotesk-bold-webfont.woff2') format('woff2'),
-		url('../fonts/aktivgrotesk-bold-webfont.woff') format('woff');
-	font-weight: 700;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: "Inter";
-	src: url('../fonts/Inter-Regular.woff2') format('woff2'),
-		url('../fonts/Inter-Regular.woff') format('woff');
+	font-family: "Circular";
+	src: url('../fonts/CircularStd-Medium.otf') format('woff2'),
+		url('../fonts/CircularStd-Medium.otf') format('woff');
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: "InterMed";
-	src: url('../fonts/inter-medium-webfont.woff2') format('woff2'),
-		url('../fonts/inter-medium-webfont.woff') format('woff');
+	font-family: "CircularMed";
+	src: url('../fonts/CircularStd-Medium.otf') format('woff2'),
+		url('../fonts/CircularStd-Medium.otf') format('woff');
 	font-weight: 500;
 	font-style: normal;
 	font-display: swap;
 }
 @font-face {
-	font-family: "InterBold";
-	src: url('../fonts/Inter-Bold.woff2') format('woff2'),
-		url('../fonts/Inter-Bold.woff') format('woff');
+	font-family: "CircularBold";
+	src: url('../fonts/CircularStd-Bold.otf') format('woff2'),
+		url('../fonts/CircularStd-Bold.otf') format('woff');
 	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
 }
 
+@font-face {
+	font-family: "CircularBlack";
+	src: url('../fonts/CircularStd-Black.otf') format('woff2'),
+		url('../fonts/CircularStd-Black.otf') format('woff');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
 :root {
-	--body-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	--heading-family: "Aktiv", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	--body-family: "Circular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	--heading-family: "Circular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	--display-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
 	--font-weight-light: 100;
@@ -51,7 +43,6 @@
 	--font-weight-medium: 500;
 	--font-weight-bold: 700;
 	--font-weight-heavy: 900;
-	--font-weight-heavy: var(--font-weight-bold);
 
 	--line-height: 1.15;
 	--line-height-headings: 1.15;

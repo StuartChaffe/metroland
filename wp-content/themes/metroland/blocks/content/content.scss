@@ -35,7 +35,7 @@
 					@extend .btn;
 					text-align: left;
 					font-weight: 400;
-					font-family: "InterBold";
+					font-family: "CircularBold";
 					color: var(--color-grey-dark);
 					border-color: var(--color-grey-dark);
 				}
@@ -186,15 +186,6 @@
 			align-items: flex-start;
 			display: flex;
 			flex-direction: column;
-			// a {
-			// 	@extend .btn;
-			// 	margin-right: 0.5rem;
-			// 	text-align: left;
-			// 	font-weight: 400;
-			// 	font-family: "InterBold";
-			// 	color: white;
-			// 	border-color: var(--color-grey-dark);
-			// }
 		}
 		.content-block__content {
 			h1 {
@@ -221,7 +212,7 @@
 				margin-right: 0.5rem;
 				text-align: left;
 				font-weight: 400;
-				font-family: "InterBold";
+				font-family: "CircularBold";
 				color: white;
 				border-color: var(--color-grey-dark);
 			}
