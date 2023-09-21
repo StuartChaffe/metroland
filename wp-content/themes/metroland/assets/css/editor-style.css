@@ -151,10 +151,10 @@ body:before {
   --color-grey-dark: #747474;
   --color-grey: #b7b7b7;
   --color-grey-light: #efefef;
-  --color-primary: #ff6138;
+  --color-primary: #ec6839;
   --color-secondary: #FEDFDF;
-  --color-tertiary: #FFBC49;
-  --color-quaternary: #E2574C;
+  --color-tertiary: #f9b000;
+  --color-quaternary: #59a5d7;
   --color-text-base: #000;
   --color-text-dark: #181822;
   --color-text-reversed: #fff;
@@ -375,7 +375,7 @@ p + .btn,
   background-color: var(--color-text-dark);
 }
 .label--primary {
-  color: var(--color-text-base);
+  color: white;
   background-color: var(--color-primary);
 }
 
@@ -1279,7 +1279,7 @@ input[type=button]:focus,
 }
 .banner-detailed__title {
   background-color: var(--color-primary);
-  color: var(--color-text-base);
+  color: white;
   font-family: "CircularBlack";
   font-size: 22px;
   padding: 0.5rem;
