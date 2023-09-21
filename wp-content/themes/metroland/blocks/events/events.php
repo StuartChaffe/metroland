@@ -6,7 +6,7 @@
 		'post_type' => 'event',
 		'taxonomy' => 'event_category',
 		'posts_per_page' => -1,
-		'orderby' => 'menu_order',
+		'orderby' => 'date',
 		'order' => 'ASC',
 		'meta_key' => 'date',
 		'meta_query'    => array(
@@ -91,7 +91,7 @@
 		'post_type' => 'event',
 		'taxonomy' => 'event_category',
 		'posts_per_page' => -1,
-		'orderby' => 'menu_order',
+		'orderby' => 'date',
 		'order' => 'ASC',
 		'meta_key' => 'date',
 		'meta_query'    => array(
