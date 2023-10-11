@@ -81,9 +81,5 @@
 			width: 100%;
 			max-width: var(--container-global);
 		}
-		@include mq(medium) {
-			padding-left: var(--spacing-xl);
-			padding-right: var(--spacing-xl);
-		}
 	}
 }
