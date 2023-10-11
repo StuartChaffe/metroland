@@ -3738,7 +3738,6 @@ figure.wp-block-gallery.has-nested-images figure.wp-block-image figcaption {
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   outline: 0;
 }
@@ -5306,10 +5305,14 @@ body.nav-open {
 .single-programme > * {
   margin-left: auto;
   margin-right: auto;
-  padding-left: var(--spacing-xl);
-  padding-right: var(--spacing-xl);
   width: 100%;
   max-width: var(--container-global);
+}
+@media (min-width: 50em) {
+  .single-programme {
+    padding-left: var(--spacing-xl);
+    padding-right: var(--spacing-xl);
+  }
 }
 
 .accordion {
