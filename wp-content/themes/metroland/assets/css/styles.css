@@ -5322,12 +5322,6 @@ body.nav-open {
   width: 100%;
   max-width: var(--container-global);
 }
-@media (min-width: 50em) {
-  .single-programme > * {
-    padding-left: var(--spacing-xl);
-    padding-right: var(--spacing-xl);
-  }
-}
 
 .accordion {
   max-width: var(--content-width);
