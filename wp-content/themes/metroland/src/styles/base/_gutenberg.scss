@@ -127,7 +127,7 @@ div[data-type="core/button"] div[data-block] {
 .wp-block-image,
 .wp-block-buttons,
 .wp-block-embed {
-	max-width: 900px;
+	max-width: var(--container-global);
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -223,4 +223,18 @@ ul, ol {
 }
 .pagelinks {
 	grid-template-columns: repeat(2, 1fr) !important;
+}
+
+// .has-background {
+// 	padding: var(--spacing);
+// }
+
+.wp-block-column {
+	> * {
+		width: 100%;
+	}
+	.has-text-align-center.wp-block-heading {
+
+			padding-right: 0 !important;
+	}
 }

@@ -1,69 +1,63 @@
 .featured {
-	padding-bottom: var(--spacing);
+	padding-bottom: var(--spacing-xl);
+	margin-bottom: var(--spacing-xl);
+	border-bottom: 1px solid black;
 	&-title {
-		@extend .container !optional;
-		padding-top: var(--spacing);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 		padding-bottom: var(--spacing);
+		h2, h3, h4 {
+			margin-bottom: 0
+		}
 	}
 
 	&-list {
-		@extend .container !optional;
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
 		gap: 0;
 		@include mq(large) {
-			grid-template-columns: 50% 50%;
+			grid-template-columns: 1fr 1fr 1fr;
 			gap: var(--spacing-s);
 		}
-		&--full {
-			flex-direction: row;
-			border-bottom: 1px solid var(--color-grey);
-			margin-bottom: var(--spacing-s);
-			@include mq(large) {
-				border-bottom: 0;
-				margin-bottom: 0;
-				grid-row: 1 / 4;
-				grid-column: 1 / 2;
-				flex-direction: column;
-			}
-			.card__content {
-				width: 100%;
-				@include mq(large) {
-					width: 60%;
-				}
-			}
-			.card__media {
-				width: 20%;
-				flex-shrink: 0;
-				margin-right: var(--spacing-s);
-				@include mq(large) {
-					width: 100%;
-					margin-right: 0;
-				}
-			}
-		}
+		// &--full {
+		// 	flex-direction: row;
+		// 	border-bottom: 1px solid var(--color-grey);
+		// 	margin-bottom: var(--spacing-s);
+		// 	@include mq(large) {
+		// 		border-bottom: 0;
+		// 		margin-bottom: 0;
+		// 		grid-row: 1 / 4;
+		// 		grid-column: 1 / 2;
+		// 		flex-direction: column;
+		// 	}
+		// 	.card__content {
+		// 		width: 100%;
+		// 		@include mq(large) {
+		// 			width: 60%;
+		// 		}
+		// 	}
+		// 	.card__media {
+		// 		width: 20%;
+		// 		flex-shrink: 0;
+		// 		margin-right: var(--spacing-s);
+		// 		@include mq(large) {
+		// 			width: 100%;
+		// 			margin-right: 0;
+		// 		}
+		// 	}
+		// }
 		&--small {
-			flex-direction: row;
-			border-bottom: 1px solid var(--color-grey);
-			@include mq(large) {
-				&:last-child {
-					border: 0;
-				}
-			}
+			flex-direction: column;
 			.card__media {
-				width: 20%;
-				flex-shrink: 0;
-				margin-right: var(--spacing-s);
-				@include mq(large) {
-					width: 40%;
-				}
+				width: 100%;
 			}
 		}
 	}
 
 	.card {
 		position: relative;
-		padding-bottom: var(--spacing-s);
+		padding-bottom: 0;
 		margin-bottom: var(--spacing-s);
 		@include mq(medium) {
 			margin-bottom: 0;

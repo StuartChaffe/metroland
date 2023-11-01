@@ -1,15 +1,14 @@
 .form {
-	max-width: calc(var(--container-s) - var(--spacing-xs));
-	padding: var(--spacing-s);
-	margin: 0 var(--spacing-s);
+	width: 100%;
 	display: flex;
 	flex-direction: column;
-	background: #fedfdf url('../../src/images/form-bkg.svg');
 	@include mq(medium) {
 		margin: 0 auto;
 	}
-
-	&__title {
-		text-transform: uppercase;
+	label {
+		display: none;
 	}
+}
+p + .form {
+	margin-top: var(--spacing-xs);
 }

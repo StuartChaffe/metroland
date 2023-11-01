@@ -2,28 +2,36 @@
 // input[type="button"],
 // input[type="submit"],
 // button,
+input[type=submit],
+input[type=submit].btn,
 .wp-block-button__link,
 .wp-block-button__link:visited,
 .is-style-outline a {
 	display: inline-block;
-	border-radius: 0;
-	padding: 8px 10px;
-	border: 1px solid var(--color-text-dark) !important;
-	color: var(--color-text-dark);
-	letter-spacing: .04em;
+	border-radius: 10px;
+	padding: 14px 24px;
+	border: 0;
+	// border: 1px solid var(--color-text-dark) !important;
+	color: var(--color-text-dark) !important;
+	font-weight: var(--font-weight-normal);
+	background-color: white;
 	// text-transform: uppercase;
 	// font-family: var(--display-family);
-	font-family: "CircularBold";
-	font-size: 14px;
+	font-size: 18px;
 	text-align: center;
 	cursor: pointer;
 	transition: all 0.1s ease-in-out;
 
 	&:hover, &:focus {
-		background: var(--color-grey);
+		background: var(--color-grey-light);
 		color: var(--color-text-base);
 		outline: 0;
 		text-decoration: none;
+	}
+	.icon {
+		height: 14px;
+		transform: translateY(-2px);
+		margin-left: 0.25rem;
 	}
 }
 // .wp-block-button__link {
@@ -34,7 +42,7 @@
 	display: flex;
 }
 a.btn {
-	padding: 8px 10px 8px;
+	padding: 14px 24px;
 }
 .btn--solid, .is-style-fill a,
 .is-style-fill a {
@@ -49,9 +57,41 @@ a.btn {
 	}
 }
 
+.btn--red {
+	background-color: var(--color-primary);
+	border: 0 !important;
+	color: white;
+	fill: white;
+
+	&:hover, &:focus {
+		color: white;
+		background-color: black;
+	}
+}
+.btn--black {
+	background-color: black;
+	border: 0 !important;
+	color: white;
+
+	&:hover, &:focus {
+		color: white;
+		background-color: var(--color-primary);
+	}
+}
+
+.btn--outline {
+	background-color: white;
+	border: 1px solid black !important;
+	color: black;
+
+	&:hover, &:focus {
+		// color: white;
+		background: var(--color-grey-light);
+	}
+}
 
 .btn--light {
-	background-color: transparent;
+	background-color: green;
 	border: 1px solid white !important;
 	color: white;
 
@@ -60,20 +100,23 @@ a.btn {
 		background-color: var(--color-grey);
 	}
 }
+.btn--link {
+	color: var(--color-primary);
+	.icon {
+		height: 14px;
+		transform: translateY(-2px);
+		margin-left: 0.25rem;
+	}
+	&:hover {
+		text-decoration: none;
+	}
+}
 .is-style-outline a {
-	padding: 8px 10px 4px !important;
+	padding: 2px 10px 4px !important;
 	background-color: transparent;
+	background-color: green;
 	border: 1px solid white !important;
 	&:hover, &:focus {
 		background: var(--color-grey) !important;
 	}
 }
-.is-style-fill a,
-.is-style-outline a {
-	@extend .btn--large;
-}
-
-.btn--large {
-	padding: 12px 20px 12px !important;
-}
-

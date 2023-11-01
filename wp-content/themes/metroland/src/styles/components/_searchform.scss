@@ -6,11 +6,20 @@
 		margin-right: 10px;
 	}
 	&__input {
-		background-color: green;
+		font-size: 18px !important;
+		color: black;
+		::placeholder {
+			font-size: 18px !important;
+			color: black;
+		  }
+		// background-color: green;
 	}
 	input[type="text"] {
 		background-color: white;
-		font-family: var(--heading-family);
+		font-size: 18px !important;
+		color: black;
+		font-family: "Circular";
+		letter-spacing: -0.5px;
 		width: 100%;
 		border: 0;
 		padding: 20px;

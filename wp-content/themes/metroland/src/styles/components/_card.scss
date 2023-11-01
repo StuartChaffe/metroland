@@ -6,37 +6,100 @@
 	flex-direction: column;
 	max-width: none;
 	&__media {
+		position: relative;
+		transition: all 0.1s ease-in-out;
 		// transition: all 0.1s ease-in-out;
 		img {
-			margin-bottom: var(--spacing-s);
+			// margin-bottom: var(--spacing-s);
 			width: 100%;
 		}
+		.icon-arrow {
+
+		}
+	}
+	&__arrow {
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		bottom: 0;
+		right: 0;
+		background-color: white;
+		width: 45px;
+		height: 45px;
+	}
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
 	}
 	&__title {
-		font-family: "CircularMed";
 		font-weight: var(--font-weight-medium);
 		margin-bottom: 1rem;
+		p {
+			font-size: var(--font-size-h5);
+			letter-spacing: -0.5px;
+			@include mq(medium) {
+				letter-spacing: -1px;
+			}
+		}
 	}
 	&__excerpt{
-		@extend .small;
 	}
 	&__date {
-		@extend .small;
-		margin-top: 1rem;
-		color: var(--color-grey-dark);
+		// margin-top: 1rem;
+		position: relative;
+		margin: var(--spacing-xs) 0;
+		z-index: 9;
+		&:before {
+			content: '';
+			z-index: -1;
+			position: absolute;
+			width: 100%;
+			height: 15px;
+			background-color: var(--color-gold-light);
+			top: 6px;
+			left: -4px;
+		}
 	}
 	&:hover {
 		text-decoration: none;
 		color: var(--color-text-base);
+		.card__arrow {
+			background-color: var(--color-maroon);
+			color: white;
+		}
 		.card__title {
-			text-decoration: underline;
+			// text-decoration: underline;
 			// color: var(--color-primary);
 		}
 		.card__media {
-			transform: scale(1.02,1.02);
+			// transform: translate(-10px, -10px);
+			// box-shadow: 10px 10px var(--color-gold-light);
 			// transition: all 0.1s ease-in-out;
 		}
 	}
+	// &:nth-child(1) {
+	// 	&:hover {
+	// 		.card__media {
+	// 			box-shadow: 10px 10px var(--color-blue);
+	// 		}
+	// 	}
+	// }
+	// &:nth-child(2) {
+	// 	&:hover {
+	// 		.card__media {
+	// 			box-shadow: 10px 10px var(--color-green);
+	// 		}
+	// 	}
+	// }
+	// &:nth-child(3) {
+	// 	&:hover {
+	// 		.card__media {
+	// 			box-shadow: 10px 10px var(--color-gold);
+	// 		}
+	// 	}
+	// }
 	.btn {
 		margin-top: 1rem;
 	}
@@ -60,7 +123,6 @@
 		.tag {
 			padding: 6px 6px 2px;
 			background-color: white;
-			font-family: "CircularBold";
 			font-size: 12px;
 			margin-left: 0.2rem;
 		}

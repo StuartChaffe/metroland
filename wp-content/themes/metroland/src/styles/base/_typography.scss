@@ -3,7 +3,7 @@ p {
 	margin-bottom: var(--spacing-s);
 	font-size: 16px;
 	@include mq(medium) {
-		font-size: 20px;
+		font-size: 18px;
 	}
 	&:last-of-type {
 		margin-bottom: 0;
@@ -15,6 +15,13 @@ p {
 }
 .has-small-font-size {
 	font-size: 14px;
+}
+.has-large-font-size {
+	font-size: 20px;
+	@include mq(medium) {
+		font-size: 32px;
+		letter-spacing: -1px;
+	}
 }
 
 p.lead {
@@ -98,15 +105,15 @@ h5 {
 	margin: 0;
 	margin-bottom: var(--spacing-s);
 	line-height: var(--line-height-headings);
-	font-weight: var(--font-weight-bold);
+	font-weight: var(--font-weight-normal);
 	font-family: var(--heading-family);
 	color: var(--color-text-base);
-	// letter-spacing: -.03em;
+	letter-spacing: -1px;
 }
 
-h1, .heading-1 { font-size: var(--font-size-h1); line-height: .9; }
-h2, .heading-2 { font-size: var(--font-size-h2); line-height: .9; }
-h3, .heading-3 { font-size: var(--font-size-h3); line-height: 1;}
+h1, .heading-1 { font-size: var(--font-size-h1);}
+h2, .heading-2 { font-size: var(--font-size-h2); }
+h3, .heading-3 { font-size: var(--font-size-h3);}
 h4, .heading-4 { font-size: var(--font-size-h4); }
 h5, .heading-5 { font-size: var(--font-size-h5); }
 
@@ -133,8 +140,9 @@ hr {
 }
 hr,
 .wp-block-separator {
-	width: 100%;
+	// max-width: calc(var(--container-global) - calc(var(--spacing) * 2));
+	max-width: 100%;
 	border: 0;
-	border-top: 1px solid #b7b7b7;
-	margin: 50px 0;
+	border-top: 1px solid black;
+	margin: var(--spacing-xl) 0;
 }

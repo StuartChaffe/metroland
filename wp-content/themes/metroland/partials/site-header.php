@@ -11,7 +11,7 @@
 		</nav>
 
 		<div class="site-header__actions">
-			<div class="u-flex">
+
 			<ul class="social-links">
 				<?php if(get_field('twitter', 'options')): ?>
 					<li class="social-links__item"><a href="<?php the_field('twitter', 'options'); ?>" class="social-links__link"><?php echo get_icon('twitter'); ?></a></li>
@@ -27,9 +27,9 @@
 				<?php endif; ?>
 			</ul>
 			<a href="/contact-us" class="site-header__actions-contact small">Contact us</a>
-			</div>
+
 			<div class="site-header__actions-search">
-				<?php echo get_icon('search');?> <p class="small">Search</p>
+				<?php echo get_icon('search');?> <p>Search</p>
 			</div>
 		</div>
 

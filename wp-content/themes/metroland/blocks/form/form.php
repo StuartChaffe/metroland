@@ -9,12 +9,12 @@
 			<div id="mc_embed_signup_scroll">
 				<div class="mc-field-group">
 					<label for="mce-FNAME">Your name </label>
-					<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+					<input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="Your name">
 					<span id="mce-FNAME-HELPERTEXT" class="helper_text"></span>
 				</div>
 				<div class="mc-field-group">
 					<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span></label>
-					<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
+					<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email address" required>
 					<span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
 				</div>
 				<div id="mce-responses" class="clear">
@@ -22,7 +22,7 @@
 					<div class="response" id="mce-success-response" style="display:none"></div>
 				</div>
 				<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f44cc57195ba06125e312ccd9_44a6745e32" tabindex="-1" value=""></div>
-				<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn--solid btn--large">
+				<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn">
 			</div>
 		</form>
 	</div>

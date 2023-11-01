@@ -43,7 +43,8 @@
             "return_format": "id",
             "multiple": 1,
             "allow_null": 0,
-            "ui": 1
+            "ui": 1,
+            "bidirectional_target": []
         },
         {
             "key": "field_63f4f94128086",
@@ -84,5 +85,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1676999021
+    "modified": 1698846814
 }

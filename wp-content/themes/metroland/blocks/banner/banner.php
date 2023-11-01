@@ -29,10 +29,13 @@
 					<?php if ($content['link_detailed']) { ?><a class="btn btn--solid btn--large" href="<?php echo $content['link_detailed']['url']; ?>" title="<?php echo $content['link_detailed']['title']; ?>"><?php echo $content['link_detailed']['title']; ?></a><?php } ?>
 				<?php } ?>
 				<?php } else { ?>
-				<?php if ($content['date']) { ?><p class="small"><?php echo $content['date']; ?></p><?php } ?>
-				<?php if ($content['title']) { ?><h3 class="uppercase txt--white"><?php echo $content['title']; ?></h3><?php } ?>
+				<?php if ($content['date']) { ?><p class="banner-date"><?php echo $content['date']; ?></p><?php } ?>
+				<?php if ($content['title']) { ?><h3 class="heading-1 txt--white"><?php echo $content['title']; ?></h3><?php } ?>
 				<?php if ($content['text']) { ?><?php echo $content['text']; ?><?php } ?>
-				<?php if ($content['link']) { ?><a class="btn btn--light" href="<?php echo $content['link']['url']; ?>" title="<?php echo $content['link']['title']; ?>"><?php echo $content['link']['title']; ?></a><?php } ?>
+				<?php if ($content['link']) { ?><a class="btn" href="<?php echo $content['link']['url']; ?>" title="<?php echo $content['link']['title']; ?>"><?php echo $content['link']['title']; ?> <?php echo get_icon('arrow');?></a><?php } ?>
+				<?php if ($content['link']) { ?><a class="btn btn--red" href="<?php echo $content['link']['url']; ?>" title="<?php echo $content['link']['title']; ?>"><?php echo $content['link']['title']; ?> <?php echo get_icon('arrow');?></a><?php } ?>
+				<?php if ($content['link']) { ?><a class="btn btn--black" href="<?php echo $content['link']['url']; ?>" title="<?php echo $content['link']['title']; ?>"><?php echo $content['link']['title']; ?> <?php echo get_icon('arrow');?></a><?php } ?>
+				<?php if ($content['link']) { ?><a class="btn btn--outline" href="<?php echo $content['link']['url']; ?>" title="<?php echo $content['link']['title']; ?>"><?php echo $content['link']['title']; ?> <?php echo get_icon('arrow');?></a><?php } ?>
 				<?php } ?>
 			</div>
 			<?php } ?>

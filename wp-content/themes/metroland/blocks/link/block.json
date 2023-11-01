@@ -1,0 +1,13 @@
+{
+	"name": "acf/link",
+	"title": "Link",
+	"description": "Basic link",
+	"category": "metroland",
+	"icon": "admin-links",
+	"keywords": ["link"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "link.php"
+	},
+	"align": "full"
+}

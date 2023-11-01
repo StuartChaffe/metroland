@@ -13,34 +13,34 @@ function origin_gutenberg_setup() {
 
 	add_theme_support( 'editor-color-palette', array(
 		array(
-			'name'  => __( 'White', 'origin-colors' ),
-			'slug'  => 'white',
-			'color'	=> '#fff',
+			'name'  => __( 'Red', 'origin-colors' ),
+			'slug'  => 'red',
+			'color'	=> '#e94f35',
 		),
 		array(
-			'name'  => __( 'Black', 'origin-colors' ),
-			'slug'  => 'black',
-			'color'	=> '#000',
+			'name'  => __( 'Maroon', 'origin-colors' ),
+			'slug'  => 'maroon',
+			'color'	=> '#8e1f5f',
 		),
 		array(
-			'name'  => __( 'Primary', 'origin-colors' ),
-			'slug'  => 'primary',
-			'color'	=> '#59BACC',
+			'name'  => __( 'Gold', 'origin-colors' ),
+			'slug'  => 'gold',
+			'color'	=> '#f9b000',
 		),
 		array(
-			'name'  => __( 'Secondary', 'origin-colors' ),
-			'slug'  => 'secondary',
-			'color' => '#58AD69',
+			'name'  => __( 'Blue', 'origin-colors' ),
+			'slug'  => 'blue',
+			'color'	=> '#59a5d7',
 		),
 		array(
-			'name'  => __( 'Tertiary', 'origin-colors' ),
-			'slug'  => 'tertiary',
-			'color' => '#FFBC49',
+			'name'  => __( 'Brown', 'origin-colors' ),
+			'slug'  => 'brown',
+			'color'	=> '#7d571c',
 		),
 		array(
-			'name'  => __( 'Quaternary', 'origin-colors' ),
-			'slug'  => 'quaternary',
-			'color' => '#E2574C',
+			'name'  => __( 'Green', 'origin-colors' ),
+			'slug'  => 'Green',
+			'color'	=> '#009640',
 		),
 	) );
 }

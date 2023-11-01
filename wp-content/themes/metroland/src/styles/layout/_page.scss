@@ -55,6 +55,13 @@
 		}
 	}
 	&-content {
+		max-width: var(--container-global);
+		width: 100%;
+		padding: 0 var(--spacing-xs);
+		@include mq(medium) {
+			padding: 0 var(--spacing-xl);
+		}
+		margin: 0 auto;
 		> h1,
 		> h2,
 		> h3,
@@ -65,10 +72,11 @@
 		{
 			margin-left: auto;
 			margin-right: auto;
-			padding-left: var(--spacing-xl);
-			padding-right: var(--spacing-xl);
+			// padding: 0 var(--spacing-s);
+			// padding-left: var(--spacing-xl);
+			// padding-right: var(--spacing-xl);
 			width: 100%;
-			max-width: var(--container-global);
+			// max-width: var(--container-global);
 		}
 	}
 }

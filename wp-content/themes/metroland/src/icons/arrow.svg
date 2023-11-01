@@ -1,6 +1,6 @@
 <svg width="19px" height="14px" viewBox="0 0 19 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-		<g transform="translate(-205, -21)" fill="white" fill-rule="nonzero">
+		<g transform="translate(-205, -21)" fill="currentColor" fill-rule="nonzero">
 			<path d="M223.918946,28.7837956 L223.918946,27.2162209 C221.027045,26.9459603 218.621641,24.9189356 218.378393,21 L216.621629,21.4054039 C217,24.2162194 218.567582,26.5675814 220.675713,27.2162209 L205,27.2162209 L205,28.7837956 L220.675713,28.7837956 C218.567582,29.4324351 217,31.7837795 216.621629,34.5946091 L218.378393,35 C218.621641,31.0810809 221.027045,29.0540562 223.918946,28.7837956 Z"></path>
 		</g>
 	</g>

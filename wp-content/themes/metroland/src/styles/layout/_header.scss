@@ -15,31 +15,36 @@ body.home {
 	transition: all 0.4s ease-in-out;
 	z-index: 99;
 	// padding: 10px var(--spacing);
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 	background-color: white;
-	border-bottom: 1px solid var(--color-grey);
+	border-bottom: 1px solid black;
+	margin-bottom: 1rem;
 
 	@include mq(medium) {
 		position: sticky;
 	}
 	@include mq(large) {
 		// padding: 10px var(--spacing-xl);
-		padding-top: 10px;
-		padding-bottom: 10px;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
 	}
 	&__inner {
-		@extend .container;
+		max-width: var(--container-global);
+		width: 100%;
+		padding: 0 var(--spacing-xs);
 		display: flex;
 		margin: 0 auto;
 		justify-content: space-between;
-		align-items: center;
+		// align-items: center;
 		// align-items: center;
 		// padding: 0;
 		width: 100%;
 		@include mq(medium) {
 			margin-bottom: 0;
 			justify-content: space-between;
+			align-items: center;
+			padding: 0 var(--spacing-xl);
 		}
 	}
 	&__logo {
@@ -48,15 +53,16 @@ body.home {
 		margin: 0;
 		// margin-right: 2rem;
 		z-index: 4;
-		width: 120px;
-		height: 45px;
+		width: 140px;
+		height: 52px;
 		@include mq(medium) {
 			// width: 180px;
+
 		}
 		a {
 			display: block;
-			width: 120px;
-			height: 45px;
+			width: 140px;
+			height: 52px;
 		}
 	}
 	&__nav {
@@ -64,6 +70,7 @@ body.home {
 		@media only screen and (min-width: 1044px) {
 			flex-grow: 1;
 			display: flex;
+			padding: 0 2rem;
 			// justify-content: stretch;
 		}
 
@@ -74,11 +81,6 @@ body.home {
 			margin: 0;
 			padding-left: 0;
 			width: 100%;
-			:not(.current_page_item) {
-				a {
-					color: var(--color-grey-dark);
-				}
-			}
 			.current_page_parent > a,
 			.current-menu-item a {
 				color: var(--color-text-base);
@@ -90,7 +92,7 @@ body.home {
 				line-height: 100%;
 				flex-grow: 1;
 				// width: 100%;
-				border-right: 1px solid var(--color-grey);
+				// border-right: 1px solid black;
 				a {
 					display: flex;
 					align-items: center;
@@ -99,10 +101,10 @@ body.home {
 					color: var(--color-text-base);
 					text-decoration: none;
 					// text-transform: uppercase;
-					font-size: 16px;
+					font-size: 18px;
+					letter-spacing: -0.5px;
 					font-family: var(--heading-family);
 					padding: 0.75rem;
-					font-family: "CircularBold";
 					// border-right: 1px solid var(--color-text-base);
 					&:hover {
 						color: var(--color-primary);
@@ -186,9 +188,8 @@ body.home {
 		}
 	}
 	&__actions {
-		height: 100%;
+		// height: 100%;
 		display: flex;
-		align-items: center;
 		margin-right: 3rem;
 		border-right: 1px solid var(--color-grey);
 		@media only screen and (min-width: 1044px) {
@@ -197,9 +198,17 @@ body.home {
 		}
 		.social-links {
 			display: none;
-			margin: 0 2rem 0 0;
+			margin: 0 1rem 0 0;
+
 			@media only screen and (min-width: 1044px) {
 				display: flex;
+				align-items: center;
+				margin: 0;
+				// padding-right: 1rem;
+				// padding-left: 1rem;
+				padding: 0.25rem 1rem;
+				border-left: 1px solid black;
+				border-right: 1px solid black;
 			}
 			&__link {
 				color: var(--color-text-base);
@@ -211,8 +220,9 @@ body.home {
 		&-search {
 			display: flex;
 			align-items: center;
-			margin-left: 1rem;
+			padding-left: 1rem;
 			margin-right: 1rem;
+
 			@media only screen and (min-width: 1044px) {
 				border-right: none;
 				margin-right: 0;
@@ -223,10 +233,18 @@ body.home {
 			}
 			p {
 				margin-left: 0.5rem;
-				color: var(--color-grey-dark);
+				font-family: "Circular";
+				letter-spacing: -0.5px;
+				font-weight: var(--font-weight-medium);
+				font-size: 18px !important;
+				// ;color: var(--color-grey-dark)
+			}
+			.icon {
+				height: 20px;
 			}
 		}
 		&-contact {
+			display: none;
 			padding-left: 1.5rem;
 		}
 	}
@@ -372,11 +390,11 @@ body.home {
 .site-header--nav-btn.is-active .site-header--nav-inner,
 .site-header--nav-btn.is-active .site-header--nav-inner::before,
 .site-header--nav-btn.is-active .site-header--nav-inner::after {
-	background-color: white;
+	background-color: black;
 }
 .site-header--nav-btn.is-active {
 	position: fixed;
-	right: 1.5rem;
+	right: 1.2rem;
     // margin-top: 6px;
 	// .site-header--nav-box {
 	// 	right: 0.5rem;
@@ -404,7 +422,7 @@ body.home {
 .site-header--nav-inner::before,
 .site-header--nav-inner::after {
 	width: 30px;
-	height: 3px;
+	height: 2px;
 	background-color: var(--color-text-base);
 	border-radius: 20px;
 	position: absolute;
