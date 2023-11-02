@@ -8,8 +8,17 @@
 <section class="resources" id="resources">
 	<?php if ($title || $content ) { ?>
 	<div class="resources-title">
-		<?php if ($title) { ?><h2 class="uppercase"><?php echo $title; ?></h2><?php } ?>
+		<?php if ($title) { ?><div class="resources-title__content">
+			<h2 class="uppercase"><?php echo $title; ?></h2>
 		<?php if ($content) { ?><?php echo $content; ?><?php } ?>
+		</div>
+		<?php } ?>
+
+		<?php if ( 'true' == get_field('button') ) { ?>
+			<div class="btn__group">
+				<a href="/resources" class="btn--link">All resources <?php echo get_icon('arrow');?></a>
+			</div>
+		<?php } ?>
 	</div>
 	<?php } ?>
 
@@ -31,35 +40,31 @@
 		<?php } else { ?>
 		<a href="<?php esc_url( the_permalink($id) ); ?>" title="Article: <?php echo $title; ?>" class="card card--std">
 		<?php } ?>
-			<figure class="card__media">
-			<?php if(has_post_thumbnail($id)) { ?>
-				<img src="<?php echo get_the_post_thumbnail_url($id); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id($id), '_wp_attachment_image_alt', true); ?>">
-				<?php } else { ?>
-				<img src="<?php echo get_template_directory_uri(); ?>/src/images/noimage.png" alt="No image" />
-			<?php } ?>
-			</figure>
-
-			<?php echo $type; ?>
-
+			<div class="card__media">
+				<figure>
+				<?php if(has_post_thumbnail($id)) { ?>
+					<img src="<?php echo get_the_post_thumbnail_url($id); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id($id), '_wp_attachment_image_alt', true); ?>">
+					<?php } else { ?>
+					<img src="<?php echo get_template_directory_uri(); ?>/src/images/noimage.png" alt="No image" />
+				<?php } ?>
+				</figure>
+				<div class="card__arrow"><?php echo get_icon('arrow');?></div>
+			</div>
 			<div class="card__title"><p><?php echo $title; ?></p></div>
 			<?php if( $excerpt ) { ?><div class="card__excerpt"><p><?php echo $excerpt; ?></p></div><?php } ?>
 
-			<span class="btn btn--solid">
+			<span class="btn--link">
 				<?php if ( $externallink ) { ?>
 					<?php echo $externallink['title']; ?>
 				<?php } else { ?>
 					Find out more
-				<?php } ?>
+				<?php } ?> <?php echo get_icon('arrow');?>
 			</span>
 		</a>
 
 		<?php endforeach; ?>
 	<?php } ?>
-	<?php if ( 'true' == get_field('button') ) { ?>
-	<div class="btn__group">
-		<a href="/resources" class="btn btn--large">All resources</a>
-	</div>
-	<?php } ?>
 
 	</div>
+	<hr />
 </section>

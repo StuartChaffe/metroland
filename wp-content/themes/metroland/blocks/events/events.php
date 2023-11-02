@@ -25,8 +25,10 @@
 <section class="events">
 	<?php if ($title || $content) { ?>
 	<div class="events-title">
-		<?php if ($title) { ?><h2 class="uppercase"><?php echo $title; ?></h2><?php } ?>
-		<?php if ($content) { ?><?php echo $content; ?><?php } ?>
+		<div class="events-title__content">
+			<?php if ($title) { ?><h2 class="uppercase"><?php echo $title; ?></h2><?php } ?>
+			<?php if ($content) { ?><?php echo $content; ?><?php } ?>
+		</div>
 	</div>
 	<?php } ?>
 
@@ -60,28 +62,32 @@
 			$tags = get_the_terms(get_the_id(), 'event_tags');
 		?>
 		<a href="<?php esc_url( the_permalink() ); ?>" title="Article: <?php the_title(); ?>" class="mix <?php foreach ($terms as $term) { ?><?php echo $term->slug . ' '; ?><?php } ?>card card--std" data-filter="<?php foreach ($terms as $term) { ?><?php echo $term->slug . ' '; ?><?php } ?>">
-			<figure class="card__media">
-			<?php if(has_post_thumbnail()) { ?>
-				<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true); ?>">
-				<?php } else { ?>
-				<img src="<?php echo get_template_directory_uri(); ?>/src/images/noimage.png" alt="No image" />
-			<?php } ?>
-			</figure>
+			<div class="card__media">
+				<figure>
+				<?php if(has_post_thumbnail()) { ?>
+					<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true); ?>">
+					<?php } else { ?>
+					<img src="<?php echo get_template_directory_uri(); ?>/src/images/noimage.png" alt="No image" />
+				<?php } ?>
+				</figure>
+				<div class="card__arrow"><?php echo get_icon('arrow');?></div>
+			</div>
 			<?php if ($tags) { ?><div class="card-tags"><?php foreach ($tags as $tag) { ?><div class="tag"><?php echo $tag->name; ?></div><?php } ?></div><?php } ?>
-			<div class="card__title"><p><?php the_title(); ?></p></div>
 			<?php if ($when['date']) { ?><div class="card__date"><?php echo $when['date']; ?><?php if ($when['time']) { ?><br /><?php echo $when['time']; ?><?php } ?></div><?php } ?>
+			<div class="card__title"><p><?php the_title(); ?></p></div>
 
 			<?php if (get_the_excerpt()) { ?><div class="card__excerpt"><?php the_excerpt(); ?></div><?php } ?>
 
 			<?php if ($where) { ?><div class="card__address"><p><?php echo $where; ?></p></div><?php } ?>
 
-			<span class="btn btn--solid">Find out more</span>
+			<span class="btn--link">Find out more <?php echo get_icon('arrow');?></span>
 		</a>
 		<?php endwhile; wp_reset_query(); ?>
 
 
 	</div>
 </section>
+<hr />
 <?php } ?>
 
 <?php
@@ -110,8 +116,10 @@
 <section class="events">
 	<?php if ($pasttitle || $content) { ?>
 	<div class="events-title">
-		<?php if ($pasttitle) { ?><h2 class="uppercase"><?php echo $pasttitle; ?></h2><?php } ?>
-		<?php if ($pastcontent) { ?><?php echo $pastcontent; ?><?php } ?>
+		<div class="events-title__content">
+			<?php if ($pasttitle) { ?><h2 class="uppercase"><?php echo $pasttitle; ?></h2><?php } ?>
+			<?php if ($pastcontent) { ?><?php echo $pastcontent; ?><?php } ?>
+		</div>
 	</div>
 	<?php } ?>
 
@@ -126,22 +134,24 @@
 			$tags = get_the_terms(get_the_id(), 'event_tags');
 		?>
 		<a href="<?php esc_url( the_permalink() ); ?>" title="Article: <?php the_title(); ?>" class="mix <?php foreach ($terms as $term) { ?><?php echo $term->slug . ' '; ?><?php } ?>card card--std" data-filter="<?php foreach ($terms as $term) { ?><?php echo $term->slug . ' '; ?><?php } ?>">
-			<figure class="card__media">
-			<?php if(has_post_thumbnail()) { ?>
-				<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true); ?>">
-				<?php } else { ?>
-				<img src="<?php echo get_template_directory_uri(); ?>/src/images/noimage.png" alt="No image" />
-			<?php } ?>
-			</figure>
+			<div class="card__media">
+				<figure class="card__media">
+				<?php if(has_post_thumbnail()) { ?>
+					<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true); ?>">
+					<?php } else { ?>
+					<img src="<?php echo get_template_directory_uri(); ?>/src/images/noimage.png" alt="No image" />
+				<?php } ?>
+				</figure>
+				<div class="card__arrow"><?php echo get_icon('arrow');?></div>
+			</div>
 			<?php if ($tags) { ?><div class="card-tags"><?php foreach ($tags as $tag) { ?><div class="tag"><?php echo $tag->name; ?></div><?php } ?></div><?php } ?>
-			<div class="card__title"><p><?php the_title(); ?></p></div>
 			<?php if ($when['date']) { ?><div class="card__date"><?php echo $when['date']; ?><?php if ($when['time']) { ?><br /><?php echo $when['time']; ?><?php } ?></div><?php } ?>
-
+			<div class="card__title"><p><?php the_title(); ?></p></div>
 			<?php if (get_the_excerpt()) { ?><div class="card__excerpt"><?php the_excerpt(); ?></div><?php } ?>
 
 			<?php if ($where) { ?><div class="card__address"><p><?php echo $where; ?></p></div><?php } ?>
 
-			<span class="btn btn--solid">Find out more</span>
+			<span class="btn--link">Find out more <?php echo get_icon('arrow');?></span>
 		</a>
 		<?php endwhile; wp_reset_query(); ?>
 

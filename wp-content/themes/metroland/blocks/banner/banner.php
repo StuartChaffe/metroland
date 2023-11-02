@@ -9,6 +9,7 @@
 	<?php while( have_rows('banner') ): the_row();
 		$images		= get_sub_field('images');
 		$content	= get_sub_field('content');
+		$bkg		= get_sub_field('bkg-colour');
 	?>
 		<div class="banner-slider__item">
 			<div class="banner-slider__item-image" <?php if ($type == ! 'Images') { ?>style="background-image: url('<?php echo $images['large']['url'];?>');"<?php } ?>>
@@ -16,7 +17,7 @@
 				<?php if ($images['small']) { ?><img class="hidedesktop" src="<?php echo $images['small']['url'];?>" /><?php } ?>
 			</div>
 			<?php if ($type == 'Detailed' || $type == 'Standard') { ?>
-			<div class="banner-slider__item-content">
+			<div class="banner-slider__item-content <?php echo $bkg; ?>">
 				<?php if ($type == 'Detailed') { ?>
 				<?php if ($content['label_detailed']) { ?><p class="label label--primary uppercase"><?php echo $content['label_detailed']; ?></p><?php } ?>
 				<?php if ($content['title_detailed']) { ?><p class="banner-detailed__title"><?php echo $content['title_detailed']; ?></p><?php } ?>
@@ -26,16 +27,13 @@
 					<div class="banner-detailed__excerpt"><?php echo $content['text_detailed']; ?></div>
 				<?php } ?>
 				<?php if ($content['link_detailed']) { ?>
-					<?php if ($content['link_detailed']) { ?><a class="btn btn--solid btn--large" href="<?php echo $content['link_detailed']['url']; ?>" title="<?php echo $content['link_detailed']['title']; ?>"><?php echo $content['link_detailed']['title']; ?></a><?php } ?>
+					<?php if ($content['link_detailed']) { ?><a class="btn btn--black" href="<?php echo $content['link_detailed']['url']; ?>" title="<?php echo $content['link_detailed']['title']; ?>"><?php echo $content['link_detailed']['title']; ?> <?php echo get_icon('arrow');?></a><?php } ?>
 				<?php } ?>
 				<?php } else { ?>
 				<?php if ($content['date']) { ?><p class="banner-date"><?php echo $content['date']; ?></p><?php } ?>
 				<?php if ($content['title']) { ?><h3 class="heading-1 txt--white"><?php echo $content['title']; ?></h3><?php } ?>
 				<?php if ($content['text']) { ?><?php echo $content['text']; ?><?php } ?>
 				<?php if ($content['link']) { ?><a class="btn" href="<?php echo $content['link']['url']; ?>" title="<?php echo $content['link']['title']; ?>"><?php echo $content['link']['title']; ?> <?php echo get_icon('arrow');?></a><?php } ?>
-				<?php if ($content['link']) { ?><a class="btn btn--red" href="<?php echo $content['link']['url']; ?>" title="<?php echo $content['link']['title']; ?>"><?php echo $content['link']['title']; ?> <?php echo get_icon('arrow');?></a><?php } ?>
-				<?php if ($content['link']) { ?><a class="btn btn--black" href="<?php echo $content['link']['url']; ?>" title="<?php echo $content['link']['title']; ?>"><?php echo $content['link']['title']; ?> <?php echo get_icon('arrow');?></a><?php } ?>
-				<?php if ($content['link']) { ?><a class="btn btn--outline" href="<?php echo $content['link']['url']; ?>" title="<?php echo $content['link']['title']; ?>"><?php echo $content['link']['title']; ?> <?php echo get_icon('arrow');?></a><?php } ?>
 				<?php } ?>
 			</div>
 			<?php } ?>

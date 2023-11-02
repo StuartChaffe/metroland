@@ -8,6 +8,13 @@
 	label {
 		display: none;
 	}
+	::placeholder {
+		color: white;
+		opacity: 1;
+	}
+	::-ms-input-placeholder {
+		color: white;
+	}
 }
 p + .form {
 	margin-top: var(--spacing-xs);

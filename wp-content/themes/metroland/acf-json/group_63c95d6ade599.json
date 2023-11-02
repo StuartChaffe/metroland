@@ -418,6 +418,38 @@
                         }
                     ],
                     "parent_repeater": "field_63e65a504865c"
+                },
+                {
+                    "key": "field_6543c7e1ecb28",
+                    "label": "Background colour",
+                    "name": "bkg-colour",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "has-maroon-background-color": "Maroon",
+                        "has-red-background-color": "Red",
+                        "has-grey-background-color": "Grey",
+                        "has-blue-background-color": "Blue",
+                        "has-green-background-color": "Green",
+                        "has-gold-background-color": "Gold",
+                        "has-brown-background-color": "Brown"
+                    },
+                    "default_value": "has-maroon-background-color",
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_63e65a504865c"
                 }
             ]
         }
@@ -440,5 +472,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1678880775
+    "modified": 1698941348
 }

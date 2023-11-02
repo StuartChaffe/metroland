@@ -23,16 +23,19 @@
 
 		?>
 		<a href="<?php esc_url( the_permalink() ); ?>" title="Article: <?php the_title(); ?>" class="card card--std">
-			<figure class="card__media">
-			<?php if(has_post_thumbnail()) { ?>
-				<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true); ?>">
-				<?php } else { ?>
-				<img src="<?php echo get_template_directory_uri(); ?>/src/images/noimage.png" alt="No image" />
-			<?php } ?>
-			</figure>
+			<div class="card__media">
+				<figure>
+				<?php if(has_post_thumbnail()) { ?>
+					<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true); ?>">
+					<?php } else { ?>
+					<img src="<?php echo get_template_directory_uri(); ?>/src/images/noimage.png" alt="No image" />
+				<?php } ?>
+				</figure>
+				<div class="card__arrow"><?php echo get_icon('arrow');?></div>
+			</div>
 			<div class="card__title"><p><?php the_title(); ?></p></div>
 			<?php if (get_the_excerpt()) { ?><div class="card__excerpt"><?php the_excerpt(); ?></div><?php } ?>
-			<span class="btn btn--solid">Find out more</span>
+			<span class="btn--link">Find out more <?php echo get_icon('arrow');?></span>
 		</a>
 		<?php endwhile; wp_reset_query(); ?>
 	</div>

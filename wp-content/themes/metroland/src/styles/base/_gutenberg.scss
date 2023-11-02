@@ -64,6 +64,9 @@ figure {
 		max-width: none;
 	}
 }
+.wp-block-spacer {
+	background-color: var(--color-grey-light);
+}
 
 // Undo blockquote styles
 .wp-block-quote:not(.is-large):not(.is-style-large) {

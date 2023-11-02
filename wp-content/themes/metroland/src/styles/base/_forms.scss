@@ -10,7 +10,7 @@ select {
 	// height: 38px;
 	padding: 12px;
 	background-color: rgba(255, 255, 255, 0.4);
-	color: white;
+	// color: white;
 	border: 0;
 	border-radius: 5px;
 	box-shadow: none;
@@ -49,17 +49,14 @@ select:focus {
 	background-color: rgba(255, 255, 255, 0.2);
 	outline: 0;
 }
-::placeholder {
-	color: white;
-	opacity: 1;
+select {
+	border: 1px solid black;
 }
-::-ms-input-placeholder {
-	color: white;
-}
+
 label {
 	display: block;
 	// margin: .5em 0;
-	font-weight: var(--font-weight-normal);
+	font-weight: var(--font-weight-book);
 }
 
 input[type="checkbox"],

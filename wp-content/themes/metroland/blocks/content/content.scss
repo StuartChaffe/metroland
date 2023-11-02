@@ -34,8 +34,7 @@
 				a {
 					@extend .btn;
 					text-align: left;
-					font-weight: 400;
-					font-family: "CircularBold";
+					font-weight: var(--font-weight-bold);
 					color: var(--color-grey-dark);
 					border-color: var(--color-grey-dark);
 				}
@@ -211,8 +210,7 @@
 				@extend .btn;
 				margin-right: 0.5rem;
 				text-align: left;
-				font-weight: 400;
-				font-family: "CircularBold";
+				font-weight: var(--font-weight-bold);
 				color: white;
 				border-color: var(--color-grey-dark);
 			}

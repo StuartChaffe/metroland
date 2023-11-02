@@ -9,15 +9,16 @@ input[type=submit].btn,
 .is-style-outline a {
 	display: inline-block;
 	border-radius: 10px;
-	padding: 14px 24px;
+	padding: 14px 20px;
 	border: 0;
 	// border: 1px solid var(--color-text-dark) !important;
 	color: var(--color-text-dark) !important;
-	font-weight: var(--font-weight-normal);
+	font-weight: var(--font-weight-book);
 	background-color: white;
 	// text-transform: uppercase;
 	// font-family: var(--display-family);
-	font-size: 18px;
+	font-size: 20px;
+	letter-spacing: -0.5px;
 	text-align: center;
 	cursor: pointer;
 	transition: all 0.1s ease-in-out;
@@ -42,7 +43,7 @@ input[type=submit].btn,
 	display: flex;
 }
 a.btn {
-	padding: 14px 24px;
+	padding: 14px 20px;
 }
 .btn--solid, .is-style-fill a,
 .is-style-fill a {
@@ -60,7 +61,7 @@ a.btn {
 .btn--red {
 	background-color: var(--color-primary);
 	border: 0 !important;
-	color: white;
+	color: white !important;
 	fill: white;
 
 	&:hover, &:focus {
@@ -71,7 +72,7 @@ a.btn {
 .btn--black {
 	background-color: black;
 	border: 0 !important;
-	color: white;
+	color: white !important;
 
 	&:hover, &:focus {
 		color: white;
@@ -102,6 +103,7 @@ a.btn {
 }
 .btn--link {
 	color: var(--color-primary);
+	font-size: 18px;
 	.icon {
 		height: 14px;
 		transform: translateY(-2px);

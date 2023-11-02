@@ -13,7 +13,7 @@
 		color: white;
 		letter-spacing: .04em;
 		text-transform: uppercase;
-		font-family: "CircularBold";
+		font-weight: var(--font-weight-bold);
 		font-size: 12px;
 		&--active {
 			background-color: var(--color-primary);
@@ -21,7 +21,7 @@
 			color: var(--color-text-base);
 		}
 		span {
-			font-weight: var(--font-weight-normal);
+			font-weight: var(--font-weight-book);
 			text-transform: capitalize;
 		}
 		p {
@@ -41,7 +41,6 @@
 		display: none;
 		width: auto;
 		padding-right: 100px;
-		border-bottom: 1px solid var(--color-grey);
 		@include mq(medium) {
 			display: flex;
 			margin-left: auto;
