@@ -172,7 +172,7 @@ body:before {
   --spacing: 40px;
   --spacing-s: 25px;
   --spacing-xs: 16px;
-  --container-s: 900px;
+  --container-s: 750px;
   --container: 1300px;
   --container-l: 1430px;
   --content-width: var(--container);
@@ -180,6 +180,8 @@ body:before {
   --nav-width: 1044px;
   --font-size: 20px;
   --font-size-small: 15px;
+  --font-size-large: 26px;
+  --font-size-lead: 26px;
   --font-size-h1: 38px;
   --font-size-h2: 38px;
   --font-size-h3: 28px;
@@ -345,6 +347,7 @@ p strong {
 
 p.lead {
   font-size: var(--font-size-lead);
+  letter-spacing: -1px;
 }
 
 p.small,
@@ -933,7 +936,7 @@ input[type=submit].btn,
 .is-style-outline a {
   display: inline-block;
   border-radius: 10px;
-  padding: 14px 20px;
+  padding: 12px 20px;
   border: 0;
   color: var(--color-text-dark) !important;
   font-weight: var(--font-weight-book);
@@ -976,7 +979,7 @@ input[type=submit].btn .icon,
 }
 
 a.btn, .content-block-article .content-block__sidebar a, .content-block__content a.wp-block-button__link, .content-block__sidebar ul li a {
-  padding: 14px 20px;
+  padding: 12px 20px;
 }
 
 .btn--solid, .content-block__content .wp-block-button__link, .wp-block-column .wp-block-button__link,
@@ -2107,6 +2110,10 @@ p + .form {
 
 .mb-s {
   margin-bottom: var(--spacing-s) !important;
+}
+
+.pt-0 {
+  padding-top: 0;
 }
 
 img.alignright {

@@ -23,7 +23,5 @@
 		<?php if($content) { ?><?php echo $content;?><?php } ?>
 	</div>
 </section>
-<?php if ( 'programme' == get_post_type() || 'event' == get_post_type() ) { ?>
-	<hr class="hr-styled hr-styled--large">
-<?php } ?>
+
 <?php } ?>

@@ -3,6 +3,7 @@
 ?>
 
 <?php if($pages) { ?>
+	<hr />
 <section class="pagelinks">
 	<?php foreach( $pages as $id ):
 		$pagetitle = get_the_title($id);

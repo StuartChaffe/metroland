@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
-<article id="content">
+<article id="content" class="page-content">
 	<div class="page-breadcrumb"><span><span><a href="/resources">Resources</a><span><span> / <?php echo do_shortcode('[wpseo_breadcrumb]'); ?></div>
 	<div class="container category-list">
 		<div class="category category--active"><p>RESOURCE </p></div>

@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
-	<div class="page-breadcrumb"><span><span><a href="/news">News</a><span><span> / <?php echo do_shortcode('[wpseo_breadcrumb]'); ?></div>
-	<article id="content">
+	<article id="content" class="page-content">
+		<div class="page-breadcrumb"><span><span><a href="/news">News</a><span><span> / <?php echo do_shortcode('[wpseo_breadcrumb]'); ?></div>
 		<section class="content-block content-block-article">
 			<?php get_sidebar('news'); ?>
 			<div class="content-block__content">

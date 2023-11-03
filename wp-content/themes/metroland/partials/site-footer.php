@@ -25,8 +25,7 @@
 				<div class="site-footer__menus-secondary">
 					<?php wp_nav_menu( array('theme_location' => 'privacy') ); ?>
 
-					<p>Design: <a href="http://peterandpaul.co.uk/">Peter &amp; Paul</a><br />
-					Build: <a href="https://stuartchaffe.co.uk/">Stuart Chaffe</a></p>
+					<p>Website by: <a href="https://stuartchaffe.co.uk/">Stuart Chaffe</a></p>
 				</div>
 			</div>
 		</div>
