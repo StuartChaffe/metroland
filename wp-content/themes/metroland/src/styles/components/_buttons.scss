@@ -1,7 +1,4 @@
 .btn,
-// input[type="button"],
-// input[type="submit"],
-// button,
 input[type=submit],
 input[type=submit].btn,
 .wp-block-button__link,
@@ -11,12 +8,9 @@ input[type=submit].btn,
 	border-radius: 10px;
 	padding: 14px 20px;
 	border: 0;
-	// border: 1px solid var(--color-text-dark) !important;
 	color: var(--color-text-dark) !important;
 	font-weight: var(--font-weight-book);
 	background-color: white;
-	// text-transform: uppercase;
-	// font-family: var(--display-family);
 	font-size: 20px;
 	letter-spacing: -0.5px;
 	text-align: center;
@@ -35,10 +29,6 @@ input[type=submit].btn,
 		margin-left: 0.25rem;
 	}
 }
-// .wp-block-button__link {
-// 	background: red;
-// 	color: white !important;
-// }
 .btn__group {
 	display: flex;
 }

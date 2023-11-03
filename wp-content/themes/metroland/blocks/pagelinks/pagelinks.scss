@@ -1,7 +1,5 @@
 .pagelinks {
-	@extend .container !optional;
 	display: grid;
-
 	grid-template-columns: repeat(1, 1fr);
 	gap: 0;
 	@include mq(medium) {
@@ -14,11 +12,15 @@
 
 	.card {
 		&__title {
-			text-transform: uppercase;
 			padding-right: 20%;
 		}
 		&__excerpt {
 			padding-right: 25%;
+		}
+		&:hover {
+			.card__arrow {
+				background-color: var(--color-green);
+			}
 		}
 	}
 }

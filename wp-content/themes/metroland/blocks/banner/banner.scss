@@ -30,6 +30,12 @@
 		}
 	}
 
+	.heading-1 + p {
+		@include mq(medium) {
+			padding-right: var(--spacing-l);
+		}
+	}
+
 	&-slider {
 		// margin-bottom: var(--spacing-l);
 		&__item {
@@ -78,11 +84,6 @@
 					padding: var(--spacing);
 				}
 				@include mq($until: xlarge) {
-				}
-				p {
-					@include mq(medium) {
-						padding-right: var(--spacing);
-					}
 				}
 				h3 {
 					font-weight: var(--font-weight-bold);
@@ -178,8 +179,8 @@
 		// 	}
 		// }
 
-		.slick-prev, .slick-next {
-			transform: translate(0, -50%);
-		}
+		// .slick-prev, .slick-next {
+		// 	transform: translate(0, -50%);
+		// }
 	}
 }

@@ -1,5 +1,4 @@
 .content-block {
-	@extend .container !optional;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -48,12 +47,12 @@
 		width: 100%;
 		margin: 0 auto;
 		line-height: 1.25;
-		@include mq(medium) {
-			width: 66.6%;
-		}
-		@include mq(xlarge) {
-			padding-right: 10%;
-		}
+		// @include mq(medium) {
+		// 	width: 66.6%;
+		// }
+		// @include mq(xlarge) {
+		// 	padding-right: 10%;
+		// }
 		&--full {
 			// margin: 0 auto;
 			// width: 66.6%;
@@ -143,18 +142,15 @@
 			@extend .btn--solid;
 			@extend .btn;
 		}
-		h2, h3, h4 {
-			text-transform: uppercase;
-		}
-		h2 {
-			font-size: 32px !important;
-		}
-		h3 {
-			font-size: 24px !important;
-		}
-		h4 {
-			font-size: 20px !important;
-		}
+		// h2 {
+		// 	font-size: 32px !important;
+		// }
+		// h3 {
+		// 	font-size: 24px !important;
+		// }
+		// h4 {
+		// 	font-size: 20px !important;
+		// }
 
 		p,
 		ul {

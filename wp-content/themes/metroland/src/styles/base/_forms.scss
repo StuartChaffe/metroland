@@ -8,11 +8,11 @@ input[type="password"],
 textarea,
 select {
 	// height: 38px;
-	padding: 12px;
-	background-color: rgba(255, 255, 255, 0.4);
+	padding: 16px;
+	background-color: rgba(255, 255, 255, 0.3);
 	// color: white;
 	border: 0;
-	border-radius: 5px;
+	border-radius: 10px;
 	box-shadow: none;
 	box-sizing: border-box;
 	width: 100%;
@@ -28,7 +28,7 @@ input[type="password"],
 textarea {
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	margin-bottom: 1.5rem;
+	margin-bottom: 1rem;
 }
 
 textarea {
@@ -75,7 +75,6 @@ input[type="button"] {
 	// border-radius: var(--border-radius);
 	// transition: (all 0.2s linear);
 	// border: 0;
-	@extend .btn--solid;
 }
 
 input[type="submit"].center,

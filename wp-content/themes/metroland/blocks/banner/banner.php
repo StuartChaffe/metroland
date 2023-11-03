@@ -3,7 +3,7 @@
 	$size	= get_field('banner_size');
 ?>
 
-<section class="banner<?php if ($type == 'Detailed') { ?> banner-detailed<?php } ?><?php if ($type == 'Images') { ?> banner-images<?php } ?><?php if ($size == 'True') { ?> banner-full<?php } ?>">
+<section class="banner<?php if ($type == 'Detailed') { ?> banner-detailed<?php } else { ?> banner-standard<?php } ?><?php if ($type == 'Images') { ?> banner-images<?php } ?><?php if ($size == 'True') { ?> banner-full<?php } ?>">
 	<div class="banner-slider">
 	<?php if( have_rows('banner') ) { ?>
 	<?php while( have_rows('banner') ): the_row();

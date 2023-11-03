@@ -30,7 +30,6 @@
 	}
 }
 .category-filter {
-	@extend .container !optional;
 	display: flex;
 	// margin-left: auto;
 	margin-bottom: var(--spacing);
