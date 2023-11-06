@@ -38,7 +38,8 @@
 	select {
 		display: none;
 		width: auto;
-		padding-right: 100px;
+		// padding-right: 100px;
+		border: 0;
 		@include mq(medium) {
 			display: flex;
 			margin-left: auto;

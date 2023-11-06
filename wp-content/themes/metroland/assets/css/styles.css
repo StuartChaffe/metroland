@@ -3138,6 +3138,10 @@ input[type=button].center {
   margin-bottom: var(--spacing-xl) !important;
 }
 
+.wp-block-column {
+  position: relative;
+  overflow: hidden;
+}
 .wp-block-column figure {
   margin-bottom: 0 !important;
 }
@@ -3158,6 +3162,22 @@ input[type=button].center {
 .wp-block-column .wp-block-button + .wp-block-button {
   margin-top: 1rem;
 }
+.wp-block-column > * {
+  z-index: 1;
+}
+.wp-block-column .wp-block-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  min-width: 100%;
+  z-index: 0;
+}
+.wp-block-column .wp-block-image img {
+  width: 100%;
+}
+
 .wp-block-columns {
   padding: 0;
 }
@@ -4585,14 +4605,14 @@ iframe.wait-autoplay {
   }
 }
 
-.container, .programmes-title, .programmes-list, .site-footer__inner, .site-header__search .search-form {
+.container, .programmes-title, .programmes-list, .site-footer__inner, .site-footer__signoff, .site-header__search .search-form {
   margin: 0 auto;
   padding: 0 var(--spacing-s);
   width: 100%;
   max-width: var(--container-global);
 }
 @media (min-width: 70em) {
-  .container, .programmes-title, .programmes-list, .site-footer__inner, .site-header__search .search-form {
+  .container, .programmes-title, .programmes-list, .site-footer__inner, .site-footer__signoff, .site-header__search .search-form {
     padding: 0 var(--spacing-s);
   }
 }
@@ -4643,7 +4663,7 @@ iframe.wait-autoplay {
 .category-filter select {
   display: none;
   width: auto;
-  padding-right: 100px;
+  border: 0;
 }
 @media (min-width: 50em) {
   .category-filter select {
@@ -5150,16 +5170,25 @@ body.home .site-header__nav ul :not(.current_page_item) a:hover {
 .site-footer a {
   color: var(--color-text-base);
 }
+.site-footer__signoff {
+  display: flex;
+  max-width: var(--container-global);
+  justify-content: space-between;
+  padding: 0 var(--spacing-xs);
+}
+@media (min-width: 70em) {
+  .site-footer__signoff {
+    padding: var(--spacing) var(--spacing-xl);
+  }
+}
 .site-footer__inner {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-top: var(--spacing);
-  padding-bottom: var(--spacing);
+  max-width: var(--container-global);
+  padding: var(--spacing) var(--spacing-xs);
 }
 @media (min-width: 70em) {
   .site-footer__inner {
-    flex-direction: row;
+    padding: var(--spacing) var(--spacing-xl);
   }
 }
 .site-footer__logo {
@@ -5171,7 +5200,6 @@ body.home .site-header__nav ul :not(.current_page_item) a:hover {
 }
 @media (min-width: 70em) {
   .site-footer__logo {
-    margin-top: 1rem;
     align-items: flex-start;
     flex-direction: column;
     margin-bottom: 0;

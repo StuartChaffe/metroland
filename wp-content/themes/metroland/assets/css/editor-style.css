@@ -641,6 +641,10 @@ div[data-type="core/button"] div[data-block] {
   margin-right: auto;
 }
 
+.wp-block-image {
+  margin-top: 0 !important;
+}
+
 .wp-block-button__link {
   padding: 18px 20px 12px !important;
   color: white !important;
@@ -862,6 +866,10 @@ input[type=button].center {
   margin-bottom: var(--spacing-xl) !important;
 }
 
+.wp-block-column {
+  position: relative;
+  overflow: hidden;
+}
 .wp-block-column figure {
   margin-bottom: 0 !important;
 }
@@ -882,6 +890,22 @@ input[type=button].center {
 .wp-block-column .wp-block-button + .wp-block-button {
   margin-top: 1rem;
 }
+.wp-block-column > * {
+  z-index: 1;
+}
+.wp-block-column .wp-block-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  min-width: 100%;
+  z-index: 0;
+}
+.wp-block-column .wp-block-image img {
+  width: 100%;
+}
+
 .wp-block-columns {
   padding: 0;
 }
