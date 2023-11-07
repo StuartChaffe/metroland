@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
-	<main id="content" class="page-content">
+	<main id="content" class="page-content <?php if ( 'true' == get_field('breadcrumb_show') ) { ?>pt-0<?php } ?>">
 	<!-- <a href="#events" class="top">Jump to Calendar</a> -->
 	<?php if ( 'true' == get_field('breadcrumb_show') ) { ?><div class="page-breadcrumb"><?php echo do_shortcode('[wpseo_breadcrumb]'); ?></div><?php } ?>
 	<?php if ( 'true' == get_field('page_title_show') ) { ?>

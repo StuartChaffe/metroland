@@ -14,6 +14,7 @@
 	</div>
 
 	<div class="container-s">
+	<div class="content-block__content">
 	<?php if(has_post_thumbnail()) { ?>
 		<div class="page-image">
 		<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true); ?>">
@@ -53,6 +54,7 @@
 			<?php } ?>
 		</div>
 		<?php the_content(); ?>
+	</div>
 	</div>
 
 </article>

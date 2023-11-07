@@ -20,17 +20,14 @@
 			<?php } ?>
 
 			<div class="site-footer__menus">
-				<div class="site-footer__menus-main">
-					<?php wp_nav_menu( array('theme_location' => 'footer') ); ?>
-				</div>
-				<div class="site-footer__menus-secondary">
-					<?php wp_nav_menu( array('theme_location' => 'privacy') ); ?>
-				</div>
+				<?php wp_nav_menu( array('theme_location' => 'footer', 'container' => false,) ); ?>
 			</div>
 		</div>
 	</div>
 	<div class="site-footer__signoff">
-		<p>&copy; <?php bloginfo( 'name' ); ?> <?php echo date('Y'); ?></p>
-		<p>Website by: <a href="https://stuartchaffe.co.uk/">Stuart Chaffe</a></p>
+		<div class="site-footer__signoff-inner">
+			<p>&copy; <?php bloginfo( 'name' ); ?> <?php echo date('Y'); ?></p>
+			<p>Website by: <a href="https://stuartchaffe.co.uk/">Stuart Chaffe</a></p>
+		</div>
 	</div>
 </footer>

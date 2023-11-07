@@ -6,9 +6,16 @@ figure {
 figcaption {
 	font-size: 14px;
 	margin-top: 10px;
+	background-color: white;
 }
 
 figcaption p {
 	font-size: 14px;
 	margin-top: 10px;
+}
+.wp-block-image figcaption {
+	margin: 0;
+}
+.wp-element-caption {
+	padding: 8px;
 }
