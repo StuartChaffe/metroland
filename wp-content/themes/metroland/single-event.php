@@ -21,7 +21,7 @@
 		</div>
 	<?php } ?>
 		<div class="page-title">
-			<h1 class="heading-3 uppercase"><?php the_title(); ?></h1>
+			<h1 class="heading-3"><?php the_title(); ?></h1>
 		</div>
 
 		<?php

@@ -125,6 +125,7 @@
 }
 
 .single-programe,
+.single-programme,
 .single-event,
 .single {
 	.page-title {
@@ -149,10 +150,13 @@
 	// }
 	&-programme {
 		> * {
-			margin-left: auto;
-			margin-right: auto;
-			width: 100%;
-			max-width: var(--container-global);
+			// margin-left: auto;
+			// margin-right: auto;
+			// width: 100%;
+			// max-width: var(--container-global);
+		}
+		.category--active {
+			background-color: var(--color-maroon);
 		}
 	}
 	&-event {

@@ -159,7 +159,7 @@ body:before {
   --color-text-dark: #181822;
   --color-text-reversed: #fff;
   --color-text-link: var(--color-text-base);
-  --color-text-hover: #003451;
+  --color-text-hover: var(--color-red);
   --color-facebook: #3B5998;
   --color-twitter: #1DA1F2;
   --color-instagram: #262626;
@@ -840,14 +840,14 @@ input[type=button].center {
   }
 }
 
-.container, .programmes-title, .programmes-list {
+.container {
   margin: 0 auto;
   padding: 0 var(--spacing-s);
   width: 100%;
   max-width: var(--container-global);
 }
 @media (min-width: 70em) {
-  .container, .programmes-title, .programmes-list {
+  .container {
     padding: 0 var(--spacing-s);
   }
 }
@@ -970,6 +970,7 @@ input[type=submit].btn,
   text-align: center;
   cursor: pointer;
   transition: all 0.1s ease-in-out;
+  text-decoration: none;
 }
 .btn:hover, .content-block-article .content-block__sidebar a:hover, .btn:focus, .content-block-article .content-block__sidebar a:focus,
 input[type=submit]:hover,
@@ -1608,7 +1609,7 @@ a.btn, .content-block-article .content-block__sidebar a, .content-block__content
   justify-content: flex-start;
 }
 .content-block__withside .content-block__content {
-  margin: 0;
+  margin: 0 auto;
 }
 .content-block__sidebar {
   width: 100%;
@@ -1716,7 +1717,7 @@ a.btn, .content-block-article .content-block__sidebar a, .content-block__content
   margin-bottom: 1rem;
 }
 .content-block__content a {
-  color: var(--color-grey-dark);
+  text-decoration: underline;
 }
 .content-block__content .wp-block-buttons {
   display: flex;
@@ -1970,6 +1971,7 @@ p + .form {
   .news {
     grid-template-columns: repeat(2, 1fr);
     gap: var(--spacing-s);
+    margin-bottom: var(--spacing);
   }
 }
 @media (min-width: 70em) {
@@ -2014,28 +2016,24 @@ p + .form {
   display: flex;
   flex-wrap: wrap;
 }
-@media (min-width: 70em) {
-  .programmes-list {
-    padding: 0 200px;
-  }
-}
 .programmes-list .btn__group {
   width: 100%;
   justify-content: center;
 }
 .programmes-title {
-  padding-top: var(--spacing);
   padding-bottom: var(--spacing);
+  display: flex;
+  justify-content: space-between;
+}
+.programmes-title__content {
+  display: flex;
+  flex-direction: column;
 }
 .programmes .card {
   position: relative;
   padding: 0 calc(var(--spacing-xs) / 2);
   padding-bottom: var(--spacing);
 }
-.programmes .card__title {
-  text-transform: uppercase;
-}
-
 .resources {
   --offset: 200px;
   background-color: white;

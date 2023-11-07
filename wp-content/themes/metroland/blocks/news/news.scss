@@ -5,6 +5,7 @@
 	@include mq(medium) {
 		grid-template-columns: repeat(2, 1fr);
 		gap: var(--spacing-s);
+		margin-bottom: var(--spacing);
 	}
 	@include mq(large) {
 		grid-template-columns: repeat(4, 1fr);
