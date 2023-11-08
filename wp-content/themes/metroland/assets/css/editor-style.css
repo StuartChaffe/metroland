@@ -2304,13 +2304,19 @@ p.has-background {
 .has-blue-background-color h1, .has-blue-background-color h2, .has-blue-background-color h3, .has-blue-background-color h4, .has-blue-background-color h5 {
   color: var(--color-maroon);
 }
+.has-blue-background-color .banner-date:before {
+  background-color: var(--color-maroon);
+}
 
 .has-green-background-color {
   background-color: var(--color-green);
   color: white;
 }
 .has-green-background-color h1, .has-green-background-color h2, .has-green-background-color h3, .has-green-background-color h4, .has-green-background-color h5 {
-  color: var(--color-maroon);
+  color: var(--color-gold);
+}
+.has-green-background-color .banner-date:before {
+  background-color: var(--color-maroon);
 }
 
 .has-gold-background-color {
@@ -2327,6 +2333,9 @@ p.has-background {
 }
 .has-brown-background-color h1, .has-brown-background-color h2, .has-brown-background-color h3, .has-brown-background-color h4, .has-brown-background-color h5 {
   color: var(--color-gold);
+}
+.has-brown-background-color .banner-date:before {
+  background-color: var(--color-maroon);
 }
 
 .has-maroon-background-color {

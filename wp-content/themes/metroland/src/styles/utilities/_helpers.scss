@@ -122,12 +122,22 @@ p.has-background {
 	h1, h2, h3, h4, h5 {
 		color: var(--color-maroon);
 	}
+	.banner-date {
+		&:before {
+			background-color: var(--color-maroon);
+		}
+	}
 }
 .has-green-background-color {
 	background-color: var(--color-green);
 	color: white;
 	h1, h2, h3, h4, h5 {
-		color: var(--color-maroon);
+		color: var(--color-gold);
+	}
+	.banner-date {
+		&:before {
+			background-color: var(--color-maroon);
+		}
 	}
 }
 .has-gold-background-color {
@@ -142,6 +152,11 @@ p.has-background {
 	color: white;
 	h1, h2, h3, h4, h5 {
 		color: var(--color-gold);
+	}
+	.banner-date {
+		&:before {
+			background-color: var(--color-maroon);
+		}
 	}
 }
 .has-maroon-background-color {
