@@ -5319,7 +5319,7 @@ body.home .site-header__nav ul :not(.current_page_item) a:hover {
   }
 }
 .site-footer__partner img {
-  max-height: 80px;
+  max-height: 60px;
   filter: grayscale(1);
 }
 .site-footer__menus {
