@@ -5936,10 +5936,17 @@ body.nav-open {
 }
 .content-block__withside {
   padding-top: var(--spacing) !important;
+  padding-bottom: var(--spacing);
   justify-content: flex-start;
 }
+@media (min-width: 50em) {
+  .content-block__withside {
+    flex-direction: row;
+    padding-bottom: var(--spacing-xl);
+  }
+}
 .content-block__withside .content-block__content {
-  margin: 0 auto;
+  margin: 0 auto 0 0;
 }
 .content-block__sidebar {
   width: 100%;

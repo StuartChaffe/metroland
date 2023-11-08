@@ -13,9 +13,14 @@
 	}
 	&__withside {
 		padding-top: var(--spacing) !important;
+		padding-bottom: var(--spacing);
 		justify-content: flex-start;
+		@include mq(medium) {
+			flex-direction: row;
+			padding-bottom: var(--spacing-xl);
+		}
 		.content-block__content {
-			margin: 0 auto;
+			margin: 0 auto 0 0;
 		}
 	}
 	&__sidebar {
