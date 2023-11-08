@@ -5934,6 +5934,9 @@ body.nav-open {
 .content-block-post {
   margin-bottom: var(--spacing-xl);
 }
+.content-block-page .content-block__content {
+  margin: 0 auto 0 0 !important;
+}
 .content-block__withside {
   padding-top: var(--spacing) !important;
   padding-bottom: var(--spacing);
@@ -5944,9 +5947,6 @@ body.nav-open {
     flex-direction: row;
     padding-bottom: var(--spacing-xl);
   }
-}
-.content-block__withside .content-block__content {
-  margin: 0 auto 0 0;
 }
 .content-block__sidebar {
   width: 100%;

@@ -11,6 +11,11 @@
 	&-post {
 		margin-bottom: var(--spacing-xl);
 	}
+	&-page {
+		.content-block__content {
+			margin: 0 auto 0 0 !important;
+		}
+	}
 	&__withside {
 		padding-top: var(--spacing) !important;
 		padding-bottom: var(--spacing);
@@ -18,9 +23,6 @@
 		@include mq(medium) {
 			flex-direction: row;
 			padding-bottom: var(--spacing-xl);
-		}
-		.content-block__content {
-			margin: 0 auto 0 0;
 		}
 	}
 	&__sidebar {
