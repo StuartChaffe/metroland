@@ -1626,6 +1626,9 @@ a.btn, .content-block-article .content-block__sidebar a, .content-block__content
     padding-bottom: var(--spacing-xl);
   }
 }
+.content-block__withside + hr {
+  margin-top: 0;
+}
 .content-block__sidebar {
   width: 100%;
   margin-bottom: var(--spacing);

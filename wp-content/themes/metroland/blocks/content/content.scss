@@ -24,6 +24,9 @@
 			flex-direction: row;
 			padding-bottom: var(--spacing-xl);
 		}
+		+ hr {
+			margin-top: 0;
+		}
 	}
 	&__sidebar {
 		width: 100%;

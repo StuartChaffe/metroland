@@ -5948,6 +5948,9 @@ body.nav-open {
     padding-bottom: var(--spacing-xl);
   }
 }
+.content-block__withside + hr {
+  margin-top: 0;
+}
 .content-block__sidebar {
   width: 100%;
   margin-bottom: var(--spacing);
