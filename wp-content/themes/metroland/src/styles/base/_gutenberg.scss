@@ -244,3 +244,8 @@ ul, ol {
 			padding-right: 0 !important;
 	}
 }
+.content-block-page {
+	&:before {
+		display: none;
+	}
+}

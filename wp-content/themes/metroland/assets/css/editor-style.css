@@ -747,6 +747,10 @@ ul li, ol li {
   padding-right: 0 !important;
 }
 
+.content-block-page:before {
+  display: none;
+}
+
 input[type=email],
 input[type=number],
 input[type=search],
