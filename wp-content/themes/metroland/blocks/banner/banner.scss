@@ -166,7 +166,7 @@
 				width: 100%;
 				@include mq(medium) {
 					margin-top: 0;
-					padding: var(--spacing) var(--spacing) var(--spacing) var(--spacing-xl);
+					padding: var(--spacing);
 				}
 				.label {
 					margin-bottom: 0;

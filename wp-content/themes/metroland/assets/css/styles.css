@@ -5918,7 +5918,7 @@ body.nav-open {
 @media (min-width: 50em) {
   .banner-detailed .banner-slider__item-content {
     margin-top: 0;
-    padding: var(--spacing) var(--spacing) var(--spacing) var(--spacing-xl);
+    padding: var(--spacing);
   }
 }
 .banner-detailed .banner-slider__item-content .label {
