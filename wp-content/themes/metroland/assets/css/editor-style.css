@@ -970,7 +970,7 @@ input[type=submit].btn,
   text-align: center;
   cursor: pointer;
   transition: all 0.1s ease-in-out;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 .btn:hover, .content-block-article .content-block__sidebar a:hover, .btn:focus, .content-block-article .content-block__sidebar a:focus,
 input[type=submit]:hover,
@@ -1102,6 +1102,7 @@ a.btn, .content-block-article .content-block__sidebar a, .content-block__content
   flex-direction: column;
   max-width: none;
   position: relative;
+  text-decoration: none !important;
 }
 .card .btn--link {
   margin-top: var(--spacing-xs);
@@ -1654,6 +1655,17 @@ a.btn, .content-block-article .content-block__sidebar a, .content-block__content
   margin: 0 auto;
   line-height: 1.5;
 }
+.content-block__content .events {
+  padding-top: var(--spacing-l);
+  margin-top: var(--spacing-xl);
+  border-top: 1px solid black;
+}
+.content-block__content .events-list .card {
+  width: 33.3333333333%;
+}
+.content-block__content .events-list .card figure {
+  margin-bottom: 0;
+}
 .content-block__content figure:first-of-type {
   margin-bottom: var(--spacing-l);
 }
@@ -1819,7 +1831,6 @@ a.btn, .content-block-article .content-block__sidebar a, .content-block__content
 
 .events {
   --offset: 200px;
-  background-color: white;
 }
 .events-list {
   display: flex;

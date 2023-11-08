@@ -76,6 +76,20 @@
 			// margin: 0 auto;
 			// width: 66.6%;
 		}
+		.events {
+			padding-top: var(--spacing-l);
+			margin-top: var(--spacing-xl);
+			border-top: 1px solid black;;
+		}
+		.events-list {
+			.card {
+				width: calc(100% / 3);
+				figure {
+					margin-bottom: 0;
+				}
+			}
+
+		}
 		figure:first-of-type {
 			margin-bottom: var(--spacing-l);
 		}

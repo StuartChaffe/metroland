@@ -16,7 +16,7 @@ input[type=submit].btn,
 	text-align: center;
 	cursor: pointer;
 	transition: all 0.1s ease-in-out;
-	text-decoration: none;
+	text-decoration: none !important;
 
 	&:hover, &:focus {
 		background: var(--color-grey-light);
