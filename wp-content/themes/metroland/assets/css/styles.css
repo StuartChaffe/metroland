@@ -4871,31 +4871,38 @@ body.home .site-header__nav ul :not(.current_page_item) a:hover {
   flex-grow: 1;
 }
 .site-header__nav ul li:nth-child(1) a:hover,
-.site-header__nav ul li:nth-child(1) .sub-menu li > a:hover {
+.site-header__nav ul li:nth-child(1) .sub-menu li > a:hover,
+.site-header__nav ul li:nth-child(1) .current_page_item a {
   color: var(--color-red);
 }
 .site-header__nav ul li:nth-child(2) a:hover,
-.site-header__nav ul li:nth-child(2) .sub-menu li > a:hover {
+.site-header__nav ul li:nth-child(2) .sub-menu li > a:hover,
+.site-header__nav ul li:nth-child(2) .current_page_item a {
   color: var(--color-maroon);
 }
 .site-header__nav ul li:nth-child(3) a:hover,
-.site-header__nav ul li:nth-child(3) .sub-menu li > a:hover {
+.site-header__nav ul li:nth-child(3) .sub-menu li > a:hover,
+.site-header__nav ul li:nth-child(3) .current_page_item a {
   color: var(--color-green);
 }
 .site-header__nav ul li:nth-child(4) a:hover,
-.site-header__nav ul li:nth-child(4) .sub-menu li > a:hover {
+.site-header__nav ul li:nth-child(4) .sub-menu li > a:hover,
+.site-header__nav ul li:nth-child(4) .current_page_item a {
   color: var(--color-blue);
 }
 .site-header__nav ul li:nth-child(5) a:hover,
-.site-header__nav ul li:nth-child(5) .sub-menu li > a:hover {
+.site-header__nav ul li:nth-child(5) .sub-menu li > a:hover,
+.site-header__nav ul li:nth-child(5) .current_page_item a {
   color: var(--color-gold);
 }
 .site-header__nav ul li:nth-child(6) a:hover,
-.site-header__nav ul li:nth-child(6) .sub-menu li > a:hover {
+.site-header__nav ul li:nth-child(6) .sub-menu li > a:hover,
+.site-header__nav ul li:nth-child(6) .current_page_item a {
   color: var(--color-red);
 }
 .site-header__nav ul li:nth-child(7) a:hover,
-.site-header__nav ul li:nth-child(7) .sub-menu li > a:hover {
+.site-header__nav ul li:nth-child(7) .sub-menu li > a:hover,
+.site-header__nav ul li:nth-child(7) .current_page_item a {
   color: var(--color-maroon);
 }
 .site-header__nav ul li a {

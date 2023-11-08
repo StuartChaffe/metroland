@@ -145,43 +145,50 @@ body.home {
 				flex-grow: 1;
 				&:nth-child(1) {
 					a:hover,
-					.sub-menu li > a:hover  {
+					.sub-menu li > a:hover,
+					.current_page_item a {
 						color: var(--color-red);
 					}
 				}
 				&:nth-child(2) {
 					a:hover,
-					.sub-menu li > a:hover  {
+					.sub-menu li > a:hover,
+					.current_page_item a {
 						color: var(--color-maroon);
 					}
 				}
 				&:nth-child(3) {
 					a:hover,
-					.sub-menu li > a:hover  {
+					.sub-menu li > a:hover,
+					.current_page_item a {
 						color: var(--color-green);
 					}
 				}
 				&:nth-child(4) {
 					a:hover,
-					.sub-menu li > a:hover  {
+					.sub-menu li > a:hover,
+					.current_page_item a {
 						color: var(--color-blue);
 					}
 				}
 				&:nth-child(5) {
 					a:hover,
-					.sub-menu li > a:hover  {
+					.sub-menu li > a:hover,
+					.current_page_item a {
 						color: var(--color-gold);
 					}
 				}
 				&:nth-child(6) {
 					a:hover,
-					.sub-menu li > a:hover  {
+					.sub-menu li > a:hover,
+					.current_page_item a {
 						color: var(--color-red);
 					}
 				}
 				&:nth-child(7) {
 					a:hover,
-					.sub-menu li > a:hover  {
+					.sub-menu li > a:hover,
+					.current_page_item a {
 						color: var(--color-maroon);
 					}
 				}
