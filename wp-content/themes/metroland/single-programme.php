@@ -42,9 +42,9 @@
 		<?php if ($file['file']) { ?>
 			<a class="btn btn--outline" href="<?php echo $file['file']['url']; ?>"><?php if ($file['link_text']) { ?><?php echo $file['link_text']; ?> <?php } else { ?>Download file<?php } ?></a>
 		<?php } ?>
-
-	<?php the_content(); ?>
 	</div>
+	<?php the_content(); ?>
+
 </article>
 <?php endwhile; ?>
 

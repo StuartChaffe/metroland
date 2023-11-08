@@ -14,14 +14,13 @@
 	</div>
 
 	<div class="container-s">
-	<div class="content-block__content">
 	<?php if(has_post_thumbnail()) { ?>
 		<div class="page-image">
 		<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true); ?>">
 		</div>
 	<?php } ?>
 		<div class="page-title">
-			<h1 class="heading-3"><?php the_title(); ?></h1>
+			<h1 class="heading-3 uppercase"><?php the_title(); ?></h1>
 		</div>
 
 		<?php
@@ -53,9 +52,9 @@
 				<a class="btn btn--outline" href="<?php echo $tickets['url']; ?>" target="<?php echo $tickets['target']; ?>"><?php echo $tickets['title']; ?> <?php echo get_icon('arrow');?></a>
 			<?php } ?>
 		</div>
-		<?php the_content(); ?>
 	</div>
-	</div>
+	<?php the_content(); ?>
+
 
 </article>
 <?php endwhile; ?>
