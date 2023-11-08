@@ -4949,7 +4949,7 @@ body.home .site-header__nav ul :not(.current_page_item) a:hover {
   border: 0;
 }
 .site-header__nav ul li .sub-menu li a {
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   border: 0;
 }
 .site-header__nav ul li .sub-menu .sub-menu {
