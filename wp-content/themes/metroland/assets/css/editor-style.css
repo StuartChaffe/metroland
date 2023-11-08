@@ -751,6 +751,10 @@ ul li, ol li {
   display: none;
 }
 
+.content-block-page .content-block__content {
+  margin: 0 auto !important;
+}
+
 input[type=email],
 input[type=number],
 input[type=search],
@@ -1612,8 +1616,8 @@ a.btn, .content-block-article .content-block__sidebar a, .content-block__content
 .content-block-post {
   margin-bottom: var(--spacing-xl);
 }
-.content-block-page .content-block__content {
-  margin: 0 auto 0 0 !important;
+.content-block-page.content-block__withside .content-block__content {
+  margin: 0 auto 0 0;
 }
 .content-block__withside {
   padding-top: var(--spacing) !important;
@@ -1765,6 +1769,9 @@ a.btn, .content-block-article .content-block__sidebar a, .content-block__content
 .content-block__content ul + h4,
 .content-block__content ul + h5 {
   margin-top: var(--spacing);
+}
+.content-block__content .wp-block-columns {
+  margin: var(--spacing) 0;
 }
 @media (min-width: 50em) {
   .content-block-event, .content-block-programme {

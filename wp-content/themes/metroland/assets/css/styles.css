@@ -5941,8 +5941,8 @@ body.nav-open {
 .content-block-post {
   margin-bottom: var(--spacing-xl);
 }
-.content-block-page .content-block__content {
-  margin: 0 auto 0 0 !important;
+.content-block-page.content-block__withside .content-block__content {
+  margin: 0 auto 0 0;
 }
 .content-block__withside {
   padding-top: var(--spacing) !important;
@@ -6094,6 +6094,9 @@ body.nav-open {
 .content-block__content ul + h4,
 .content-block__content ul + h5 {
   margin-top: var(--spacing);
+}
+.content-block__content .wp-block-columns {
+  margin: var(--spacing) 0;
 }
 @media (min-width: 50em) {
   .content-block-event, .content-block-programme {
