@@ -1072,6 +1072,7 @@ a.btn, .content-block-article .content-block__sidebar a, .content-block__content
 }
 .btn--link:hover {
   text-decoration: none;
+  color: var(--color-text-base);
 }
 .btn--link-back {
   display: flex;
@@ -2021,9 +2022,15 @@ p + .form {
   background-color: var(--color-green);
 }
 
+.programmes {
+  padding-bottom: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+  border-bottom: 1px solid black;
+}
 .programmes-list {
   justify-content: center;
-  margin-bottom: var(--spacing-l);
+  margin-left: -12.5px;
+  margin-right: -12.5px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -2042,7 +2049,7 @@ p + .form {
 }
 .programmes .card {
   position: relative;
-  padding: 0 calc(var(--spacing-xs) / 2);
+  padding: 0 calc(var(--spacing-xs));
   padding-bottom: var(--spacing);
 }
 .resources {

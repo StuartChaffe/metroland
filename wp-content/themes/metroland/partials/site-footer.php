@@ -6,7 +6,7 @@
 
 		<div class="site-footer__content">
 
-			<?php if(get_field('partners_title', 'options')) { ?><p><?php the_field('partners_title', 'options'); ?></p><?php } ?>
+			<?php if(get_field('partners_title', 'options')) { ?><p><strong><?php the_field('partners_title', 'options'); ?></strong></p><?php } ?>
 			<?php if( have_rows('partner_logos', 'options') ) { ?>
 				<div class="site-footer__logos">
 				<?php while( have_rows('partner_logos', 'options') ): the_row();

@@ -108,7 +108,7 @@ body.nav-open {
 						color: black;
 						padding: 1.5rem 0;
 						text-decoration: none;
-						font-size: 18px;
+						font-weight: var(--font-weight-bold);
 						&:hover {
 							border-bottom: 1px solid black;
 							color: var(--color-primary);

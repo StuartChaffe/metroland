@@ -102,6 +102,7 @@ a.btn {
 	}
 	&:hover {
 		text-decoration: none;
+		color: var(--color-text-base);
 	}
 	&-back {
 		display: flex;
