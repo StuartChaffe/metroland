@@ -5916,6 +5916,8 @@ body.nav-open {
 }
 .banner-detailed .banner-slider__item-content .label {
   margin-bottom: 0;
+  color: white;
+  background-color: var(--color-text-base);
 }
 
 .content-block {

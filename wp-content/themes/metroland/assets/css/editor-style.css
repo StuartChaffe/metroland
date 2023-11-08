@@ -1590,6 +1590,8 @@ a.btn, .content-block-article .content-block__sidebar a, .content-block__content
 }
 .banner-detailed .banner-slider__item-content .label {
   margin-bottom: 0;
+  color: white;
+  background-color: var(--color-text-base);
 }
 
 .content-block {
