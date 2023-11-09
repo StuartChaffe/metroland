@@ -1930,6 +1930,10 @@ a.btn, .content-block-article .content-block__sidebar a, .content-block__content
 .events .card__excerpt {
   margin-bottom: 1rem;
 }
+.events .card__address {
+  display: none;
+}
+
 .featured {
   padding-bottom: var(--spacing-xl);
   margin-bottom: var(--spacing-xl);
