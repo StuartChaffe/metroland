@@ -1954,9 +1954,6 @@ a.btn, .content-block-article .content-block__sidebar a, .content-block__content
   justify-content: space-between;
   padding-bottom: var(--spacing);
 }
-.featured-title h2, .featured-title h3, .featured-title h4 {
-  margin-bottom: 0;
-}
 .featured-title__content {
   display: flex;
   flex-direction: column;

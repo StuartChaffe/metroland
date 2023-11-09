@@ -7,9 +7,6 @@
 		align-items: center;
 		justify-content: space-between;
 		padding-bottom: var(--spacing);
-		h2, h3, h4 {
-			margin-bottom: 0
-		}
 		&__content {
 			display: flex;
 			flex-direction: column;
