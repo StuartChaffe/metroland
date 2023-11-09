@@ -6340,6 +6340,17 @@ p + .form {
   margin-top: var(--spacing-s);
 }
 
+section + .form {
+  margin-top: var(--spacing);
+  margin-bottom: var(--spacing);
+  background-color: var(--color-maroon);
+  padding: var(--spacing-s);
+}
+section + .form h2 {
+  font-weight: var(--font-weight-black);
+  color: var(--color-blue);
+}
+
 .link {
   background-color: red;
 }

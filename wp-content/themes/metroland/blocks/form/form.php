@@ -3,7 +3,7 @@
 ?>
 
 <section class="form">
-	<?php if ($title) { ?><div class="form__title"><h5><?php echo $title; ?></h5></div><?php } ?>
+	<?php if ($title) { ?><div class="form__title"><h2><?php echo $title; ?></h2></div><?php } ?>
 	<div id="mc_embed_signup">
 		<form action="https://metrolandcultures.us13.list-manage.com/subscribe/post?u=f44cc57195ba06125e312ccd9&amp;id=44a6745e32&amp;f_id=0070e6e2f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 			<div id="mc_embed_signup_scroll">
