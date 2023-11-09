@@ -109,6 +109,9 @@ h5 {
 	font-family: var(--heading-family);
 	color: var(--color-text-base);
 	letter-spacing: -1px;
+	strong {
+		font-weight: var(--font-weight-book);
+	}
 }
 
 h1, .heading-1 { font-size: var(--font-size-h1);}

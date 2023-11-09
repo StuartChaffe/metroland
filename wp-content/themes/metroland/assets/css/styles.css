@@ -2963,6 +2963,13 @@ h5 {
   color: var(--color-text-base);
   letter-spacing: -1px;
 }
+h1 strong,
+h2 strong,
+h3 strong,
+h4 strong,
+h5 strong {
+  font-weight: var(--font-weight-book);
+}
 
 h1, .heading-1 {
   font-size: var(--font-size-h1);
