@@ -26,7 +26,7 @@
 	<?php if ($title || $content) { ?>
 	<div class="events-title">
 		<div class="events-title__content">
-			<?php if ($title) { ?><h2 class="uppercase"><?php echo $title; ?></h2><?php } ?>
+			<?php if ($title) { ?><h2><?php echo $title; ?></h2><?php } ?>
 			<?php if ($content) { ?><?php echo $content; ?><?php } ?>
 		</div>
 	</div>
@@ -117,7 +117,7 @@
 	<?php if ($pasttitle || $content) { ?>
 	<div class="events-title">
 		<div class="events-title__content">
-			<?php if ($pasttitle) { ?><h2 class="uppercase"><?php echo $pasttitle; ?></h2><?php } ?>
+			<?php if ($pasttitle) { ?><h2><?php echo $pasttitle; ?></h2><?php } ?>
 			<?php if ($pastcontent) { ?><?php echo $pastcontent; ?><?php } ?>
 		</div>
 	</div>

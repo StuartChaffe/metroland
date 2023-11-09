@@ -5656,13 +5656,6 @@ body.nav-open {
   margin-top: var(--spacing);
 }
 
-.single-programe .page-title h1,
-.single-programme .page-title h1,
-.single-event .page-title h1,
-.single .page-title h1 {
-  font-weight: var(--font-weight-bold);
-}
-
 .single {
   background-color: var(--content-bkg);
 }
