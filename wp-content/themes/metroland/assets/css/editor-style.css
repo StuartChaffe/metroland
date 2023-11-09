@@ -1203,6 +1203,9 @@ a.btn, .content-block-article .content-block__sidebar a, .content-block__content
 .card:hover .btn--red {
   background-color: var(--color-maroon);
 }
+.card:hover .btn--black {
+  background-color: var(--color-maroon);
+}
 .card:hover .card__arrow {
   background-color: var(--color-maroon);
   color: white;
