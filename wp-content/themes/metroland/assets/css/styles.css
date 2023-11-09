@@ -3151,7 +3151,7 @@ input[type=button].center {
   margin-bottom: 0;
 }
 .wp-block-columns:last-of-type {
-  margin-bottom: var(--spacing-xl) !important;
+  margin-bottom: var(--spacing) !important;
 }
 
 .wp-block-column {
@@ -6113,7 +6113,10 @@ body.nav-open {
   margin-top: var(--spacing);
 }
 .content-block__content .wp-block-columns {
-  margin: var(--spacing) 0;
+  margin: var(--spacing) 0 0 0;
+}
+.content-block__content .wp-block-columns + .wp-block-columns {
+  margin-top: 0;
 }
 @media (min-width: 50em) {
   .content-block-event, .content-block-programme {

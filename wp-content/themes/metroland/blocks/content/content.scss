@@ -220,7 +220,10 @@
 		// 	margin-top: var(--spacing)
 		// }
 		.wp-block-columns {
-			margin: var(--spacing) 0;
+			margin: var(--spacing) 0 0 0;
+			+ .wp-block-columns {
+				margin-top: 0;
+			}
 		}
 	}
 
@@ -230,7 +233,7 @@
 			padding-top: var(--spacing);
 		}
 		.content-block {
-			padding: 0;
+		padding: 0;
 		}
 		.content-block__sidebar {
 			align-items: flex-start;
