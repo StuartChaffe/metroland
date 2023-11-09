@@ -6697,7 +6697,7 @@ p.has-background {
   color: white;
 }
 .has-gold-background-color h1, .has-gold-background-color h2, .has-gold-background-color h3, .has-gold-background-color h4, .has-gold-background-color h5 {
-  color: var(--color-brown);
+  color: var(--color-green);
 }
 
 .has-brown-background-color {
