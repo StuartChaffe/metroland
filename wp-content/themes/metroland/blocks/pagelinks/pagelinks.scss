@@ -2,6 +2,7 @@
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
 	gap: 0;
+	margin-bottom: var(--spacing);
 	@include mq(medium) {
 		grid-template-columns: repeat(2, 1fr);
 		gap: var(--spacing-s);

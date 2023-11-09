@@ -6370,6 +6370,7 @@ p + .form {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 0;
+  margin-bottom: var(--spacing);
 }
 @media (min-width: 50em) {
   .pagelinks {
