@@ -3225,6 +3225,9 @@ input[type=button].center {
     padding-right: var(--spacing-xl);
   }
 }
+.wp-block-columns .wp-block-column .wp-block-heading strong {
+  font-weight: var(--font-weight-black);
+}
 @media (min-width: 70em) {
   .wp-block-columns .wp-block-column p {
     padding-right: var(--spacing-xl);
