@@ -3309,6 +3309,7 @@ input[type=button].center {
 .card__media {
   position: relative;
   transition: all 0.1s ease-in-out;
+  width: 100%;
 }
 .card__media img {
   width: 100%;
@@ -6266,6 +6267,10 @@ body.nav-open {
 }
 .featured-title h2, .featured-title h3, .featured-title h4 {
   margin-bottom: 0;
+}
+.featured-title__content {
+  display: flex;
+  flex-direction: column;
 }
 .featured-list {
   display: grid;

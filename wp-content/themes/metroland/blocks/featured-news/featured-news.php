@@ -1,5 +1,6 @@
 <?php
 	$title = get_field('featured_title');
+	$content = get_field('featured_content');
 	$featured = get_field( 'select_feature' );
 	$button = get_field( 'button' );
 
@@ -7,7 +8,10 @@
 ?>
 <section class="featured featured-news">
 	<div class="featured-title">
-		<?php if ($title) { ?><h3 class="uppercase"><?php echo $title; ?></h3><?php } ?>
+		<div class="featured-title__content">
+			<?php if ($title) { ?><h3><?php echo $title; ?></h3><?php } ?>
+			<?php if ($content) { ?><?php echo $content; ?><?php } ?>
+		</div>
 		<?php if ( 'true' == get_field('button') ) { ?>
 			<a href="/news" class="btn--link">All news <?php echo get_icon('arrow');?></a>
 		<?php } ?>

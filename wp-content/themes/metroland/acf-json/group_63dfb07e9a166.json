@@ -23,6 +23,26 @@
             "append": ""
         },
         {
+            "key": "field_654cd29c9a872",
+            "label": "Content",
+            "name": "featured_content",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
             "key": "field_63dfb1a45f909",
             "label": "Select featured",
             "name": "select_feature",
@@ -85,5 +105,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1698846814
+    "modified": 1699533483
 }

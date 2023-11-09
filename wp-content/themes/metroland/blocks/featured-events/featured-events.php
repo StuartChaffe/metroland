@@ -9,13 +9,11 @@
 	<?php if ($title || $content ) { ?>
 	<div class="events-title">
 		<div class="events-title__content">
-		<?php if ($title) { ?><h2 class="uppercase"><?php echo $title; ?></h2><?php } ?>
+		<?php if ($title) { ?><h2><?php echo $title; ?></h2><?php } ?>
 		<?php if ($content) { ?><?php echo $content; ?><?php } ?>
 		</div>
 		<?php if ( 'true' == get_field('button') ) { ?>
-		<div class="btn__group">
-			<a href="/events" class="btn--link">All events <?php echo get_icon('arrow');?></a>
-		</div>
+		<a href="/events" class="btn--link">All events <?php echo get_icon('arrow');?></a>
 		<?php } ?>
 	</div>
 	<?php } ?>
