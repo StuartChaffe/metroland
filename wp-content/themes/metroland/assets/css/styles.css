@@ -5941,6 +5941,9 @@ body.nav-open {
 .content-block-post {
   margin-bottom: var(--spacing-xl);
 }
+.content-block-page + * {
+  margin-top: var(--spacing-xl);
+}
 .content-block-page.content-block__withside .content-block__content {
   margin: 0 auto 0 0;
 }
@@ -5948,6 +5951,7 @@ body.nav-open {
   padding-top: var(--spacing) !important;
   padding-bottom: var(--spacing);
   justify-content: flex-start;
+  align-items: flex-start;
 }
 @media (min-width: 50em) {
   .content-block__withside {
@@ -5959,6 +5963,8 @@ body.nav-open {
   margin-top: 0;
 }
 .content-block__sidebar {
+  position: sticky;
+  top: 150px;
   width: 100%;
   margin-bottom: var(--spacing);
   padding-right: var(--spacing);

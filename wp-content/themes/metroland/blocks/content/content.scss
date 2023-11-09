@@ -11,6 +11,11 @@
 	&-post {
 		margin-bottom: var(--spacing-xl);
 	}
+	&-page {
+		+ * {
+			margin-top: var(--spacing-xl);
+		}
+	}
 	&-page.content-block__withside {
 		.content-block__content {
 			margin: 0 auto 0 0;
@@ -21,6 +26,7 @@
 		padding-top: var(--spacing) !important;
 		padding-bottom: var(--spacing);
 		justify-content: flex-start;
+		align-items: flex-start;
 		@include mq(medium) {
 			flex-direction: row;
 			padding-bottom: var(--spacing-xl);
@@ -30,6 +36,8 @@
 		}
 	}
 	&__sidebar {
+		position: sticky;
+		top: 150px;
 		width: 100%;
 		margin-bottom: var(--spacing);
 		padding-right: var(--spacing);

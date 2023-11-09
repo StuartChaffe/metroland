@@ -1616,6 +1616,9 @@ a.btn, .content-block-article .content-block__sidebar a, .content-block__content
 .content-block-post {
   margin-bottom: var(--spacing-xl);
 }
+.content-block-page + * {
+  margin-top: var(--spacing-xl);
+}
 .content-block-page.content-block__withside .content-block__content {
   margin: 0 auto 0 0;
 }
@@ -1623,6 +1626,7 @@ a.btn, .content-block-article .content-block__sidebar a, .content-block__content
   padding-top: var(--spacing) !important;
   padding-bottom: var(--spacing);
   justify-content: flex-start;
+  align-items: flex-start;
 }
 @media (min-width: 50em) {
   .content-block__withside {
@@ -1634,6 +1638,8 @@ a.btn, .content-block-article .content-block__sidebar a, .content-block__content
   margin-top: 0;
 }
 .content-block__sidebar {
+  position: sticky;
+  top: 150px;
   width: 100%;
   margin-bottom: var(--spacing);
   padding-right: var(--spacing);
