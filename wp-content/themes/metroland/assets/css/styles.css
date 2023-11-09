@@ -4759,13 +4759,6 @@ iframe.wait-autoplay {
   margin: 0;
 }
 
-body.home .site-header__nav ul :not(.current_page_item) a {
-  color: var(--color-text-base);
-}
-body.home .site-header__nav ul :not(.current_page_item) a:hover {
-  color: var(--color-primary);
-}
-
 .site-header {
   position: absolute;
   top: 0;
