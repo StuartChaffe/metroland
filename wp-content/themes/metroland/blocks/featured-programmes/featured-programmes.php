@@ -42,7 +42,7 @@
 			<div class="card__title"><p><?php echo $title; ?></p></div>
 			<?php if( $excerpt ) { ?><div class="card__excerpt"><p><?php echo $excerpt; ?></p></div><?php } ?>
 
-			<span class="btn--link">Find out more <?php echo get_icon('arrow');?></span>
+			<span class="btn btn--red">Find out more <?php echo get_icon('arrow');?></span>
 		</a>
 		<?php endforeach; ?>
 	<?php } ?>

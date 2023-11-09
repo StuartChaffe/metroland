@@ -3326,6 +3326,7 @@ input[type=button].center {
   background-color: white;
   width: 45px;
   height: 45px;
+  transition: all 0.1s ease-in-out;
 }
 .card__content {
   display: flex;
@@ -3346,7 +3347,7 @@ input[type=button].center {
   }
 }
 .card__excerpt p {
-  font-size: 18px;
+  font-size: 17px;
 }
 .card__date {
   position: relative;
@@ -3376,9 +3377,13 @@ input[type=button].center {
 .card:hover .btn--link {
   color: var(--color-text-base);
 }
+.card:hover .btn--red {
+  background-color: var(--color-maroon);
+}
 .card:hover .card__arrow {
   background-color: var(--color-maroon);
   color: white;
+  transition: all 0.1s ease-in-out;
 }
 .card:hover::before {
   background-color: var(--color-grey-light);

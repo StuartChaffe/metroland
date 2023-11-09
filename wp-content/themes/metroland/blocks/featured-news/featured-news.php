@@ -35,6 +35,7 @@
 				<div class="card__date"><p><?php echo $date; ?></p></div>
 				<div class="card__title"><p><?php echo $title; ?></div>
 				<?php if( $excerpt ) { ?><div class="card__excerpt"><p><?php echo $excerpt; ?></p></div><?php } ?>
+				<span class="btn btn--red">Find out more <?php echo get_icon('arrow');?></span>
 			</div>
 		</a>
 		<?php $counter++; ?>

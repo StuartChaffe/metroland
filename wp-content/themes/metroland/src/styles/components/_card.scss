@@ -48,6 +48,7 @@
 		background-color: white;
 		width: 45px;
 		height: 45px;
+		transition: all 0.1s ease-in-out;
 	}
 	&__content {
 		display: flex;
@@ -67,7 +68,7 @@
 	}
 	&__excerpt{
 		p {
-			font-size: 18px;
+			font-size: 17px;
 		}
 	}
 	&__date {
@@ -98,9 +99,13 @@
 		.btn--link {
 			color: var(--color-text-base);
 		}
+		.btn--red {
+			background-color: var(--color-maroon);
+		}
 		.card__arrow {
 			background-color: var(--color-maroon);
 			color: white;
+			transition: all 0.1s ease-in-out;
 		}
 		.card__title {
 			// text-decoration: underline;

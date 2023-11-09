@@ -46,6 +46,7 @@
 		<div class="card__date"><p><?php the_date(); ?></p></div>
 		<div class="card__title"><p><?php the_title(); ?></p></div>
 		<div class="card__excerpt"><?php the_excerpt(); ?></div>
+		<span class="btn btn--black">Find out more <?php echo get_icon('arrow');?></span>
 	</a>
 	<?php endwhile; wp_reset_query(); ?>
 <?php } ?>
