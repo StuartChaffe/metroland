@@ -710,18 +710,6 @@ ul li, ol li {
   color: var(--color-text-link);
   text-decoration: none;
 }
-.content-block__content h2 {
-  font-size: 32px !important;
-}
-.content-block__content h3 {
-  font-size: 24px !important;
-}
-.content-block__content h4 {
-  font-size: 20px !important;
-}
-.content-block__content h5 {
-  font-size: 16px !important;
-}
 
 .card--std {
   max-width: 25%;
@@ -1520,12 +1508,6 @@ a.btn, .content-block-article .content-block__sidebar a, .content-block__content
     min-width: calc(100% + 2px);
     min-height: calc(100% + 2px);
     display: block;
-  }
-}
-@media (min-width: 50em) {
-  .banner-slider__item-image img {
-    opacity: 0;
-    visibility: hidden;
   }
 }
 .banner-slider__item-content {

@@ -12,7 +12,7 @@
 		$bkg		= get_sub_field('bkg-colour');
 	?>
 		<div class="banner-slider__item <?php echo $bkg; ?>">
-			<div class="banner-slider__item-image" style="background-image: url('<?php echo $images['large']['url'];?>');">
+			<div class="banner-slider__item-image" <?php if ($type == ! 'Images') { ?>style="background-image: url('<?php echo $images['large']['url'];?>');"<?php } ?>>
 				<?php if ($images['large']) { ?><img class="" src="<?php echo $images['large']['url'];?>" /><?php } ?>
 				<?php if ($images['small']) { ?><img class="hidedesktop" src="<?php echo $images['small']['url'];?>" /><?php } ?>
 			</div>
