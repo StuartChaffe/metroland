@@ -5832,12 +5832,6 @@ body.nav-open {
     display: block;
   }
 }
-@media (min-width: 50em) {
-  .banner-slider__item-image img {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
 .banner-slider__item-content {
   width: 100%;
   padding: var(--spacing-l) var(--spacing-s);
