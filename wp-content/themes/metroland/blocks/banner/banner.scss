@@ -70,10 +70,10 @@
 						min-height: calc(100% + 2px);
 						display: block;
 					}
-					// @include mq(medium) {
-					// 	opacity: 0;
-    				// 	visibility: hidden;
-					// }
+					@include mq(medium) {
+						opacity: 0;
+    					visibility: hidden;
+					}
 				}
 			}
 			&-content {
