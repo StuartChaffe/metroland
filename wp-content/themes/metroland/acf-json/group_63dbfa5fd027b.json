@@ -1,7 +1,28 @@
 {
     "key": "group_63dbfa5fd027b",
     "title": "Post details",
-    "fields": [],
+    "fields": [
+        {
+            "key": "field_654e167e04699",
+            "label": "Show featured image",
+            "name": "show_featured_image",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
     "location": [
         [
             {
@@ -12,7 +33,7 @@
         ]
     ],
     "menu_order": 0,
-    "position": "normal",
+    "position": "side",
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
@@ -20,5 +41,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1675360895
+    "modified": 1699616798
 }

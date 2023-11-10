@@ -6,10 +6,12 @@
 		<a href="/news" class="btn--link btn--link-back"><?php echo get_icon('arrow');?> Back to articles</a>
 		<div class="content-block__content">
 			<div class="container-s">
+			<?php if ( 'true' == get_field('show_featured_image') ) { ?>
 			<?php if(has_post_thumbnail()) { ?>
 				<div class="page-image">
 					<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true); ?>">
 				</div>
+			<?php } ?>
 			<?php } ?>
 				<p class="page-date"><?php echo get_the_date(); ?></p>
 				<div class="page-title">
