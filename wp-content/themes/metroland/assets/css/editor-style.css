@@ -1935,7 +1935,6 @@ a.btn, .content-block-article .content-block__sidebar a, .content-block__content
 }
 .featured-title {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   padding-bottom: var(--spacing);
 }

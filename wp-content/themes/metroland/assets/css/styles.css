@@ -6257,7 +6257,6 @@ body.nav-open {
 }
 .featured-title {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   padding-bottom: var(--spacing);
 }
