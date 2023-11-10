@@ -28,7 +28,7 @@
 			<div class="card__media">
 				<figure>
 				<?php if(has_post_thumbnail($id)) { ?>
-					<img src="<?php echo get_the_post_thumbnail_url($id); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id($id), '_wp_attachment_image_alt', true); ?>">
+					<img src="<?php echo get_the_post_thumbnail_url($id,'Square'); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id($id), '_wp_attachment_image_alt', true); ?>">
 					<?php } else { ?>
 					<img src="<?php echo get_template_directory_uri(); ?>/src/images/noimage.png" alt="No image" />
 				<?php } ?>
