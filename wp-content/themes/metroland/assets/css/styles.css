@@ -5615,7 +5615,7 @@ body.nav-open {
   margin-top: var(--spacing);
 }
 .page-title {
-  padding-bottom: var(--spacing-s);
+  padding-bottom: var(--spacing);
 }
 @media (min-width: 50em) {
   .page-title {

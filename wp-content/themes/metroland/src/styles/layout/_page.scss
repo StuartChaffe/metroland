@@ -14,7 +14,7 @@
 		}
 	}
 	&-title {
-		padding-bottom: var(--spacing-s);
+		padding-bottom: var(--spacing);
 		@include mq(medium) {
 			padding-bottom: var(--spacing);
 		}
