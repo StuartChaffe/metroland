@@ -14,8 +14,12 @@
 	?>
 		<div class="banner-slider__item <?php echo $bkg; ?>">
 			<div class="banner-slider__item-image" <?php if ($type == ! 'Images') { ?>style="background-image: url('<?php echo $images['large']['url'];?>');"<?php } ?>>
+			<?php if ($type == 'Standard') { ?>
 				<?php if ($images['large']) { ?><img class="" src="<?php echo $images["large"]["sizes"]["Square"];?>" /><?php } ?>
+			<?php } else { ?>
+				<?php if ($images['large']) { ?><img class="" src="<?php echo $images["large"]["sizes"]["Thumb"];?>" /><?php } ?>
 				<?php if ($images['small']) { ?><img class="hidedesktop" src="<?php echo $images['small']['url'];?>" /><?php } ?>
+			<?php } ?>
 			</div>
 			<?php if ($type == 'Detailed' || $type == 'Standard') { ?>
 			<div class="banner-slider__item-content">
