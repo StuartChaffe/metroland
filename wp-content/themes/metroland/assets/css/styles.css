@@ -5926,7 +5926,7 @@ body.nav-open {
   width: 100%;
   color: var(--color-text-base);
   background-color: white;
-  padding: 1rem 2rem 0 0;
+  padding: 0.5rem;
   margin-bottom: 1rem;
 }
 @media (min-width: 50em) {
@@ -5952,8 +5952,7 @@ body.nav-open {
   }
 }
 .banner-detailed .banner-slider__item-content {
-  margin-top: -67px;
-  padding: 0 var(--spacing-s) var(--spacing) var(--spacing-s);
+  padding: var(--spacing-xs);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
