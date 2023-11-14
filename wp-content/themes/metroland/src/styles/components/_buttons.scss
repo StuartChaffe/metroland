@@ -42,10 +42,43 @@ a.btn {
 	border: 1px solid var(--color-text-base);
 	color: white !important;
 	&:hover, &:focus {
-		background: var(--color-grey) !important;
+		background: var(--color-grey);
 		outline: 0;
-		color: var(--color-text-dark) !important;
+		color: var(--color-text-dark);
 		text-decoration: none;
+	}
+}
+.wp-block-button__link {
+	position: relative;
+	// display: flex;
+	// align-items: center;
+	border: 1px solid var(--color-text-base);
+	&:after {
+		content: url('../../src/icons/arrow-white.svg');
+		position: relative;
+		color: white;
+		// display: inline-block;
+		width: 19px;
+		height: 14px;
+		margin-left: 0.5rem;
+		// top: 50%;
+	}
+	&:hover, &:focus {
+		color: white !important;
+		background-color: var(--color-primary) !important;
+		border: 1px solid var(--color-primary);
+	}
+}
+input[type=submit].btn {
+	position: relative;
+	background-image: url('../../src/icons/arrow.svg');
+	background-position: center right 15px;
+	background-repeat: no-repeat;
+	padding: 12px 45px 12px 20px;
+	&:hover {
+		background-image: url('../../src/icons/arrow.svg');
+		background-position: center right 15px;
+		background-repeat: no-repeat;
 	}
 }
 

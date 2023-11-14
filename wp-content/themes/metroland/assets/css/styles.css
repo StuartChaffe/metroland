@@ -3548,10 +3548,41 @@ a.btn, .content-block-article .content-block__sidebar a, .content-block__content
 .btn--solid:hover, .content-block__content .wp-block-button__link:hover, .wp-block-column .wp-block-button__link:hover, .btn--solid:focus, .content-block__content .wp-block-button__link:focus, .wp-block-column .wp-block-button__link:focus,
 .is-style-fill a:hover,
 .is-style-fill a:focus {
-  background: var(--color-grey) !important;
+  background: var(--color-grey);
   outline: 0;
-  color: var(--color-text-dark) !important;
+  color: var(--color-text-dark);
   text-decoration: none;
+}
+
+.wp-block-button__link {
+  position: relative;
+  border: 1px solid var(--color-text-base);
+}
+.wp-block-button__link:after {
+  content: url("../../src/icons/arrow-white.svg");
+  position: relative;
+  color: white;
+  width: 19px;
+  height: 14px;
+  margin-left: 0.5rem;
+}
+.wp-block-button__link:hover, .wp-block-button__link:focus {
+  color: white !important;
+  background-color: var(--color-primary) !important;
+  border: 1px solid var(--color-primary);
+}
+
+input[type=submit].btn, .content-block__content input[type=submit].wp-block-button__link {
+  position: relative;
+  background-image: url("../../src/icons/arrow.svg");
+  background-position: center right 15px;
+  background-repeat: no-repeat;
+  padding: 12px 45px 12px 20px;
+}
+input[type=submit].btn:hover, .content-block__content input[type=submit].wp-block-button__link:hover {
+  background-image: url("../../src/icons/arrow.svg");
+  background-position: center right 15px;
+  background-repeat: no-repeat;
 }
 
 .btn--red {
@@ -5988,7 +6019,7 @@ body.nav-open {
   color: var(--color-red);
 }
 .content-block__sidebar ul li {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.75rem;
 }
 .content-block__sidebar ul li a {
   text-align: left;
