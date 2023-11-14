@@ -2922,6 +2922,16 @@ ol {
   margin-bottom: 1.5rem;
   padding-left: 1.5rem;
 }
+ul li,
+ol li {
+  font-size: 16px;
+}
+@media (min-width: 50em) {
+  ul li,
+  ol li {
+    font-size: 20px;
+  }
+}
 
 ul ul,
 ol ul,
@@ -5854,12 +5864,11 @@ body.nav-open {
 @media (max-width: 49.99em) {
   .banner-slider__item-image img {
     position: absolute;
-    top: 50%;
+    top: 0;
     left: 50%;
     max-width: 100%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0);
     min-width: calc(100% + 2px);
-    min-height: calc(100% + 2px);
     display: block;
   }
 }

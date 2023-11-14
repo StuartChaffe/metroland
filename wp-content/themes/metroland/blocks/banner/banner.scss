@@ -62,12 +62,12 @@
 					width: 100%;
 					@include mq($until: medium) {
 						position: absolute;
-						top: 50%;
+						top: 0;
 						left: 50%;
 						max-width: 100%;
-						transform: translate(-50%, -50%);
+						transform: translate(-50%, 0);
 						min-width: calc(100% + 2px);
-						min-height: calc(100% + 2px);
+						// min-height: calc(100% + 2px);
 						display: block;
 					}
 					// @include mq(medium) {
