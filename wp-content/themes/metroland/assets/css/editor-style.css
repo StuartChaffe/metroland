@@ -1524,7 +1524,6 @@ input[type=submit].btn:hover, .content-block__content input[type=submit].wp-bloc
 .banner-slider__item-image {
   position: relative;
   width: 100%;
-  height: 65vw;
   background-image: none;
   overflow: hidden;
 }
@@ -1538,17 +1537,6 @@ input[type=submit].btn:hover, .content-block__content input[type=submit].wp-bloc
 }
 .banner-slider__item-image img {
   width: 100%;
-}
-@media (max-width: 49.99em) {
-  .banner-slider__item-image img {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    max-width: 100%;
-    transform: translate(-50%, 0);
-    min-width: calc(100% + 2px);
-    display: block;
-  }
 }
 .banner-slider__item-content {
   width: 100%;
