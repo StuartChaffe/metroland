@@ -6692,6 +6692,10 @@ p.has-background {
   background-color: var(--color-maroon);
 }
 
+.has-red-color {
+  color: var(--color-red);
+}
+
 .has-blue-background-color {
   background-color: var(--color-blue);
   color: white;
@@ -6701,6 +6705,10 @@ p.has-background {
 }
 .has-blue-background-color .banner-date:before {
   background-color: var(--color-maroon);
+}
+
+.has-blue-color {
+  color: var(--color-blue);
 }
 
 .has-green-background-color {
@@ -6714,12 +6722,20 @@ p.has-background {
   background-color: var(--color-maroon);
 }
 
+.has-green-color {
+  color: var(--color-green);
+}
+
 .has-gold-background-color {
   background-color: var(--color-gold);
   color: white;
 }
 .has-gold-background-color h1, .has-gold-background-color h2, .has-gold-background-color h3, .has-gold-background-color h4, .has-gold-background-color h5 {
   color: var(--color-green);
+}
+
+.has-gold-color {
+  color: var(--color-gold);
 }
 
 .has-brown-background-color {
@@ -6733,12 +6749,20 @@ p.has-background {
   background-color: var(--color-maroon);
 }
 
+.has-brown-color {
+  color: var(--color-brown);
+}
+
 .has-maroon-background-color {
   background-color: var(--color-maroon);
   color: white;
 }
 .has-maroon-background-color h1, .has-maroon-background-color h2, .has-maroon-background-color h3, .has-maroon-background-color h4, .has-maroon-background-color h5 {
   color: var(--color-blue);
+}
+
+.has-maroon-color {
+  color: var(--color-maroon);
 }
 
 .has-grey-background-color,

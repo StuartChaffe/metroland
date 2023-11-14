@@ -116,6 +116,9 @@ p.has-background {
 		}
 	}
 }
+.has-red-color {
+	color: var(--color-red);
+}
 .has-blue-background-color {
 	background-color: var(--color-blue);
 	color: white;
@@ -127,6 +130,9 @@ p.has-background {
 			background-color: var(--color-maroon);
 		}
 	}
+}
+.has-blue-color {
+	color: var(--color-blue);
 }
 .has-green-background-color {
 	background-color: var(--color-green);
@@ -140,12 +146,18 @@ p.has-background {
 		}
 	}
 }
+.has-green-color {
+	color: var(--color-green);
+}
 .has-gold-background-color {
 	background-color: var(--color-gold);
 	color: white;
 	h1, h2, h3, h4, h5 {
 		color: var(--color-green);
 	}
+}
+.has-gold-color {
+	color: var(--color-gold);
 }
 .has-brown-background-color {
 	background-color: var(--color-brown);
@@ -159,12 +171,18 @@ p.has-background {
 		}
 	}
 }
+.has-brown-color {
+	color: var(--color-brown);
+}
 .has-maroon-background-color {
 	background-color: var(--color-maroon);
 	color: white;
 	h1, h2, h3, h4, h5 {
 		color: var(--color-blue);
 	}
+}
+.has-maroon-color {
+	color: var(--color-maroon);
 }
 .has-grey-background-color,
 .bkg--grey {
