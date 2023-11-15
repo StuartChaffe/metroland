@@ -88,6 +88,7 @@
 		max-width: var(--container-global);
 		width: 100%;
 		padding: 0 var(--spacing-xs);
+
 		@include mq(medium) {
 			padding: var(--spacing-l) var(--spacing-xl) 0 var(--spacing-xl);
 		}

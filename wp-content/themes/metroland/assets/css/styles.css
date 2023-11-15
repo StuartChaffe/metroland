@@ -5294,6 +5294,7 @@ iframe.wait-autoplay {
 
 .site-footer {
   font-size: 18px;
+  border-top: 100px solid white;
 }
 .site-footer a {
   color: var(--color-text-base);
