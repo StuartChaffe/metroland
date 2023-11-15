@@ -14,10 +14,12 @@
 	</div>
 
 	<div class="container-s">
+	<?php if ( 'true' == get_field('show_featured_image') ) { ?>
 	<?php if(has_post_thumbnail()) { ?>
 		<div class="page-image">
-		<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true); ?>">
+			<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true); ?>">
 		</div>
+	<?php } ?>
 	<?php } ?>
 		<div class="page-title">
 			<h1 class="heading-2"><?php the_title(); ?></h1>
