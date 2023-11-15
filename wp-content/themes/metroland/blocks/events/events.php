@@ -7,7 +7,7 @@
 		'taxonomy' => 'event_category',
 		'posts_per_page' => -1,
 		'orderby' => 'date',
-		'order' => 'ASC',
+		'order' => 'DESC',
 		'meta_key' => 'date',
 		'meta_query'    => array(
 			'relation'      => 'AND',
@@ -98,7 +98,7 @@
 		'taxonomy' => 'event_category',
 		'posts_per_page' => -1,
 		'orderby' => 'date',
-		'order' => 'ASC',
+		'order' => 'DESC',
 		'meta_key' => 'date',
 		'meta_query'    => array(
 			'relation'      => 'AND',
