@@ -168,7 +168,7 @@ body:before {
   --body-background-color: #fff;
   --border-radius: 16px;
   --spacing-xxl: 150px;
-  --spacing-xl: 90px;
+  --spacing-xl: 60px;
   --spacing-l: 50px;
   --spacing: 40px;
   --spacing-s: 25px;
@@ -191,6 +191,7 @@ body:before {
 }
 @media (min-width: 50em) {
   :root {
+    --spacing-xl: 90px;
     --font-size-h1: calc(1rem + 3.5vw);
     --font-size-h2: calc(1rem + 2.5vw);
     --font-size-h3: calc(1rem + 2vw);
@@ -927,7 +928,12 @@ input[type=button].center {
   flex-direction: column;
   align-items: flex-start;
   margin-right: 0;
-  min-height: calc(33vw - 180px);
+  min-height: 50vw;
+}
+@media (min-width: 50em) {
+  .wp-block-columns .wp-block-column {
+    min-height: calc(33vw - 180px);
+  }
 }
 @media (min-width: 70em) {
   .wp-block-columns .wp-block-column {
@@ -1256,7 +1262,7 @@ input[type=submit].btn:hover, .content-block__content input[type=submit].wp-bloc
   }
 }
 .card--std {
-  width: 50%;
+  width: 100%;
 }
 @media (min-width: 50em) {
   .card--std {
@@ -1540,7 +1546,7 @@ input[type=submit].btn:hover, .content-block__content input[type=submit].wp-bloc
 }
 .banner-slider__item-content {
   width: 100%;
-  padding: var(--spacing-l) var(--spacing-s);
+  padding: var(--spacing-s) var(--spacing-s) var(--spacing-l) var(--spacing-s);
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -1926,6 +1932,7 @@ input[type=submit].btn:hover, .content-block__content input[type=submit].wp-bloc
 .events .card {
   position: relative;
   padding: 0 calc(var(--spacing-s) / 2);
+  margin-bottom: var(--spacing);
 }
 @media (min-width: 50em) {
   .events .card {

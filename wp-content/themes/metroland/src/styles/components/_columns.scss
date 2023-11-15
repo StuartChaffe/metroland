@@ -36,16 +36,18 @@
 		z-index: 1;
 	}
 	.wp-block-image {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		height: 100%;
-		min-width: 100%;
-		z-index: 0;
-		img {
-			width: 100%;
-		}
+		// @include mq(medium) {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			height: 100%;
+			min-width: 100%;
+			z-index: 0;
+			img {
+				width: 100%;
+			}
+		// }
 	}
 }
 
@@ -57,7 +59,10 @@
 		flex-direction: column;
 		align-items: flex-start;
 		margin-right: 0;
-		min-height: calc(33vw - 180px);
+		min-height: 50vw;
+		@include mq(medium) {
+			min-height: calc(33vw - 180px);
+		}
 		@include mq(large) {
 			min-height: calc(1220px / 3);
 		}

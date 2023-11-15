@@ -72,7 +72,7 @@
 	--border-radius: 16px;
 
 	--spacing-xxl: 150px;
-	--spacing-xl: 90px;
+	--spacing-xl: 60px;
 	--spacing-l: 50px;
 	--spacing: 40px;
 	--spacing-s: 25px;
@@ -104,6 +104,7 @@
 	// }
 
 	@include mq(medium) {
+		--spacing-xl: 90px;
 		--font-size-h1: calc(1rem + 3.5vw);
 		--font-size-h2: calc(1rem + 2.5vw);
 		--font-size-h3: calc(1rem + 2vw);

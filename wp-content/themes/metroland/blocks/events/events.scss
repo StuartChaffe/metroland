@@ -35,6 +35,7 @@
 	.card {
 		position: relative;
 		padding: 0 calc(var(--spacing-s) / 2);
+		margin-bottom: var(--spacing);
 		// padding-bottom: var(--spacing);
 		@include mq(medium) {
 			margin-bottom: var(--spacing);
