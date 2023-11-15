@@ -10,6 +10,9 @@
 	}
 	&-post {
 		margin-bottom: var(--spacing-xl);
+		.content-block__sidebar {
+			display: none;
+		}
 	}
 	&-page {
 		+ * {

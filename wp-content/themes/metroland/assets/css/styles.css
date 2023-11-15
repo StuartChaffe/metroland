@@ -5980,6 +5980,9 @@ body.nav-open {
 .content-block-post {
   margin-bottom: var(--spacing-xl);
 }
+.content-block-post .content-block__sidebar {
+  display: none;
+}
 .content-block-page + * {
   margin-top: var(--spacing-xl);
 }
