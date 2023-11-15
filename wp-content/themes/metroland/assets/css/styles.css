@@ -5977,10 +5977,10 @@ body.nav-open {
     flex-direction: row;
   }
 }
-.content-block-post {
+.content-block-post, .content-block-programme {
   margin-bottom: var(--spacing-xl);
 }
-.content-block-post .content-block__sidebar {
+.content-block-post .content-block__sidebar, .content-block-programme .content-block__sidebar {
   display: none;
 }
 .content-block-page + * {

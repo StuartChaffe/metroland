@@ -8,7 +8,8 @@
 		// padding-top: var(--spacing-l);
 		// padding-bottom: var(--spacing-l);
 	}
-	&-post {
+	&-post,
+	&-programme {
 		margin-bottom: var(--spacing-xl);
 		.content-block__sidebar {
 			display: none;

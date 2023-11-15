@@ -6,11 +6,7 @@
 <?php if($allowed_blocks) { ?>
 <section class="content-block content-block-<?php echo get_post_type(); ?><?php if ('true' == get_field('show_sidebar') ) { echo ' content-block__withside';} ?>">
 <?php
-	if ( 'programme' == get_post_type() ) {
-		get_template_part('sidebar-programme' );
-	} elseif ( 'event' == get_post_type() ) {
-		get_template_part('sidebar-event' );
-	} elseif ( 'true' == get_field('show_sidebar') ) {
+	if ( 'page' == get_post_type() && 'true' == get_field('show_sidebar')) {
 		get_sidebar();
 	}
 ?>

@@ -1653,10 +1653,10 @@ input[type=submit].btn:hover, .content-block__content input[type=submit].wp-bloc
     flex-direction: row;
   }
 }
-.content-block-post {
+.content-block-post, .content-block-programme {
   margin-bottom: var(--spacing-xl);
 }
-.content-block-post .content-block__sidebar {
+.content-block-post .content-block__sidebar, .content-block-programme .content-block__sidebar {
   display: none;
 }
 .content-block-page + * {
