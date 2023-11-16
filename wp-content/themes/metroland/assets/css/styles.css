@@ -5990,7 +5990,6 @@ body.nav-open {
   margin: 0 auto 0 0;
 }
 .content-block__withside {
-  padding-top: var(--spacing) !important;
   padding-bottom: var(--spacing);
   justify-content: flex-start;
   align-items: flex-start;

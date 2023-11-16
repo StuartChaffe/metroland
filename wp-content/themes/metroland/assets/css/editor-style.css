@@ -1666,7 +1666,6 @@ input[type=submit].btn:hover, .content-block__content input[type=submit].wp-bloc
   margin: 0 auto 0 0;
 }
 .content-block__withside {
-  padding-top: var(--spacing) !important;
   padding-bottom: var(--spacing);
   justify-content: flex-start;
   align-items: flex-start;
