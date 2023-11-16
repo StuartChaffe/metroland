@@ -3330,6 +3330,9 @@ input[type=button].center {
 .card__media img {
   width: 100%;
 }
+.card__media figure {
+  margin-bottom: 0;
+}
 .card__media + .card__title {
   margin-top: var(--spacing-xs);
 }

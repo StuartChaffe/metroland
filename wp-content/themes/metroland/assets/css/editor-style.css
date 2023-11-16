@@ -1172,6 +1172,9 @@ input[type=submit].btn:hover, .content-block__content input[type=submit].wp-bloc
 .card__media img {
   width: 100%;
 }
+.card__media figure {
+  margin-bottom: 0;
+}
 .card__media + .card__title {
   margin-top: var(--spacing-xs);
 }
