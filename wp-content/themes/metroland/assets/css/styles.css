@@ -5642,6 +5642,9 @@ body.nav-open {
 .page-title + .content-block {
   padding-top: 0;
 }
+.page-title + .content-block__withside {
+  padding-top: var(--spacing) !important;
+}
 .page-date {
   margin-bottom: var(--spacing-xs) !important;
   position: relative;

@@ -37,6 +37,9 @@
 		+ .content-block {
 			padding-top: 0;
 		}
+		+ .content-block__withside {
+			padding-top: var(--spacing) !important;
+		}
 	}
 	&-date {
 		margin-bottom: var(--spacing-xs) !important;
