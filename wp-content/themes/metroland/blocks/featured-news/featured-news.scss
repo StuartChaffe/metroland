@@ -19,7 +19,7 @@
 		gap: 0;
 		@include mq(large) {
 			grid-template-columns: 1fr 1fr 1fr;
-			gap: var(--spacing-s);
+			gap: var(--spacing-l) var(--spacing-s);
 		}
 		// &--full {
 		// 	flex-direction: row;

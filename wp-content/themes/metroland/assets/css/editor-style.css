@@ -1992,7 +1992,7 @@ input[type=submit].btn:hover, .content-block__content input[type=submit].wp-bloc
 @media (min-width: 70em) {
   .featured-list {
     grid-template-columns: 1fr 1fr 1fr;
-    gap: var(--spacing-s);
+    gap: var(--spacing-l) var(--spacing-s);
   }
 }
 .featured-list--small {
