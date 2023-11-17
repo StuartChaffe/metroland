@@ -6163,6 +6163,9 @@ body.nav-open {
 .content-block__content .wp-block-columns + .wp-block-columns {
   margin-top: 0;
 }
+.content-block__content .wp-block-columns .wp-block-column {
+  min-height: 0;
+}
 .content-block__content .wp-block-columns .wp-block-column .wp-block-heading,
 .content-block__content .wp-block-columns .wp-block-column p {
   padding-right: 0;

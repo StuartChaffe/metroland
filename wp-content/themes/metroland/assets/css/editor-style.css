@@ -1836,6 +1836,9 @@ input[type=submit].btn:hover, .content-block__content input[type=submit].wp-bloc
 .content-block__content .wp-block-columns + .wp-block-columns {
   margin-top: 0;
 }
+.content-block__content .wp-block-columns .wp-block-column {
+  min-height: 0;
+}
 .content-block__content .wp-block-columns .wp-block-column .wp-block-heading,
 .content-block__content .wp-block-columns .wp-block-column p {
   padding-right: 0;

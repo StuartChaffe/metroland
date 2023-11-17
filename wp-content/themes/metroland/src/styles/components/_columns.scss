@@ -67,6 +67,7 @@
 			// padding-top: 0;
 			// padding-left: 2rem;
 			min-height: 33vw;
+
 		}
 		@include mq(large) {
 			min-height: calc(1220px / 3);
