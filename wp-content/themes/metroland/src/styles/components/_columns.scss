@@ -45,6 +45,7 @@
 			min-width: 100%;
 			z-index: 0;
 			img {
+				min-height: 100%;
 				width: 100%;
 			}
 		// }
@@ -60,11 +61,11 @@
 		align-items: flex-start;
 		margin-right: 0;
 		min-height: 75vw;
-		padding-left: 0;
-		padding-top: 1rem;
+		// padding-left: 0;
+		// padding-top: 1rem;
 		@include mq(medium) {
-			padding-top: 0;
-			padding-left: 2rem;
+			// padding-top: 0;
+			// padding-left: 2rem;
 			min-height: 33vw;
 		}
 		@include mq(large) {

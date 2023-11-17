@@ -212,8 +212,18 @@
 		// }
 		.wp-block-columns {
 			margin: var(--spacing) 0 0 0;
+			+ p,
+			+ .wp-block-heading {
+				margin-top: var(--spacing);
+			}
 			+ .wp-block-columns {
 				margin-top: 0;
+			}
+			.wp-block-column {
+				.wp-block-heading,
+				p {
+					padding-right: 0;
+				}
 			}
 		}
 	}
