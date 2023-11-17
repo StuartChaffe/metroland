@@ -63,6 +63,7 @@
 		padding-left: 0;
 		padding-top: 1rem;
 		@include mq(medium) {
+			padding-top: 0;
 			padding-left: 2rem;
 			min-height: 33vw;
 		}

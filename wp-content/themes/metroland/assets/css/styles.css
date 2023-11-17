@@ -3219,6 +3219,7 @@ input[type=button].center {
 }
 @media (min-width: 50em) {
   .wp-block-columns .wp-block-column {
+    padding-top: 0;
     padding-left: 2rem;
     min-height: 33vw;
   }
