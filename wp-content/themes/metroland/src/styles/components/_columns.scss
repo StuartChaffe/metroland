@@ -59,9 +59,12 @@
 		flex-direction: column;
 		align-items: flex-start;
 		margin-right: 0;
-		min-height: 50vw;
+		min-height: 75vw;
+		padding-left: 0;
+		padding-top: 1rem;
 		@include mq(medium) {
-			min-height: calc(33vw - 180px);
+			padding-left: 2rem;
+			min-height: 33vw;
 		}
 		@include mq(large) {
 			min-height: calc(1220px / 3);

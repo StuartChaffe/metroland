@@ -3213,11 +3213,14 @@ input[type=button].center {
   flex-direction: column;
   align-items: flex-start;
   margin-right: 0;
-  min-height: 50vw;
+  min-height: 75vw;
+  padding-left: 0;
+  padding-top: 1rem;
 }
 @media (min-width: 50em) {
   .wp-block-columns .wp-block-column {
-    min-height: calc(33vw - 180px);
+    padding-left: 2rem;
+    min-height: 33vw;
   }
 }
 @media (min-width: 70em) {
